@@ -1,98 +1,215 @@
-# 00 — Android Audio Capture Feasibility
+# 00 — Android Audio Capture Feasibility (empirical)
 
-**Status: BLOCKING. Read before writing any other code.**
-**Owner: Native/Android pair. Deadline: Day 3.**
+On-device measurement of whether a **normal, non-privileged third-party app**
+receives the REMOTE party's voice via `AudioRecord(MediaRecorder.AudioSource.MIC)`
+during an active carrier call on speakerphone.
 
----
+Only Play-Store-legal APIs were used. No `VOICE_CALL`, `VOICE_DOWNLINK`,
+`VOICE_UPLINK`, `CAPTURE_AUDIO_OUTPUT`, AccessibilityService, or root. A negative
+result is a valid result and was not worked around.
 
-## 1. The finding
+**Verdict: SILENCED BY OS.** See [The gate](#the-gate).
 
-The original Mode B design assumed a third-party Android app can capture the
-remote caller's voice during a live carrier call, using the microphone while
-the call is on speakerphone. **This assumption is false on Android 11 and above.**
+## Device under test
 
-Timeline of the restriction:
+| Manufacturer | Model | Android version | API level | Serial |
+|---|---|---|---|---|
+| vivo | V2502 | 16 | 36 | 10BF7B0H6A0046E |
 
-| Version / Date | Change |
+## Capture configuration
+
+| Parameter | Value |
 |---|---|
-| Android 10 (2019) | Direct call-audio API closed to third-party apps |
-| Android 11 (2020) | The speakerphone-microphone workaround also closed |
-| May 2022 | Play Store policy bars the Accessibility API for call-audio capture; hundreds of apps removed |
-| 2023 onward | OEMs ship native call recording in their own dialer using privileged system APIs |
+| Audio source | `MediaRecorder.AudioSource.MIC` |
+| Sample rate | 16000 Hz |
+| Channel | `CHANNEL_IN_MONO` |
+| Encoding | `ENCODING_PCM_16BIT` |
+| Buffer size | `AudioRecord.getMinBufferSize(...) * 4` |
+| Window | 500 ms per emitted CSV row |
 
-Native dialers (Google Phone, Samsung One UI) work because they are **system
-applications holding signature-level permissions**. That path is not available
-to an app distributed through the Play Store.
+## Data provenance
 
-## 2. Every path evaluated
+Source: `docs/aawaz_diag.csv`, 1,064 data rows.
 
-| Approach | API | Verdict |
+The file contains two runs. They are separated by an `uptimeMillis` gap of
+**17,654,545 ms (4.90 h)** between row index 342 and 343.
+
+| | rows | uptime range |
 |---|---|---|
-| Downlink capture | `AudioRecord(VOICE_CALL)` / `VOICE_DOWNLINK` | Requires `CAPTURE_AUDIO_OUTPUT`, a signature/privileged permission. **Not grantable.** |
-| Ambient capture | `AudioRecord(MIC)` during active call | Telephony holds input priority. Returns silence or near-silence on most OEMs. **Best-effort only.** |
-| Other-app VoIP capture | `AudioPlaybackCapture` (Android 10+) | Apps using `USAGE_VOICE_COMMUNICATION` (WhatsApp, Signal, Meet) are **non-capturable by design.** |
-| Accessibility workaround | `AccessibilityService` | **Banned by Play Store policy.** Automatic rejection. |
-| Default dialer | `InCallService` + `ROLE_DIALER` | Grants call *control* (answer, mute, end), **not raw audio frames.** |
-| Root / Xposed / custom ROM | — | Not deployable. Not demoable. Disqualifying. |
-| **Own VoIP stack** | `react-native-webrtc` / `ConnectionService` | ✅ **Full audio access. This is Mode A.** |
-| File decode | `MediaExtractor` / `MediaCodec` | ✅ Full access. Kept internally as **demo insurance only**, not a product feature. |
+| Earlier aborted run — **discarded** | 343 | 186,658,309 – 186,840,615 |
+| Re-run — **analysed below** | 721 | 204,495,160 – 206,493,036 (1,997.9 s) |
 
-**What still works and must be kept:** `TelephonyManager` / `PhoneStateListener`
-call-state *detection* requires only `READ_PHONE_STATE` and is unaffected. We
-keep automatic call detection; we lose automatic call *audio*.
+`docs/aawaz_diag_logcat.txt` exists but **does not cover the analysed session**.
+Its CSV rows span 186,658,309 – 186,840,615, i.e. exactly the 343 discarded rows
+of the aborted run, and it carries no STEP 4 banner. Step boundaries for the
+analysed session were therefore recovered by the fallback method — segmentation
+on `callState` plus the RMS step change — and **all step labels below are
+inferred, at lower confidence than banner-matched boundaries would be**.
 
-## 3. The kill-test (Day 1-3)
+One boundary could not be recovered at all. The OFFHOOK block contains no RMS
+step change because every row in it is identical, so the STEP 3 / STEP 4 split
+is an arbitrary halving of the speakerphone rows. This does not affect any
+conclusion: both halves are identical.
 
-Build a throwaway Kotlin app. No React Native, no UI, no model.
+## Startup facts
 
-```kotlin
-// Foreground service, type "microphone"
-val rec = AudioRecord(
-    MediaRecorder.AudioSource.MIC,
-    16000,
-    AudioFormat.CHANNEL_IN_MONO,
-    AudioFormat.ENCODING_PCM_16BIT,
-    bufSize
-)
-rec.startRecording()
-// every 500 ms:
-val rms = sqrt(buf.map { it.toDouble() * it }.average())
-Log.d("KILLTEST", "rms=$rms state=${tm.callState}")
-```
+Omitted for the analysed session. The startup banner is only present in the
+logcat of the aborted run, which is a different `AudioRecord` instance, so
+quoting its `audioSessionId` or buffer sizes here would be misattribution.
 
-### Protocol
-1. Install on **3 physical devices**, different OEMs — one Xiaomi/Redmi, one
-   Samsung, one stock Android (Pixel/Motorola/Nothing).
-2. Place a real carrier call. Put it on **speakerphone**.
-3. Have the remote party speak while the local user stays completely silent.
-4. Record the RMS value in the matrix below.
-5. Repeat the whole test with a **WhatsApp** call.
+What the data itself proves about initialisation: `AudioRecord.read()` returned
+**+320 on every row of the analysed session with zero negative returns**, which
+an uninitialised or non-recording `AudioRecord` cannot do.
 
-### Results matrix — fill this in
+For reference only, the aborted run's banner reported
+`getMinBufferSize=1280 bytes`, `audioRecord.state=1`, `recordingState=3`,
+`audioSessionId=68185` — same device, same build, different session.
 
-| Device | Android ver. | Carrier + speaker, remote talking | Carrier, local talking | WhatsApp, remote talking | Verdict |
-|---|---|---|---|---|---|
-| Xiaomi / Redmi | | | | | |
-| Samsung | | | | | |
-| Stock Android | | | | | |
+## Validation
 
-### Decision rule
-
-| Outcome | Action |
+| Check | Result |
 |---|---|
-| Remote RMS is clearly above the silence floor on **2 or more** devices | Mode B ships as one-tap Guardian. Document which OEMs work. |
-| Remote RMS is at the floor on 2 or more devices | Mode B ships as **detect-and-prompt only** — the app still warns the user that a call is in progress and offers guidance, and the OEM matrix goes in the pitch as a finding. |
-| Recording fails to start at all during a call | Same as above, plus state this explicitly in the pitch as a finding. |
+| Any segment under 20 rows | None. Smallest is STEP 1 at 36 rows. |
+| Gaps > 2000 ms in retained session | One: **1,637,094 ms (27.3 min)** at idx 277→278, `IDLE→IDLE`, `NORMAL→NORMAL`. Sits before the call; does not touch steps 3, 4 or 5. |
+| Gaps inside the OFFHOOK block | **None.** Largest consecutive gap during the call is 640 ms. Capture ran continuously for all 141.8 s. |
+| STEP 3 validity gate | **PASSES** on 273 rows — `callState=OFFHOOK`, `audioMode=IN_CALL`, `outputDevice=BUILTIN_SPEAKER` all hold with no exceptions. |
+| Negative `readResult` | **0 rows** in the entire retained session. |
+| `dbfs == -999.0` (exact digital silence) | **550 rows**, of which **283 are the entire OFFHOOK block** and 264 more are a pre-call `IN_COMMUNICATION` / `BLUETOOTH_SCO` stretch. |
 
-## 4. Why this is a strength, not a setback
+The first 11 OFFHOOK rows report `BUILTIN_EARPIECE` — speakerphone was not yet
+engaged — and are excluded from STEP 3 and STEP 4 so the gate is measured only
+on genuine speakerphone rows.
 
-Most competing teams will demo Mode B on an emulator or with a pre-recorded
-audio file and never discover this. Presenting a measured OEM matrix and a
-design that respects the platform's actual security model reads as engineering
-maturity. The line to use:
+## Results
 
-> "We do not claim to intercept carrier call audio. Android has forbidden that
-> for every third-party app since version 11, and the Play Store banned the
-> Accessibility workaround in 2022. We tested this on three OEMs before
-> designing around it. Any team claiming automatic carrier-call interception
-> either has not tested on Android 11+ or is using a workaround that cannot ship."
+First 2 rows of each segment dropped as settling.
+
+| Step | Median RMS | Peak | dBFS | zeroRatio | readResult | Interpretation |
+|---|---|---|---|---|---|---|
+| 1 — no call, room silent (noise floor) | 164.2 | 668 | −46.0 | 0.003 | +320, no negatives | Valid noise floor. Mic healthy. |
+| 2 — no call, local speaking ~30 cm | 1508.3 | 8651 | −26.7 | 0.001 | +320, no negatives | 9.2× the floor. Capture demonstrably works. |
+| 3 — carrier call, speakerphone, REMOTE speaking only | **0.0** | **0** | **−999.0** | **1.000** | +320, no negatives | **Absolute digital silence. Valid stream, no content.** |
+| 4 — carrier call, speakerphone, local speaking | **0.0** | **0** | **−999.0** | **1.000** | +320, no negatives | **Also silent. The mute is not remote-specific.** |
+| 5 — call ended, room silent (recovery) | 166.7 | 625 | −45.9 | 0.002 | +320, +2560 | Returns to the STEP 1 floor. Full recovery. |
+
+Stability (min / max RMS within segment):
+
+| Step | rows used | min RMS | max RMS |
+|---|---|---|---|
+| 1 | 34 | 113.3 | 415.6 |
+| 2 | 63 | 100.3 | 3228.5 |
+| 3 | 134 | 0.0 | 0.0 |
+| 4 | 135 | 0.0 | 0.0 |
+| 5 | 43 | 0.0 | 1008.7 |
+
+Context columns observed per segment:
+
+| Step | callState | audioMode | outputDevice |
+|---|---|---|---|
+| 1 | IDLE | NORMAL | BUILTIN_EARPIECE |
+| 2 | IDLE | NORMAL | BUILTIN_EARPIECE |
+| 3 | OFFHOOK | IN_CALL | BUILTIN_SPEAKER |
+| 4 | OFFHOOK | IN_CALL | BUILTIN_SPEAKER |
+| 5 | IDLE | IN_CALL, NORMAL | BUILTIN_SPEAKER, BUILTIN_EARPIECE |
+
+Across all 284 OFFHOOK rows there is exactly one non-zero row — the first
+(`rms 37.7, peak 370`), the tail of the pre-call buffer — and it falls in the
+earpiece rows excluded from the gate. The other 283 are precisely
+`rms 0.0, peak 0, dbfs -999.0, zeroRatio 1.000`.
+
+## The deciding comparison
+
+| | Median RMS |
+|---|---|
+| STEP 1 — noise floor | **164.2** |
+| STEP 3 — remote talking on speakerphone | **0.0** |
+| STEP 4 — local talking on speakerphone (control) | **0.0** |
+
+**STEP 3 / STEP 1 ratio = 0.000.**
+
+The control did not behave as hypothesised. STEP 4 is not high — it is also
+exactly zero. The platform is **not** selectively excluding remote audio while
+passing local audio. It mutes the third-party microphone feed entirely for the
+duration of the call, in both directions.
+
+## The gate
+
+- **STEP 3 RMS clearly above the floor (~2x or more) and zeroRatio low**
+  → **CAPTURE WORKS.** Mode B proceeds as one-tap Guardian.
+- **STEP 3 RMS at the floor, or zeroRatio near 1.000**
+  → **SILENCED BY OS.** Mode B becomes detect-and-warn only.
+- **`audioRecord.state == 0`, or `read()` returns negative during the call**
+  → **HARD BLOCKED.** Same product outcome, recorded as a distinct finding.
+
+`zeroRatio` is the discriminator between the second and third outcomes: Android
+commonly returns a *valid* stream of pure silence rather than an error during a
+call. A silenced stream and a failed stream are different findings.
+
+### Verdict: SILENCED BY OS
+
+Justified by these numbers specifically:
+
+- STEP 3 median RMS **0.0** against a STEP 1 floor of **164.2**. Not merely at
+  the floor — below it, at absolute digital zero. Ratio 0.000.
+- STEP 3 median zeroRatio **1.000**. Not "near" 1.000; exactly 1.000 on all 273
+  speakerphone rows.
+- **Not HARD BLOCKED.** `read()` returned **+320 on every row with zero negative
+  returns** — no `ERROR_INVALID_OPERATION`, `ERROR_BAD_VALUE` or
+  `ERROR_DEAD_OBJECT`. Android delivered a valid, correctly sized, uninterrupted
+  PCM stream containing nothing but zeros. This is exactly the case `zeroRatio`
+  was added to catch.
+- **Not CAPTURE WORKS**, by a wide margin. STEP 2 at 1508.3 (9.2× the floor) and
+  STEP 5 recovery at 166.7 prove the microphone path is healthy immediately
+  before and after the call. The silence is call-scoped, not a broken capture
+  chain.
+
+**Product consequence: Mode B becomes detect-and-warn only.** Live capture of
+the remote party's voice during a carrier call is not available to a
+Play-Store-legal app on this device.
+
+## Findings
+
+**1. The mute is blanket, not remote-selective.** STEP 4 was the control for
+this and it reads 0.0, identical to STEP 3. Once `audioMode` reaches `IN_CALL`,
+the third-party MIC feed is zeroed regardless of who is speaking. This is a
+sharper and more final result than "remote audio is excluded": there is no
+partial signal to work with, in either direction.
+
+**2. Silencing is not unique to carrier calls.** In the retained session, 264
+rows before the call also read `rms 0.0 / zeroRatio 1.000`, while `callState`
+was `IDLE` but `audioMode` was `IN_COMMUNICATION` on a `BLUETOOTH_SCO` route —
+another app held the communication audio path. The same zeroing applied. The
+trigger appears to be ownership of the communication audio path, not the carrier
+call as such. Worth confirming deliberately if VoIP detection is ever
+reconsidered.
+
+**3. Mid-call stall: did not recur.** The re-run's OFFHOOK block is continuous —
+141.8 s with a maximum consecutive gap of 640 ms and no dropped rows. The
+service was not killed during the call, so the zeros are a genuine platform
+result and not an artefact of Funtouch OS suspending the service. Disabling
+battery optimisation before the run appears to have worked.
+
+Note on the 123 s mid-call stall reported from an earlier run: **it is not
+present in either session in this CSV.** The aborted run's largest gap is
+11,846 ms (11.8 s), between two `IDLE` rows. That run also never reached
+`OFFHOOK` at all — it contains zero OFFHOOK rows, which is presumably why it was
+aborted. If the 123 s stall matters, its data is not in this file.
+
+**4. One 27.3-minute gap in the retained session**, at idx 277→278, between two
+`IDLE`/`NORMAL` rows well before the call. Consistent with the capture being
+stopped and restarted during test setup. Without a logcat for this session it
+cannot be distinguished from a service kill, but either way it precedes the call
+and affects no measured step.
+
+## What would need re-running to strengthen this
+
+The conclusion is sound on the evidence, but two gaps are worth closing if this
+finding is ever challenged:
+
+1. **Capture the logcat for the same session as the CSV.** The supplied logcat
+   is from the aborted run, which cost banner-accurate step boundaries and the
+   startup facts. Redirect logcat to a file with `-v time` before pressing START
+   and keep it running until after STOP.
+2. **Press MARK STEP 4.** The aborted run has no STEP 4 banner and the re-run's
+   boundary had to be inferred by halving. With every step marked, the STEP 3 /
+   STEP 4 split becomes fact rather than inference.
