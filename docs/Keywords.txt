@@ -1,0 +1,11 @@
+Key takeaways
+
+• Pick the cloning tier that matches the use case. Zero-shot (3–6s sample) for interactive agents, few-shot (30–90 sec) for stable product voices, Professional Voice Cloning (30+ min) for audiobooks and broadcast.
+
+• Sub-500ms end-to-end is achievable in 2026. Cartesia Sonic Turbo (~40 ms), ElevenLabs Flash v2.5 (~75 ms) and Inworld all hit well under 100 ms time-to-first-audio; the bottleneck is usually your LLM, not the TTS.
+
+• Consent and watermarking are architecture, not legal notes. The EU AI Act (Article 50), Tennessee ELVIS Act and Illinois BIPA each require written consent, provenance and disclosure — retrofit cost is brutal.
+
+• Cost spans ~6× across providers. Cartesia at ~$0.038 per 1k chars, ElevenLabs at $0.05–$0.10, OpenAI gpt-realtime at ~$0.10 per bundled minute (more on long uncached calls). Self-hosted Chatterbox (MIT) is cheapest at scale — but XTTS-v2 weights are non-commercial, so read the licence first.
+
+• Quality is a loop, not a launch. Speaker similarity (ECAPA-TDNN cosine ≥ 0.80), MOS ≥ 4.0, pronunciation error rate < 2% — measured weekly on a held-out sample set — is how you keep a voice product honest.
