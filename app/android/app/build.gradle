@@ -22,6 +22,13 @@ react {
     //   skip the bundling of the JS bundle and the assets. Default is "debug", "debugOptimized".
     //   If you add flavors like lite, prod, etc. you'll have to list your debuggableVariants.
     // debuggableVariants = ["liteDebug", "liteDebugOptimized", "prodDebug", "prodDebugOptimized"]
+    //
+    // Empty list = no variant is treated as "debuggable JS", so the debug build
+    // packages index.android.bundle and runs WITHOUT Metro. This keeps the debug
+    // manifest (DiagnosticsActivity) available for the demo harness, which a
+    // release build would strip.
+    // To get Fast Refresh back for JS development, delete the next line.
+    debuggableVariants = []
 
     /* Bundling */
     //   A list containing the node command and its flags. Default is just 'node'.

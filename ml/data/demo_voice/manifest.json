@@ -1,0 +1,118 @@
+{
+  "pairs": [
+    {
+      "pair_id": "pair_01",
+      "speaker_id": "1272",
+      "utt_id": "1272-141231-0001",
+      "transcript": "SWEAT COVERED BRION'S BODY TRICKLING INTO THE TIGHT LOINCLOTH THAT WAS THE ONLY GARMENT HE WORE",
+      "source_dataset": "LibriSpeech dev-clean (OpenSLR SLR12)",
+      "license": "CC BY 4.0",
+      "generation_model": "XTTS-v2 (tts_models/multilingual/multi-dataset/xtts_v2)",
+      "generation_language": "en",
+      "generated_on": "2026-09-11",
+      "human_original": {
+        "path": "ml/data/demo_voice/pair_01/human_original.wav",
+        "sample_rate": 16000,
+        "duration": 6.535
+      },
+      "ai_original": {
+        "path": "ml/data/demo_voice/pair_01/ai_xtts_original.wav",
+        "sample_rate": 24000,
+        "duration": 5.942
+      },
+      "human": {
+        "path": "ml/data/demo_voice/pair_01/human.wav",
+        "sample_rate": 16000,
+        "duration": 6.535,
+        "peak": 0.64594,
+        "rms": 0.08935,
+        "peak_limited": false
+      },
+      "ai": {
+        "path": "ml/data/demo_voice/pair_01/ai_xtts.wav",
+        "sample_rate": 16000,
+        "duration": 5.942,
+        "peak": 0.81829,
+        "rms": 0.13556,
+        "peak_limited": false
+      }
+    },
+    {
+      "pair_id": "pair_02",
+      "speaker_id": "2035",
+      "utt_id": "2035-152373-0010",
+      "transcript": "THE KINGDOM OF NORTHUMBRIA AS THE NAME IMPLIES EMBRACED NEARLY ALL THE COUNTRY FROM THE HUMBER TO THE PICTISH BORDER",
+      "source_dataset": "LibriSpeech dev-clean (OpenSLR SLR12)",
+      "license": "CC BY 4.0",
+      "generation_model": "XTTS-v2 (tts_models/multilingual/multi-dataset/xtts_v2)",
+      "generation_language": "en",
+      "generated_on": "2026-09-11",
+      "human_original": {
+        "path": "ml/data/demo_voice/pair_02/human_original.wav",
+        "sample_rate": 16000,
+        "duration": 7.6
+      },
+      "ai_original": {
+        "path": "ml/data/demo_voice/pair_02/ai_xtts_original.wav",
+        "sample_rate": 24000,
+        "duration": 8.63
+      },
+      "human": {
+        "path": "ml/data/demo_voice/pair_02/human.wav",
+        "sample_rate": 16000,
+        "duration": 7.6,
+        "peak": 0.38339,
+        "rms": 0.04713,
+        "peak_limited": false
+      },
+      "ai": {
+        "path": "ml/data/demo_voice/pair_02/ai_xtts.wav",
+        "sample_rate": 16000,
+        "duration": 8.63,
+        "peak": 0.84875,
+        "rms": 0.13814,
+        "peak_limited": false
+      }
+    },
+    {
+      "pair_id": "pair_03",
+      "speaker_id": "2078",
+      "utt_id": "2078-142845-0019",
+      "transcript": "SOME OF THE PREPARATIONS OF MAIZE FLOUR ARE VERY GOOD AND WHEN PARTAKEN IN MODERATION SUITABLE FOOD FOR ALMOST EVERYBODY",
+      "source_dataset": "LibriSpeech dev-clean (OpenSLR SLR12)",
+      "license": "CC BY 4.0",
+      "generation_model": "XTTS-v2 (tts_models/multilingual/multi-dataset/xtts_v2)",
+      "generation_language": "en",
+      "generated_on": "2026-09-11",
+      "human_original": {
+        "path": "ml/data/demo_voice/pair_03/human_original.wav",
+        "sample_rate": 16000,
+        "duration": 9.405
+      },
+      "ai_original": {
+        "path": "ml/data/demo_voice/pair_03/ai_xtts_original.wav",
+        "sample_rate": 24000,
+        "duration": 6.774
+      },
+      "human": {
+        "path": "ml/data/demo_voice/pair_03/human.wav",
+        "sample_rate": 16000,
+        "duration": 9.405,
+        "peak": 0.74451,
+        "rms": 0.07556,
+        "peak_limited": false
+      },
+      "ai": {
+        "path": "ml/data/demo_voice/pair_03/ai_xtts.wav",
+        "sample_rate": 16000,
+        "duration": 6.774,
+        "peak": 0.80336,
+        "rms": 0.12066,
+        "peak_limited": false
+      }
+    }
+  ],
+  "failures": [],
+  "target_sample_rate": 16000,
+  "note": "Detector copies are 16 kHz mono PCM16. Leading silence preserved."
+}

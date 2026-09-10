@@ -106,6 +106,40 @@
             android:layout_height="wrap_content"
             android:text="TEST CLIP - SYNTHETIC" />
 
+        <TextView
+            android:id="@+id/micProbeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:typeface="monospace"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="mic probe idle" />
+
+        <Button
+            android:id="@+id/speakerRealButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SPEAKER ONLY - REAL CLIP (air path)" />
+
+        <Button
+            android:id="@+id/speakerFakeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SPEAKER ONLY - AI CLIP (air path)" />
+
+        <Button
+            android:id="@+id/micProbeStartButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="START MIC PROBE" />
+
+        <Button
+            android:id="@+id/micProbeStopButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="STOP MIC PROBE" />
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"

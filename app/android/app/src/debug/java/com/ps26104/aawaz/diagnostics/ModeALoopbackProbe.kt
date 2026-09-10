@@ -220,6 +220,12 @@ class ModeALoopbackProbe(private val context: Context) {
         )
         sink = pcmSink
         track.addSink(pcmSink)
+        // Attaching the sink is not enough: ModeAPipeline.onPcmFrames drops every
+        // frame while it is not running, so a remote track that arrives before
+        // the pipeline starts is silently discarded. Start it here, at the point
+        // a remote track actually exists. Idempotent - if React Native already
+        // called startModeA(), this is a no-op and the existing listener stands.
+        ModeAController.start(context)
         // Mute playout. The sink taps the track before the output mixer, so we
         // still get every PCM frame, but nothing is played into the room. That
         // removes the acoustic loop the echo canceller would otherwise converge

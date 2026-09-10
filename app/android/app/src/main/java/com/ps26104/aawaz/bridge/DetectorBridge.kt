@@ -7,6 +7,7 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule
 import com.facebook.react.bridge.ReactMethod
 import com.facebook.react.bridge.WritableMap
 import com.facebook.react.modules.core.DeviceEventManagerModule
+import com.ps26104.aawaz.detector.DemoAudioSource
 import com.ps26104.aawaz.detector.ModeAController
 import com.ps26104.aawaz.detector.RiskAggregator
 
@@ -33,6 +34,7 @@ class DetectorBridge(
     override fun getName(): String = NAME
 
     private val listener = ModeAPipelineListener()
+    private var demoSource: DemoAudioSource? = null
 
     @ReactMethod
     fun startModeA(promise: Promise) {
@@ -54,6 +56,48 @@ class DetectorBridge(
         } catch (t: Throwable) {
             promise.reject("MODEA_STOP_FAILED", t.message, t)
         }
+    }
+
+    /**
+     * Judge demo: play a validated clip out loud and score that same audio with
+     * the existing detector. "real" or "fake". Runs off the JS thread; the
+     * resulting risk arrives through the normal AawazRisk event, not from here.
+     */
+    @ReactMethod
+    fun playDemoClip(kind: String, promise: Promise) {
+        try {
+            val asset = if (kind.equals("fake", ignoreCase = true)) {
+                DemoAudioSource.ASSET_FAKE
+            } else {
+                DemoAudioSource.ASSET_REAL
+            }
+            val label = if (kind.equals("fake", ignoreCase = true)) "AI VOICE" else "REAL HUMAN"
+            val source = demoSource ?: DemoAudioSource(reactContext).also { demoSource = it }
+            if (source.isPlaying) {
+                promise.resolve(false)
+                return
+            }
+            pipelineListenerAttached()
+            Thread({ source.play(asset, label) }, "aawaz-demo-audio").start()
+            promise.resolve(true)
+        } catch (t: Throwable) {
+            promise.reject("DEMO_CLIP_FAILED", t.message, t)
+        }
+    }
+
+    /** Current media volume as a percentage, so the UI can warn if it is muted. */
+    @ReactMethod
+    fun getMediaVolumePercent(promise: Promise) {
+        val source = demoSource ?: DemoAudioSource(reactContext).also { demoSource = it }
+        promise.resolve(source.mediaVolumePercent())
+    }
+
+    /**
+     * DemoAudioSource restarts the pipeline, which does not clear the listener
+     * field, but re-asserting it keeps this safe if start order ever changes.
+     */
+    private fun pipelineListenerAttached() {
+        ModeAController.pipeline(reactContext).listener = listener
     }
 
     /** Median inference latency in ms, for the pitch numbers. */

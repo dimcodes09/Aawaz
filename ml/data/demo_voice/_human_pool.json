@@ -1,0 +1,40 @@
+{
+  "selected": [
+    {
+      "pair_id": "pair_01",
+      "speaker_id": "1272",
+      "utt_id": "1272-141231-0001",
+      "source_path": "ml/data/_raw/LibriSpeech/dev-clean/1272/141231/1272-141231-0001.flac",
+      "transcript": "SWEAT COVERED BRION'S BODY TRICKLING INTO THE TIGHT LOINCLOTH THAT WAS THE ONLY GARMENT HE WORE",
+      "source_dataset": "LibriSpeech dev-clean (OpenSLR SLR12)",
+      "license": "CC BY 4.0",
+      "sample_rate": 16000,
+      "duration": 6.535,
+      "prescreen_human_risk": 0
+    },
+    {
+      "pair_id": "pair_02",
+      "speaker_id": "2035",
+      "utt_id": "2035-152373-0010",
+      "source_path": "ml/data/_raw/LibriSpeech/dev-clean/2035/152373/2035-152373-0010.flac",
+      "transcript": "THE KINGDOM OF NORTHUMBRIA AS THE NAME IMPLIES EMBRACED NEARLY ALL THE COUNTRY FROM THE HUMBER TO THE PICTISH BORDER",
+      "source_dataset": "LibriSpeech dev-clean (OpenSLR SLR12)",
+      "license": "CC BY 4.0",
+      "sample_rate": 16000,
+      "duration": 7.6,
+      "prescreen_human_risk": 0
+    },
+    {
+      "pair_id": "pair_03",
+      "speaker_id": "2078",
+      "utt_id": "2078-142845-0019",
+      "source_path": "ml/data/_raw/LibriSpeech/dev-clean/2078/142845/2078-142845-0019.flac",
+      "transcript": "SOME OF THE PREPARATIONS OF MAIZE FLOUR ARE VERY GOOD AND WHEN PARTAKEN IN MODERATION SUITABLE FOOD FOR ALMOST EVERYBODY",
+      "source_dataset": "LibriSpeech dev-clean (OpenSLR SLR12)",
+      "license": "CC BY 4.0",
+      "sample_rate": 16000,
+      "duration": 9.405,
+      "prescreen_human_risk": 0
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "rows": [
+    {
+      "pair_id": "pair_01",
+      "type": "human",
+      "path": "ml/data/demo_voice/pair_01/human.wav",
+      "risk": 0,
+      "state": "OK",
+      "logit_spoof": -4.6346,
+      "logit_bonafide": 5.4218,
+      "duration": 6.535,
+      "sample_rate": 16000,
+      "preprocessing_mode": "first_window_head_crop_64600_16k_mono_no_norm"
+    },
+    {
+      "pair_id": "pair_01",
+      "type": "ai",
+      "path": "ml/data/demo_voice/pair_01/ai_xtts.wav",
+      "risk": 100,
+      "state": "HIGH",
+      "logit_spoof": 6.6146,
+      "logit_bonafide": -6.7169,
+      "duration": 5.942,
+      "sample_rate": 16000,
+      "preprocessing_mode": "first_window_head_crop_64600_16k_mono_no_norm"
+    },
+    {
+      "pair_id": "pair_02",
+      "type": "human",
+      "path": "ml/data/demo_voice/pair_02/human.wav",
+      "risk": 0,
+      "state": "OK",
+      "logit_spoof": -4.6449,
+      "logit_bonafide": 5.4873,
+      "duration": 7.6,
+      "sample_rate": 16000,
+      "preprocessing_mode": "first_window_head_crop_64600_16k_mono_no_norm"
+    },
+    {
+      "pair_id": "pair_02",
+      "type": "ai",
+      "path": "ml/data/demo_voice/pair_02/ai_xtts.wav",
+      "risk": 97,
+      "state": "HIGH",
+      "logit_spoof": 4.3961,
+      "logit_bonafide": -3.3736,
+      "duration": 8.63,
+      "sample_rate": 16000,
+      "preprocessing_mode": "first_window_head_crop_64600_16k_mono_no_norm"
+    },
+    {
+      "pair_id": "pair_03",
+      "type": "human",
+      "path": "ml/data/demo_voice/pair_03/human.wav",
+      "risk": 0,
+      "state": "OK",
+      "logit_spoof": -4.6624,
+      "logit_bonafide": 5.4901,
+      "duration": 9.405,
+      "sample_rate": 16000,
+      "preprocessing_mode": "first_window_head_crop_64600_16k_mono_no_norm"
+    },
+    {
+      "pair_id": "pair_03",
+      "type": "ai",
+      "path": "ml/data/demo_voice/pair_03/ai_xtts.wav",
+      "risk": 98,
+      "state": "HIGH",
+      "logit_spoof": 4.5479,
+      "logit_bonafide": -4.1421,
+      "duration": 6.774,
+      "sample_rate": 16000,
+      "preprocessing_mode": "first_window_head_crop_64600_16k_mono_no_norm"
+    }
+  ],
+  "verdicts": {
+    "pair_01": {
+      "human_risk": 0,
+      "ai_risk": 100,
+      "gap": 100,
+      "passes": true
+    },
+    "pair_02": {
+      "human_risk": 0,
+      "ai_risk": 97,
+      "gap": 97,
+      "passes": true
+    },
+    "pair_03": {
+      "human_risk": 0,
+      "ai_risk": 98,
+      "gap": 98,
+      "passes": true
+    }
+  },
+  "gate": {
+    "human_below": 45,
+    "ai_at_or_above": 75
+  },
+  "preprocessing_mode": "first_window_head_crop_64600_16k_mono_no_norm",
+  "model": "ml/export/rawtfnet32_b1.onnx"
+}

@@ -7,6 +7,8 @@ import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.media.AudioAttributes
+import android.media.MediaPlayer
 import android.util.Log
 import android.widget.Button
 import android.widget.TextView
@@ -38,10 +40,13 @@ class DiagnosticsActivity : Activity() {
     private lateinit var permissionsText: TextView
     private lateinit var probeText: TextView
     private lateinit var modeaText: TextView
+    private lateinit var micProbeText: TextView
 
     private var modeAProbe: ModeALoopbackProbe? = null
     private var feeder: ModeAFileFeeder? = null
     private var feedThread: Thread? = null
+    private var micProbe: MicProbe? = null
+    private var speakerPlayer: MediaPlayer? = null
 
     private val handler = Handler(Looper.getMainLooper())
     private val refresh = object : Runnable {
@@ -50,6 +55,7 @@ class DiagnosticsActivity : Activity() {
             renderPermissions()
             renderProbe()
             renderModeA()
+            renderMicProbe()
             handler.postDelayed(this, UI_REFRESH_MS)
         }
     }
@@ -69,6 +75,7 @@ class DiagnosticsActivity : Activity() {
         metricsText = findViewById(R.id.metricsText)
         probeText = findViewById(R.id.probeText)
         modeaText = findViewById(R.id.modeaText)
+        micProbeText = findViewById(R.id.micProbeText)
 
         deviceText.text = Build.MANUFACTURER + " " + Build.MODEL +
             "  |  Android " + Build.VERSION.RELEASE + "  |  API " + Build.VERSION.SDK_INT
@@ -131,6 +138,32 @@ class DiagnosticsActivity : Activity() {
             runClip("modea_fake_48k.wav", "SYNTHETIC CLIP")
         }
 
+        findViewById<Button>(R.id.speakerRealButton).setOnClickListener {
+            playThroughSpeakerOnly("demo_real_48k.wav", "REAL CLIP")
+        }
+
+        findViewById<Button>(R.id.speakerFakeButton).setOnClickListener {
+            playThroughSpeakerOnly("demo_fake_48k.wav", "AI CLIP")
+        }
+
+        findViewById<Button>(R.id.micProbeStartButton).setOnClickListener {
+            if (!hasAllPermissions()) {
+                Toast.makeText(this, "Grant permissions first", Toast.LENGTH_SHORT).show()
+                requestPermissionsIfNeeded()
+                return@setOnClickListener
+            }
+            val probe = micProbe ?: MicProbe(this).also { micProbe = it }
+            probe.start("MIC PROBE")
+            Toast.makeText(this, "Mic probe started", Toast.LENGTH_SHORT).show()
+        }
+
+        findViewById<Button>(R.id.micProbeStopButton).setOnClickListener {
+            micProbe?.stop()
+        speakerPlayer?.release()
+        speakerPlayer = null
+            Toast.makeText(this, "Mic probe stopped", Toast.LENGTH_SHORT).show()
+        }
+
         bindMark(R.id.mark1Button, 1, "no call, room silent, noise floor")
         bindMark(R.id.mark2Button, 2, "no call, LOCAL speaking at ~30 cm")
         bindMark(R.id.mark3Button, 3, "carrier call, speakerphone, REMOTE talking, local silent")
@@ -152,6 +185,7 @@ class DiagnosticsActivity : Activity() {
 
     override fun onDestroy() {
         feeder?.cancel()
+        micProbe?.stop()
         ModeAController.stop()
         modeAProbe?.stop()
         modeAProbe = null
@@ -196,6 +230,49 @@ class DiagnosticsActivity : Activity() {
             )
             pipeline.logSummary(label)
         }, "aawaz-modea-feed").also { it.start() }
+    }
+
+    /**
+     * Plays a clip out of the speaker WITHOUT feeding the pipeline, so the only
+     * way the audio can reach the detector is acoustically, through the room and
+     * back in via the microphone. That is the whole point of the air-path test.
+     */
+    private fun playThroughSpeakerOnly(assetName: String, label: String) {
+        try {
+            speakerPlayer?.release()
+            val afd = assets.openFd(assetName)
+            val player = MediaPlayer()
+            player.setAudioAttributes(
+                AudioAttributes.Builder()
+                    .setUsage(AudioAttributes.USAGE_MEDIA)
+                    .setContentType(AudioAttributes.CONTENT_TYPE_SPEECH)
+                    .build()
+            )
+            player.setDataSource(afd.fileDescriptor, afd.startOffset, afd.length)
+            afd.close()
+            player.setOnCompletionListener {
+                Log.i(TAG, "===== SPEAKER ONLY END: " + label + " =====")
+            }
+            player.prepare()
+            player.start()
+            speakerPlayer = player
+            Log.i(TAG, "===== SPEAKER ONLY START: " + label + " (" + assetName + ") =====")
+            Toast.makeText(this, "Playing " + label + " via speaker", Toast.LENGTH_SHORT).show()
+        } catch (t: Throwable) {
+            Log.e(TAG, "SPEAKER ONLY failed: " + t.javaClass.simpleName + ": " + t.message, t)
+        }
+    }
+
+    private fun renderMicProbe() {
+        val pipeline = ModeAController.pipeline(this)
+        micProbeText.text = String.format(
+            Locale.US,
+            "MIC PROBE%nrunning   : %s%nwindows   : %d%nlast risk : %s  %s",
+            MicProbe.isRunning,
+            MicProbe.windowsLogged,
+            if (pipeline.lastRawRisk < 0) "-" else pipeline.lastRawRisk.toString(),
+            pipeline.currentReading.state
+        )
     }
 
     private fun renderModeA() {

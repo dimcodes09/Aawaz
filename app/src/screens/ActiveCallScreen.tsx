@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { View, Text, StyleSheet, Pressable, Modal } from 'react-native';
 import { Theme } from '../theme';
 import { ShieldIcon, WaveformIcon, ChevronDownIcon } from '../components/Icons';
@@ -8,6 +8,8 @@ import { InCallControlBar } from '../components/InCallControlBar';
 import { HighRiskWarningModal } from '../components/HighRiskWarningModal';
 import { Keypad } from '../components/Keypad';
 import { Contact, MOCK_OFFICIAL_CONTACTS } from '../mock/contactsData';
+import { useAawazRisk } from '../native/AawazRisk';
+import { JudgeDemoBar } from '../components/JudgeDemoBar';
 
 export interface ActiveCallScreenProps {
   contact?: Contact;
@@ -23,12 +25,15 @@ export const ActiveCallScreen: React.FC<ActiveCallScreenProps> = ({
   onMinimizeCall,
 }: ActiveCallScreenProps) => {
   // Local UI View State
-  const [overrideState, setOverrideState] = useState<'auto' | 'verified' | 'unverified'>('verified');
+  const [overrideState, setOverrideState] = useState<'auto' | 'verified' | 'unverified'>('auto');
   const [isMuted, setIsMuted] = useState<boolean>(false);
   const [isSpeakerOn, setIsSpeakerOn] = useState<boolean>(false);
   const [showKeypadModal, setShowKeypadModal] = useState<boolean>(false);
   const [showWarningModal, setShowWarningModal] = useState<boolean>(false);
   const [secondsElapsed, setSecondsElapsed] = useState<number>(258); // Starts at 04:18
+
+  // Live risk from the Track 1 native detector (DeviceEventEmitter "AawazRisk").
+  const { risk, eventCount } = useAawazRisk(true);
 
   // Active call duration timer tick
   useEffect(() => {
@@ -37,6 +42,29 @@ export const ActiveCallScreen: React.FC<ActiveCallScreenProps> = ({
     }, 1000);
     return () => clearInterval(timer);
   }, []);
+
+  // In 'auto' the screen shows the real native verdict; the toggle stays as a
+  // manual demo override. Contract states: ANALYSING | OK | ELEVATED | HIGH.
+  const isNativeHigh = risk.state === 'HIGH';
+  const isAnalysing = risk.state === 'ANALYSING';
+  const isAnomalyState =
+    overrideState === 'unverified' ||
+    (overrideState === 'auto' && isNativeHigh);
+
+  // Risk shown in the modal: the live native score, falling back to the
+  // component default only when the detector has not scored a window yet.
+  const displayedRiskScore = risk.score > 0 ? risk.score : 82;
+
+  // Native HIGH pops the same warning modal the manual override uses. Guarded on
+  // the transition so it does not reopen every second while the state persists.
+  const prevNativeHighRef = useRef<boolean>(false);
+  useEffect(() => {
+    if (overrideState !== 'auto') return;
+    if (isNativeHigh && !prevNativeHighRef.current) {
+      setShowWarningModal(true);
+    }
+    prevNativeHighRef.current = isNativeHigh;
+  }, [isNativeHigh, overrideState]);
 
   // When switching to unverified state, automatically pop up the High Risk Warning Modal
   const handleSelectState = (state: 'auto' | 'verified' | 'unverified'): void => {
@@ -53,8 +81,6 @@ export const ActiveCallScreen: React.FC<ActiveCallScreenProps> = ({
     const ss = secs < 10 ? `0${secs}` : `${secs}`;
     return `${mm}:${ss}`;
   };
-
-  const isAnomalyState = overrideState === 'unverified';
 
   const getInitials = (name: string): string => {
     const parts = name.split(' ').filter(Boolean);
@@ -144,11 +170,18 @@ export const ActiveCallScreen: React.FC<ActiveCallScreenProps> = ({
               ]}
             >
               {isAnomalyState
-                ? 'AAWAZ alert: Voice anomaly'
+                ? `AAWAZ alert: Voice anomaly (${displayedRiskScore}%)`
+                : overrideState === 'auto' && isAnalysing
+                ? `AAWAZ is analysing… (${eventCount})`
+                : overrideState === 'auto'
+                ? `AAWAZ is listening · ${risk.state} ${risk.score}%`
                 : 'AAWAZ is listening'}
             </Text>
           </View>
         </View>
+
+        {/* Judge demo: hear the voice, then see the detector's verdict. */}
+        <JudgeDemoBar state={risk.state} score={risk.score} />
 
         {/* Flexible Spacer */}
         <View style={styles.spacer} />
@@ -167,7 +200,7 @@ export const ActiveCallScreen: React.FC<ActiveCallScreenProps> = ({
       {/* High Risk Warning Popup Modal */}
       <HighRiskWarningModal
         visible={showWarningModal}
-        riskScore={82}
+        riskScore={displayedRiskScore}
         onEndCall={() => {
           setShowWarningModal(false);
           onEndCall();

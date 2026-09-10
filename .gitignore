@@ -1,1 +1,7 @@
 .idea/
+
+# ML datasets and generated audio (large, reproducible from scripts)
+ml/data/_raw/
+ml/data/demo_voice/**/*.wav
+ml/data/demo_voice/**/*.flac
+ml/eval/data/

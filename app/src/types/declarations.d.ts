@@ -7,6 +7,8 @@ declare module 'react' {
   export const useState: <T>(initialState: T | (() => T)) => [T, (newState: T | ((prev: T) => T)) => void];
   export const useEffect: (effect: () => void | (() => void), deps?: any[]) => void;
   export const useMemo: <T>(factory: () => T, deps: any[]) => T;
+  export const useRef: <T>(initialValue: T) => { current: T };
+  export const useCallback: <T>(fn: T, deps: any[]) => T;
   export type FC<P = {}> = (props: P) => any;
   export type ReactNode = any;
   export default any;
@@ -24,6 +26,13 @@ declare module 'react-native' {
   export const Modal: any;
   export const Alert: any;
   export const TextInput: any;
+  export const DeviceEventEmitter: {
+    addListener: (eventType: string, listener: (event: any) => void) => EmitterSubscription;
+  };
+  export const NativeModules: { [name: string]: any };
+  export interface EmitterSubscription {
+    remove: () => void;
+  }
   export type ViewStyle = any;
   export type TextStyle = any;
   export type ImageStyle = any;

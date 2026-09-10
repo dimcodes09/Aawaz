@@ -1,0 +1,2004 @@
+{
+  "scored": [
+    {
+      "utt_id": "1272-128104-0003",
+      "speaker_id": "1272",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1272/128104/1272-128104-0003.flac",
+      "text": "HE HAS GRAVE DOUBTS WHETHER SIR FREDERICK LEIGHTON'S WORK IS REALLY GREEK AFTER ALL AND CAN DISCOVER IN IT BUT LITTLE OF ROCKY ITHACA",
+      "duration": 9.9,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.3384
+    },
+    {
+      "utt_id": "1462-170138-0008",
+      "speaker_id": "1462",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1462/170138/1462-170138-0008.flac",
+      "text": "OF COURSE HILDA IS IRISH THE BURGOYNES HAVE BEEN STAGE PEOPLE FOR GENERATIONS AND SHE HAS THE IRISH VOICE",
+      "duration": 6.32,
+      "sample_rate": 16000,
+      "risk": 100,
+      "logit_bonafide": -5.5672
+    },
+    {
+      "utt_id": "1673-143396-0002",
+      "speaker_id": "1673",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1673/143396/1673-143396-0002.flac",
+      "text": "YET THE MOST CHARITABLE CRITICISM MUST REFUSE THESE SECTARIES ANY KNOWLEDGE OF THE PURE AND PROPER DIVINITY OF CHRIST",
+      "duration": 7.85,
+      "sample_rate": 16000,
+      "risk": 95,
+      "logit_bonafide": -2.8822
+    },
+    {
+      "utt_id": "174-168635-0005",
+      "speaker_id": "174",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/174/168635/174-168635-0005.flac",
+      "text": "COSETTE ON HER SIDE HAD ALSO UNKNOWN TO HERSELF BECOME ANOTHER BEING POOR LITTLE THING",
+      "duration": 7.93,
+      "sample_rate": 16000,
+      "risk": 62,
+      "logit_bonafide": -0.5033
+    },
+    {
+      "utt_id": "1919-142785-0004",
+      "speaker_id": "1919",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1919/142785/1919-142785-0004.flac",
+      "text": "THEN ADD THE YOLKS OF THE EGGS WELL BEATEN STIR THEM TO THE SAUCE BUT DO NOT ALLOW IT TO BOIL AND SERVE VERY HOT",
+      "duration": 8.17,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.6984
+    },
+    {
+      "utt_id": "1988-147956-0004",
+      "speaker_id": "1988",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1988/147956/1988-147956-0004.flac",
+      "text": "PRESENTLY AGAINST ONE OF THOSE BANKS I SAW A SORT OF SHED THATCHED WITH THE SAME WINE COLORED GRASS THAT GREW EVERYWHERE",
+      "duration": 9.025,
+      "sample_rate": 16000,
+      "risk": 28,
+      "logit_bonafide": 0.9282
+    },
+    {
+      "utt_id": "1993-147149-0000",
+      "speaker_id": "1993",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1993/147149/1993-147149-0000.flac",
+      "text": "HOW INFINITE THE WEALTH OF LOVE AND HOPE GARNERED IN THESE SAME TINY TREASURE HOUSES AND OH",
+      "duration": 6.715,
+      "sample_rate": 16000,
+      "risk": 3,
+      "logit_bonafide": 3.409
+    },
+    {
+      "utt_id": "2035-147960-0002",
+      "speaker_id": "2035",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2035/147960/2035-147960-0002.flac",
+      "text": "ONE DAY WHEN I RODE OVER TO THE SHIMERDAS I FOUND ANTONIA STARTING OFF ON FOOT FOR RUSSIAN PETER'S HOUSE TO BORROW A SPADE AMBROSCH NEEDED",
+      "duration": 8.84,
+      "sample_rate": 16000,
+      "risk": 12,
+      "logit_bonafide": 1.9952
+    },
+    {
+      "utt_id": "2078-142845-0013",
+      "speaker_id": "2078",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2078/142845/2078-142845-0013.flac",
+      "text": "A YELLOW VARIETY CALLED GOLDEN MILLET IS SOLD IN THE GROCERS SHOPS FOR MAKING PUDDINGS AND IS VERY DELICATE AND WHOLESOME",
+      "duration": 9.855,
+      "sample_rate": 16000,
+      "risk": 90,
+      "logit_bonafide": -2.2534
+    },
+    {
+      "utt_id": "2086-149214-0001",
+      "speaker_id": "2086",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2086/149214/2086-149214-0001.flac",
+      "text": "IN GOOD FAITH HOWEVER HE IS NOT SUFFICIENTLY IMAGINATIVE TO FLATTER HIMSELF WITH THE SLIGHTEST HOPE OF THIS KIND",
+      "duration": 6.97,
+      "sample_rate": 16000,
+      "risk": 98,
+      "logit_bonafide": -3.866
+    },
+    {
+      "utt_id": "2277-149874-0001",
+      "speaker_id": "2277",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2277/149874/2277-149874-0001.flac",
+      "text": "TO CARRIE THE SOUND OF THE LITTLE BELLS UPON THE HORSE CARS AS THEY TINKLED IN AND OUT OF HEARING WAS AS PLEASING AS IT WAS NOVEL",
+      "duration": 7.04,
+      "sample_rate": 16000,
+      "risk": 71,
+      "logit_bonafide": -0.9162
+    },
+    {
+      "utt_id": "2412-153947-0002",
+      "speaker_id": "2412",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2412/153947/2412-153947-0002.flac",
+      "text": "ON MY RETURN I PURPOSELY AVOIDED LOOKING INTO IT UNTIL I HAD SENT BACK MY LAST REVISES TO THE PRINTER",
+      "duration": 6.595,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.674
+    },
+    {
+      "utt_id": "2428-83699-0003",
+      "speaker_id": "2428",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2428/83699/2428-83699-0003.flac",
+      "text": "IT APPEARED THAT THE TERMS WOULD BE FIVE GUINEAS BUT THERE WAS NO MENTION OF THE LENGTH OF TIME WHICH THAT FEE WOULD COVER",
+      "duration": 6.265,
+      "sample_rate": 16000,
+      "risk": 100,
+      "logit_bonafide": -5.3643
+    },
+    {
+      "utt_id": "251-118436-0000",
+      "speaker_id": "251",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/251/118436/251-118436-0000.flac",
+      "text": "HE WAS YOUNG NO SPEAR HAD TOUCHED HIM NO POISON LURKED IN HIS WINE",
+      "duration": 6.26,
+      "sample_rate": 16000,
+      "risk": 84,
+      "logit_bonafide": -1.6557
+    },
+    {
+      "utt_id": "2803-154320-0003",
+      "speaker_id": "2803",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2803/154320/2803-154320-0003.flac",
+      "text": "THEIR MINDS WERE SO DISTRACTED AT THIS CHANGE OF ROUTE AS TO BE QUITE UNHINGED",
+      "duration": 6.475,
+      "sample_rate": 16000,
+      "risk": 99,
+      "logit_bonafide": -4.2361
+    },
+    {
+      "utt_id": "2902-9006-0012",
+      "speaker_id": "2902",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2902/9006/2902-9006-0012.flac",
+      "text": "TRIBE AFTER TRIBE WAS CROWDING DOWN TO THE ALPS AND TRAMPLING UPON EACH OTHER ON THE FRONTIERS OF THE EMPIRE",
+      "duration": 6.42,
+      "sample_rate": 16000,
+      "risk": 99,
+      "logit_bonafide": -4.6894
+    },
+    {
+      "utt_id": "3000-15664-0002",
+      "speaker_id": "3000",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/3000/15664/3000-15664-0002.flac",
+      "text": "PERHAPS THE PROFESSION OF DOING GOOD MAY BE FULL BUT EVERY BODY SHOULD BE KIND AT LEAST TO HIMSELF",
+      "duration": 7.17,
+      "sample_rate": 16000,
+      "risk": 93,
+      "logit_bonafide": -2.5719
+    },
+    {
+      "utt_id": "3081-166546-0001",
+      "speaker_id": "3081",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/3081/166546/3081-166546-0001.flac",
+      "text": "INSTANTLY THEY ABSORBED ALL MY ATTENTION THOUGH I DARED NOT GIVE THEM A DIRECT LOOK AND CONTINUED TO OBSERVE THEM ONLY IN THE GLASS",
+      "duration": 9.62,
+      "sample_rate": 16000,
+      "risk": 3,
+      "logit_bonafide": 3.4364
+    },
+    {
+      "utt_id": "3170-137482-0005",
+      "speaker_id": "3170",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/3170/137482/3170-137482-0005.flac",
+      "text": "WE WOULD VERY OFTEN SPEND THE WHOLE NIGHT RAMBLING ABOUT THE CITY INVENTING AND CARRYING INTO EXECUTION THE MOST IMPERTINENT PRACTICAL JOKES",
+      "duration": 8.72,
+      "sample_rate": 16000,
+      "risk": 97,
+      "logit_bonafide": -3.3426
+    },
+    {
+      "utt_id": "3536-23268-0003",
+      "speaker_id": "3536",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/3536/23268/3536-23268-0003.flac",
+      "text": "NIGHT AFTER NIGHT HIS SLEEP HAD BEEN DISTURBED BY FEARS FOR HER WHEN ABROAD MORNING AFTER MORNING IT HAD BEEN BROKEN BY THE CLAMOUR OF HER RETURN",
+      "duration": 7.995,
+      "sample_rate": 16000,
+      "risk": 100,
+      "logit_bonafide": -6.766
+    },
+    {
+      "utt_id": "3576-138058-0015",
+      "speaker_id": "3576",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/3576/138058/3576-138058-0015.flac",
+      "text": "HE WAS MOUNTED UPON A POWERFUL HORSE AND HAD ON A COAT OF MAIL WITH FOUR OF THE PISTOLS THEY CALL PETRONELS IN THAT COUNTRY AT HIS WAIST",
+      "duration": 9.185,
+      "sample_rate": 16000,
+      "risk": 98,
+      "logit_bonafide": -3.8702
+    },
+    {
+      "utt_id": "3752-4943-0000",
+      "speaker_id": "3752",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/3752/4943/3752-4943-0000.flac",
+      "text": "HE HAD BEEN A CLERK IN A BANKING HOUSE AND WAS TRANSPORTED FOR EMBEZZLEMENT THOUGH BY SOME GRAVE DOUBTS AS TO HIS GUILT WERE ENTERTAINED",
+      "duration": 8.83,
+      "sample_rate": 16000,
+      "risk": 2,
+      "logit_bonafide": 4.1762
+    },
+    {
+      "utt_id": "3853-163249-0002",
+      "speaker_id": "3853",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/3853/163249/3853-163249-0002.flac",
+      "text": "SO CHRISTIE TURNED A DEAF EAR TO HER PROPHETIC SOUL AND GAVE HERSELF UP TO THE BLISSFUL HOLIDAY THAT HAD COME AT LAST",
+      "duration": 7.665,
+      "sample_rate": 16000,
+      "risk": 10,
+      "logit_bonafide": 2.1972
+    },
+    {
+      "utt_id": "422-122949-0004",
+      "speaker_id": "422",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/422/122949/422-122949-0004.flac",
+      "text": "HE HONOURS WHATEVER HE RECOGNIZES IN HIMSELF SUCH MORALITY EQUALS SELF GLORIFICATION",
+      "duration": 6.985,
+      "sample_rate": 16000,
+      "risk": 77,
+      "logit_bonafide": -1.2013
+    },
+    {
+      "utt_id": "5338-24615-0001",
+      "speaker_id": "5338",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/5338/24615/5338-24615-0001.flac",
+      "text": "THE HOUSES SEEMED MISERABLE IN THE EXTREME ESPECIALLY TO AN EYE ACCUSTOMED TO THE SMILING NEATNESS OF ENGLISH COTTAGES",
+      "duration": 7.605,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.4077
+    },
+    {
+      "utt_id": "5536-43358-0001",
+      "speaker_id": "5536",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/5536/43358/5536-43358-0001.flac",
+      "text": "THE ORIGINAL ATTITUDE OF THE AMERICAN INDIAN TOWARD THE ETERNAL THE GREAT MYSTERY THAT SURROUNDS AND EMBRACES US WAS AS SIMPLE AS IT WAS EXALTED",
+      "duration": 9.875,
+      "sample_rate": 16000,
+      "risk": 85,
+      "logit_bonafide": -1.7493
+    },
+    {
+      "utt_id": "5694-64025-0005",
+      "speaker_id": "5694",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/5694/64025/5694-64025-0005.flac",
+      "text": "ON SUNDAY MORNING A CLEAR BEAUTIFUL AND STILL DAY THE ORDER WAS GIVEN FOR THE WHOLE ARMY TO ADVANCE AND TO ATTACK IMMEDIATELY",
+      "duration": 8.17,
+      "sample_rate": 16000,
+      "risk": 0,
+      "logit_bonafide": 5.4742
+    },
+    {
+      "utt_id": "5895-34615-0002",
+      "speaker_id": "5895",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/5895/34615/5895-34615-0002.flac",
+      "text": "HAD GWYNPLAINE WHEN A CHILD BEEN SO WORTHY OF ATTENTION THAT HIS FACE HAD BEEN SUBJECTED TO TRANSMUTATION WHY NOT",
+      "duration": 8.73,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.7534
+    },
+    {
+      "utt_id": "6241-61943-0000",
+      "speaker_id": "6241",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/6241/61943/6241-61943-0000.flac",
+      "text": "ON THE SECOND OF THE MONTH AT TWO IN THE MORNING OUR PRECIOUS CARGO OF LUGGAGE WAS TAKEN ON BOARD THE GOOD SHIP VALKYRIE",
+      "duration": 6.95,
+      "sample_rate": 16000,
+      "risk": 0,
+      "logit_bonafide": 5.2996
+    },
+    {
+      "utt_id": "6295-244435-0001",
+      "speaker_id": "6295",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/6295/244435/6295-244435-0001.flac",
+      "text": "COLONEL LEONIDAS TALBOT REGARDED THE WHITE FLAG WITH FEELINGS IN WHICH TRIUMPH AND SADNESS WERE MINGLED STRANGELY",
+      "duration": 7.885,
+      "sample_rate": 16000,
+      "risk": 48,
+      "logit_bonafide": 0.0847
+    },
+    {
+      "utt_id": "6313-66125-0015",
+      "speaker_id": "6313",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/6313/66125/6313-66125-0015.flac",
+      "text": "CAUTIOUSLY PLACING A HAND AGAINST THE ROCKS TO STEADY HIMSELF TAD WISELY CONCLUDED THAT HEREAFTER IT WOULD NOT PAY TO BE TOO CURIOUS",
+      "duration": 8.23,
+      "sample_rate": 16000,
+      "risk": 99,
+      "logit_bonafide": -5.1802
+    },
+    {
+      "utt_id": "6319-275224-0002",
+      "speaker_id": "6319",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/6319/275224/6319-275224-0002.flac",
+      "text": "YOUR COUSIN THE WILD CONVOLVULUS WHOM I LEFT IN THE FIELDS THIS MORNING DOES NO SUCH THING I ASSURE YOU",
+      "duration": 7.455,
+      "sample_rate": 16000,
+      "risk": 85,
+      "logit_bonafide": -1.7129
+    },
+    {
+      "utt_id": "6345-64257-0003",
+      "speaker_id": "6345",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/6345/64257/6345-64257-0003.flac",
+      "text": "SHE STOOD FOR A MOMENT ON THE HEARTH AND IN SAD DREAMY MOOD LISTENED TO THE HOWLING SWOOPS OF THE WIND MAKING THE HOUSE QUIVER AND SHAKE",
+      "duration": 8.78,
+      "sample_rate": 16000,
+      "risk": 99,
+      "logit_bonafide": -4.3944
+    },
+    {
+      "utt_id": "652-129742-0001",
+      "speaker_id": "652",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/652/129742/652-129742-0001.flac",
+      "text": "BIRDS NEST SALAD HAVE READY AS MANY CRISP LEAVES OF LETTUCE AS MAY BE REQUIRED TO MAKE A DAINTY LITTLE NEST FOR EACH PERSON",
+      "duration": 8.66,
+      "sample_rate": 16000,
+      "risk": 8,
+      "logit_bonafide": 2.4932
+    },
+    {
+      "utt_id": "777-126732-0011",
+      "speaker_id": "777",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/777/126732/777-126732-0011.flac",
+      "text": "THE POSSESSORS OF PROPERTY HAD NOT ONLY TO FACE THE AWAKENED PROLETARIAT BUT THEY HAD ALSO TO FIGHT AMONGST THEMSELVES YES",
+      "duration": 7.45,
+      "sample_rate": 16000,
+      "risk": 29,
+      "logit_bonafide": 0.8893
+    },
+    {
+      "utt_id": "7850-111771-0000",
+      "speaker_id": "7850",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/7850/111771/7850-111771-0000.flac",
+      "text": "THROUGH THE INFLUENCE OF HON THOMAS L HAMER HE WAS ADMITTED AT WEST POINT IN EIGHTEEN THIRTY NINE",
+      "duration": 7.56,
+      "sample_rate": 16000,
+      "risk": 91,
+      "logit_bonafide": -2.319
+    },
+    {
+      "utt_id": "7976-105575-0000",
+      "speaker_id": "7976",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/7976/105575/7976-105575-0000.flac",
+      "text": "GRANT WAS ONLY A FEW MILES AWAY BUT ALTHOUGH COMMANDER IN CHIEF HE KNEW NOTHING OF THE HARDEST FOUGHT BATTLE OF THE CIVIL WAR UNTIL IT WAS OVER",
+      "duration": 9.16,
+      "sample_rate": 16000,
+      "risk": 97,
+      "logit_bonafide": -3.5133
+    },
+    {
+      "utt_id": "8297-275154-0002",
+      "speaker_id": "8297",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/8297/275154/8297-275154-0002.flac",
+      "text": "THIS ALTERNATIVE IN THE CAPTAIN'S PLANS TERMINATING THE VOYAGE A MONTH EARLIER THAN HIS ARRANGEMENTS HAD CONTEMPLATED PUZZLED RANDAL",
+      "duration": 9.76,
+      "sample_rate": 16000,
+      "risk": 0,
+      "logit_bonafide": 5.5816
+    },
+    {
+      "utt_id": "84-121123-0003",
+      "speaker_id": "84",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/84/121123/84-121123-0003.flac",
+      "text": "AND THE CRY ISSUED FROM HIS PORES IF WE MAY THUS SPEAK A CRY FRIGHTFUL IN ITS SILENCE",
+      "duration": 6.8,
+      "sample_rate": 16000,
+      "risk": 94,
+      "logit_bonafide": -2.7164
+    },
+    {
+      "utt_id": "8842-302196-0002",
+      "speaker_id": "8842",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/8842/302196/8842-302196-0002.flac",
+      "text": "THE LIFE BLOOD OF RHYTHMICAL TRANSLATION IS THIS COMMANDMENT THAT A GOOD POEM SHALL NOT BE TURNED INTO A BAD ONE",
+      "duration": 6.655,
+      "sample_rate": 16000,
+      "risk": 99,
+      "logit_bonafide": -4.9109
+    },
+    {
+      "utt_id": "1272-128104-0005",
+      "speaker_id": "1272",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1272/128104/1272-128104-0005.flac",
+      "text": "IT IS OBVIOUSLY UNNECESSARY FOR US TO POINT OUT HOW LUMINOUS THESE CRITICISMS ARE HOW DELICATE IN EXPRESSION",
+      "duration": 9.01,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.6123
+    },
+    {
+      "utt_id": "1272-128104-0007",
+      "speaker_id": "1272",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1272/128104/1272-128104-0007.flac",
+      "text": "PAINTING HE TELLS US IS OF A DIFFERENT QUALITY TO MATHEMATICS AND FINISH IN ART IS ADDING MORE FACT",
+      "duration": 9.24,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.4252
+    },
+    {
+      "utt_id": "1272-128104-0013",
+      "speaker_id": "1272",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1272/128104/1272-128104-0013.flac",
+      "text": "MISTER QUILTER HAS MISSED HIS CHANCE FOR HE HAS FAILED EVEN TO MAKE HIMSELF THE TUPPER OF PAINTING",
+      "duration": 7.1,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.3975
+    },
+    {
+      "utt_id": "1272-135031-0015",
+      "speaker_id": "1272",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1272/135031/1272-135031-0015.flac",
+      "text": "THE METAL FOREST IS IN THE GREAT DOMED CAVERN THE LARGEST IN ALL OUR DOMINIONS REPLIED KALIKO",
+      "duration": 7.375,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.7505
+    },
+    {
+      "utt_id": "1272-135031-0017",
+      "speaker_id": "1272",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1272/135031/1272-135031-0017.flac",
+      "text": "HOWEVER IF WE LOOK SHARP WE MAY BE ABLE TO DISCOVER ONE OF THESE SECRET WAYS",
+      "duration": 6.86,
+      "sample_rate": 16000,
+      "risk": 3,
+      "logit_bonafide": 3.5065
+    },
+    {
+      "utt_id": "1272-135031-0023",
+      "speaker_id": "1272",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1272/135031/1272-135031-0023.flac",
+      "text": "KALIKO WENT TO THE BIG GONG AND POUNDED ON IT JUST AS RUGGEDO USED TO DO BUT NO ONE ANSWERED THE SUMMONS",
+      "duration": 7.52,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.9164
+    },
+    {
+      "utt_id": "1272-141231-0001",
+      "speaker_id": "1272",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1272/141231/1272-141231-0001.flac",
+      "text": "SWEAT COVERED BRION'S BODY TRICKLING INTO THE TIGHT LOINCLOTH THAT WAS THE ONLY GARMENT HE WORE",
+      "duration": 6.535,
+      "sample_rate": 16000,
+      "risk": 0,
+      "logit_bonafide": 5.4218
+    },
+    {
+      "utt_id": "1272-141231-0009",
+      "speaker_id": "1272",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1272/141231/1272-141231-0009.flac",
+      "text": "THE CONTESTANTS IN THE TWENTIES NEEDED UNDISTURBED REST THEREFORE NIGHTS IN THE DORMITORIES WERE AS QUIET AS DEATH",
+      "duration": 8.62,
+      "sample_rate": 16000,
+      "risk": 2,
+      "logit_bonafide": 3.8111
+    },
+    {
+      "utt_id": "1272-141231-0012",
+      "speaker_id": "1272",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1272/141231/1272-141231-0012.flac",
+      "text": "I'M HERE BECAUSE THE MATTER IS OF UTMOST IMPORTANCE AND BRANDD IS THE ONE I MUST SEE NOW STAND ASIDE",
+      "duration": 7.74,
+      "sample_rate": 16000,
+      "risk": 4,
+      "logit_bonafide": 3.0631
+    },
+    {
+      "utt_id": "1272-141231-0014",
+      "speaker_id": "1272",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1272/141231/1272-141231-0014.flac",
+      "text": "HE MUST HAVE DRAWN HIS GUN BECAUSE THE INTRUDER SAID QUICKLY PUT THAT AWAY YOU'RE BEING A FOOL OUT",
+      "duration": 7.305,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.8788
+    },
+    {
+      "utt_id": "1272-141231-0018",
+      "speaker_id": "1272",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1272/141231/1272-141231-0018.flac",
+      "text": "A RED HAIRED MOUNTAIN OF A MAN WITH AN APPARENTLY INEXHAUSTIBLE STORE OF ENERGY",
+      "duration": 6.0,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.2219
+    },
+    {
+      "utt_id": "1272-141231-0022",
+      "speaker_id": "1272",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1272/141231/1272-141231-0022.flac",
+      "text": "THERE APPEARED TO BE AN IMMEDIATE ASSOCIATION WITH THE DEATH TRAUMA AS IF THE TWO WERE INEXTRICABLY LINKED INTO ONE",
+      "duration": 8.35,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.4257
+    },
+    {
+      "utt_id": "1272-141231-0023",
+      "speaker_id": "1272",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1272/141231/1272-141231-0023.flac",
+      "text": "THE STRENGTH THAT ENABLES SOMEONE IN A TRANCE TO HOLD HIS BODY STIFF AND UNSUPPORTED EXCEPT AT TWO POINTS THE HEAD AND HEELS",
+      "duration": 8.66,
+      "sample_rate": 16000,
+      "risk": 0,
+      "logit_bonafide": 5.4318
+    },
+    {
+      "utt_id": "1272-141231-0025",
+      "speaker_id": "1272",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1272/141231/1272-141231-0025.flac",
+      "text": "OTHERS HAD DIED BEFORE DURING THE TWENTIES AND DEATH DURING THE LAST ROUND WAS IN SOME WAYS EASIER THAN DEFEAT",
+      "duration": 8.725,
+      "sample_rate": 16000,
+      "risk": 41,
+      "logit_bonafide": 0.3811
+    },
+    {
+      "utt_id": "1272-141231-0026",
+      "speaker_id": "1272",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1272/141231/1272-141231-0026.flac",
+      "text": "BREATHING DEEPLY BRION SOFTLY SPOKE THE AUTO HYPNOTIC PHRASES THAT TRIGGERED THE PROCESS",
+      "duration": 6.635,
+      "sample_rate": 16000,
+      "risk": 67,
+      "logit_bonafide": -0.7063
+    },
+    {
+      "utt_id": "1272-141231-0027",
+      "speaker_id": "1272",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1272/141231/1272-141231-0027.flac",
+      "text": "WHEN THE BUZZER SOUNDED HE PULLED HIS FOIL FROM HIS SECOND'S STARTLED GRASP AND RAN FORWARD",
+      "duration": 6.57,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.4082
+    },
+    {
+      "utt_id": "1272-141231-0029",
+      "speaker_id": "1272",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1272/141231/1272-141231-0029.flac",
+      "text": "HE THOUGHT IT WAS A LAST BURST OF ENERGY HE KNEW HOW CLOSE THEY BOTH WERE TO EXHAUSTION",
+      "duration": 6.88,
+      "sample_rate": 16000,
+      "risk": 9,
+      "logit_bonafide": 2.2653
+    },
+    {
+      "utt_id": "1272-141231-0030",
+      "speaker_id": "1272",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1272/141231/1272-141231-0030.flac",
+      "text": "BRION SAW SOMETHING CLOSE TO PANIC ON HIS OPPONENT'S FACE WHEN THE MAN FINALLY RECOGNIZED HIS ERROR",
+      "duration": 7.13,
+      "sample_rate": 16000,
+      "risk": 3,
+      "logit_bonafide": 3.3734
+    },
+    {
+      "utt_id": "1272-141231-0031",
+      "speaker_id": "1272",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1272/141231/1272-141231-0031.flac",
+      "text": "A WAVE OF DESPAIR ROLLED OUT FROM IROLG BRION SENSED IT AND KNEW THE FIFTH POINT WAS HIS",
+      "duration": 7.115,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.8274
+    },
+    {
+      "utt_id": "1462-170138-0010",
+      "speaker_id": "1462",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1462/170138/1462-170138-0010.flac",
+      "text": "WHEN SHE BEGAN TO DANCE BY WAY OF SHOWING THE GOSSOONS WHAT SHE HAD SEEN IN THE FAIRY RINGS AT NIGHT THE HOUSE BROKE INTO A PROLONGED UPROAR",
+      "duration": 8.615,
+      "sample_rate": 16000,
+      "risk": 78,
+      "logit_bonafide": -1.288
+    },
+    {
+      "utt_id": "1462-170138-0013",
+      "speaker_id": "1462",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1462/170138/1462-170138-0013.flac",
+      "text": "THE PLAYWRIGHT GAVE MAINHALL A CURIOUS LOOK OUT OF HIS DEEP SET FADED EYES AND MADE A WRY FACE",
+      "duration": 7.02,
+      "sample_rate": 16000,
+      "risk": 6,
+      "logit_bonafide": 2.8267
+    },
+    {
+      "utt_id": "1462-170138-0017",
+      "speaker_id": "1462",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1462/170138/1462-170138-0017.flac",
+      "text": "SIR HARRY TOWNE BOWED AND SAID THAT HE HAD MET MISTER ALEXANDER AND HIS WIFE IN TOKYO",
+      "duration": 6.21,
+      "sample_rate": 16000,
+      "risk": 7,
+      "logit_bonafide": 2.5946
+    },
+    {
+      "utt_id": "1462-170138-0021",
+      "speaker_id": "1462",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1462/170138/1462-170138-0021.flac",
+      "text": "HE BOWED AS THE WARNING BELL RANG AND MAINHALL WHISPERED YOU KNOW LORD WESTMERE OF COURSE THE STOOPED MAN WITH THE LONG GRAY MUSTACHE TALKING TO LADY DOWLE",
+      "duration": 9.645,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.5956
+    },
+    {
+      "utt_id": "1462-170138-0022",
+      "speaker_id": "1462",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1462/170138/1462-170138-0022.flac",
+      "text": "IN A MOMENT PEGGY WAS ON THE STAGE AGAIN AND ALEXANDER APPLAUDED VIGOROUSLY WITH THE REST",
+      "duration": 6.185,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.3165
+    },
+    {
+      "utt_id": "1462-170138-0023",
+      "speaker_id": "1462",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1462/170138/1462-170138-0023.flac",
+      "text": "IN THE HALF LIGHT HE LOOKED ABOUT AT THE STALLS AND BOXES AND SMILED A LITTLE CONSCIOUSLY RECALLING WITH AMUSEMENT SIR HARRY'S JUDICIAL FROWN",
+      "duration": 9.5,
+      "sample_rate": 16000,
+      "risk": 94,
+      "logit_bonafide": -2.7778
+    },
+    {
+      "utt_id": "1462-170142-0001",
+      "speaker_id": "1462",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1462/170142/1462-170142-0001.flac",
+      "text": "EMERGING AT EUSTON AT HALF PAST THREE O'CLOCK IN THE AFTERNOON ALEXANDER HAD HIS LUGGAGE SENT TO THE SAVOY AND DROVE AT ONCE TO BEDFORD SQUARE",
+      "duration": 9.585,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.4566
+    },
+    {
+      "utt_id": "1462-170142-0002",
+      "speaker_id": "1462",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1462/170142/1462-170142-0002.flac",
+      "text": "SHE BLUSHED AND SMILED AND FUMBLED HIS CARD IN HER CONFUSION BEFORE SHE RAN UPSTAIRS",
+      "duration": 6.45,
+      "sample_rate": 16000,
+      "risk": 22,
+      "logit_bonafide": 1.25
+    },
+    {
+      "utt_id": "1462-170142-0004",
+      "speaker_id": "1462",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1462/170142/1462-170142-0004.flac",
+      "text": "A COAL FIRE WAS CRACKLING IN THE GRATE AND THE LAMPS WERE LIT FOR IT WAS ALREADY BEGINNING TO GROW DARK OUTSIDE",
+      "duration": 7.255,
+      "sample_rate": 16000,
+      "risk": 95,
+      "logit_bonafide": -2.9939
+    },
+    {
+      "utt_id": "1462-170142-0006",
+      "speaker_id": "1462",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1462/170142/1462-170142-0006.flac",
+      "text": "SHE MERELY BRUSHED HIS CHEEK WITH HER LIPS AND PUT A HAND LIGHTLY AND JOYOUSLY ON EITHER SHOULDER",
+      "duration": 6.195,
+      "sample_rate": 16000,
+      "risk": 14,
+      "logit_bonafide": 1.7746
+    },
+    {
+      "utt_id": "1462-170142-0009",
+      "speaker_id": "1462",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1462/170142/1462-170142-0009.flac",
+      "text": "SHE LOOKED AT HIS HEAVY SHOULDERS AND BIG DETERMINED HEAD THRUST FORWARD LIKE A CATAPULT IN LEASH",
+      "duration": 6.335,
+      "sample_rate": 16000,
+      "risk": 95,
+      "logit_bonafide": -2.9403
+    },
+    {
+      "utt_id": "1462-170142-0012",
+      "speaker_id": "1462",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1462/170142/1462-170142-0012.flac",
+      "text": "HILDA WATCHED HIM FROM HER CORNER TREMBLING AND SCARCELY BREATHING DARK SHADOWS GROWING ABOUT HER EYES",
+      "duration": 6.67,
+      "sample_rate": 16000,
+      "risk": 3,
+      "logit_bonafide": 3.6148
+    },
+    {
+      "utt_id": "1462-170142-0016",
+      "speaker_id": "1462",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1462/170142/1462-170142-0016.flac",
+      "text": "I AM NOT A MAN WHO CAN LIVE TWO LIVES HE WENT ON FEVERISHLY EACH LIFE SPOILS THE OTHER",
+      "duration": 6.24,
+      "sample_rate": 16000,
+      "risk": 98,
+      "logit_bonafide": -4.14
+    },
+    {
+      "utt_id": "1462-170142-0021",
+      "speaker_id": "1462",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1462/170142/1462-170142-0021.flac",
+      "text": "COULD YOU COULD YOU SIT DOWN AND TALK ABOUT IT QUIETLY BARTLEY AS IF I WERE A FRIEND AND NOT SOME ONE WHO HAD TO BE DEFIED",
+      "duration": 8.17,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.4453
+    },
+    {
+      "utt_id": "1462-170145-0003",
+      "speaker_id": "1462",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1462/170145/1462-170145-0003.flac",
+      "text": "OF COURSE I KNOW BARTLEY SHE SAID AT LAST THAT AFTER THIS YOU WON'T OWE ME THE LEAST CONSIDERATION BUT WE SAIL ON TUESDAY",
+      "duration": 8.735,
+      "sample_rate": 16000,
+      "risk": 2,
+      "logit_bonafide": 3.9815
+    },
+    {
+      "utt_id": "1462-170145-0004",
+      "speaker_id": "1462",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1462/170145/1462-170145-0004.flac",
+      "text": "I SAW THAT INTERVIEW IN THE PAPER YESTERDAY TELLING WHERE YOU WERE AND I THOUGHT I HAD TO SEE YOU THAT'S ALL GOOD NIGHT I'M GOING NOW",
+      "duration": 8.275,
+      "sample_rate": 16000,
+      "risk": 91,
+      "logit_bonafide": -2.3568
+    },
+    {
+      "utt_id": "1462-170145-0007",
+      "speaker_id": "1462",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1462/170145/1462-170145-0007.flac",
+      "text": "I TOLD MYSELF THAT IF I WERE REALLY THINKING OF YOU AND NOT OF MYSELF A LETTER WOULD BE BETTER THAN NOTHING",
+      "duration": 6.32,
+      "sample_rate": 16000,
+      "risk": 64,
+      "logit_bonafide": -0.5906
+    },
+    {
+      "utt_id": "1462-170145-0015",
+      "speaker_id": "1462",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1462/170145/1462-170145-0015.flac",
+      "text": "I'VE BEEN UP IN CANADA WITH MY BRIDGE AND I ARRANGED NOT TO COME TO NEW YORK UNTIL AFTER YOU HAD GONE",
+      "duration": 6.055,
+      "sample_rate": 16000,
+      "risk": 100,
+      "logit_bonafide": -5.3845
+    },
+    {
+      "utt_id": "1462-170145-0022",
+      "speaker_id": "1462",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1462/170145/1462-170145-0022.flac",
+      "text": "I DON'T KNOW WHAT I OUGHT TO SAY BUT I DON'T BELIEVE YOU'D BE HAPPY TRULY I DON'T AREN'T YOU TRYING TO FRIGHTEN ME",
+      "duration": 6.51,
+      "sample_rate": 16000,
+      "risk": 97,
+      "logit_bonafide": -3.6321
+    },
+    {
+      "utt_id": "1673-143396-0007",
+      "speaker_id": "1673",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1673/143396/1673-143396-0007.flac",
+      "text": "BUT THE PREVAILING DOCTRINE OF THE ETERNITY AND INHERENT PRAVITY OF MATTER INFECTED THE PRIMITIVE CHURCHES OF THE EAST",
+      "duration": 7.095,
+      "sample_rate": 16000,
+      "risk": 93,
+      "logit_bonafide": -2.6416
+    },
+    {
+      "utt_id": "1673-143396-0015",
+      "speaker_id": "1673",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1673/143396/1673-143396-0015.flac",
+      "text": "THEIR MURMURS WERE VARIOUSLY SILENCED BY THE SECTARIES WHO ESPOUSED AND MODIFIED THE DOUBLE SYSTEM OF CERINTHUS",
+      "duration": 6.305,
+      "sample_rate": 16000,
+      "risk": 89,
+      "logit_bonafide": -2.0743
+    },
+    {
+      "utt_id": "1673-143396-0017",
+      "speaker_id": "1673",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1673/143396/1673-143396-0017.flac",
+      "text": "YET AS THE PROFOUND DOCTOR HAD BEEN TERRIFIED AT HIS OWN RASHNESS APOLLINARIS WAS HEARD TO MUTTER SOME FAINT ACCENTS OF EXCUSE AND EXPLANATION",
+      "duration": 8.43,
+      "sample_rate": 16000,
+      "risk": 31,
+      "logit_bonafide": 0.7837
+    },
+    {
+      "utt_id": "1673-143397-0000",
+      "speaker_id": "1673",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1673/143397/1673-143397-0000.flac",
+      "text": "ARDENT IN THE PROSECUTION OF HERESY CYRIL AUSPICIOUSLY OPENED HIS REIGN BY OPPRESSING THE NOVATIANS THE MOST INNOCENT AND HARMLESS OF THE SECTARIES",
+      "duration": 9.35,
+      "sample_rate": 16000,
+      "risk": 88,
+      "logit_bonafide": -2.0123
+    },
+    {
+      "utt_id": "1673-143397-0001",
+      "speaker_id": "1673",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1673/143397/1673-143397-0001.flac",
+      "text": "WITHOUT ANY LEGAL SENTENCE WITHOUT ANY ROYAL MANDATE THE PATRIARCH AT THE DAWN OF DAY LED A SEDITIOUS MULTITUDE TO THE ATTACK OF THE SYNAGOGUES",
+      "duration": 8.895,
+      "sample_rate": 16000,
+      "risk": 65,
+      "logit_bonafide": -0.6221
+    },
+    {
+      "utt_id": "1673-143397-0006",
+      "speaker_id": "1673",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1673/143397/1673-143397-0006.flac",
+      "text": "WHICH OPPRESSED THE METROPOLITANS OF EUROPE AND ASIA INVADED THE PROVINCES OF ANTIOCH AND ALEXANDRIA AND MEASURED THEIR DIOCESE BY THE LIMITS OF THE EMPIRE",
+      "duration": 8.535,
+      "sample_rate": 16000,
+      "risk": 100,
+      "logit_bonafide": -5.7041
+    },
+    {
+      "utt_id": "1673-143397-0012",
+      "speaker_id": "1673",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1673/143397/1673-143397-0012.flac",
+      "text": "SIXTY EIGHT BISHOPS TWENTY TWO OF METROPOLITAN RANK DEFENDED HIS CAUSE BY A MODEST AND TEMPERATE PROTEST THEY WERE EXCLUDED FROM THE COUNCILS OF THEIR BRETHREN",
+      "duration": 9.33,
+      "sample_rate": 16000,
+      "risk": 55,
+      "logit_bonafide": -0.1815
+    },
+    {
+      "utt_id": "1673-143397-0013",
+      "speaker_id": "1673",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1673/143397/1673-143397-0013.flac",
+      "text": "BY THE VIGILANCE OF MEMNON THE CHURCHES WERE SHUT AGAINST THEM AND A STRONG GARRISON WAS THROWN INTO THE CATHEDRAL",
+      "duration": 6.675,
+      "sample_rate": 16000,
+      "risk": 39,
+      "logit_bonafide": 0.4388
+    },
+    {
+      "utt_id": "1673-143397-0014",
+      "speaker_id": "1673",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1673/143397/1673-143397-0014.flac",
+      "text": "DURING A BUSY PERIOD OF THREE MONTHS THE EMPEROR TRIED EVERY METHOD EXCEPT THE MOST EFFECTUAL MEANS OF INDIFFERENCE AND CONTEMPT TO RECONCILE THIS THEOLOGICAL QUARREL",
+      "duration": 9.395,
+      "sample_rate": 16000,
+      "risk": 80,
+      "logit_bonafide": -1.3817
+    },
+    {
+      "utt_id": "1673-143397-0015",
+      "speaker_id": "1673",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1673/143397/1673-143397-0015.flac",
+      "text": "RETURN TO YOUR PROVINCES AND MAY YOUR PRIVATE VIRTUES REPAIR THE MISCHIEF AND SCANDAL OF YOUR MEETING",
+      "duration": 6.345,
+      "sample_rate": 16000,
+      "risk": 99,
+      "logit_bonafide": -4.7046
+    },
+    {
+      "utt_id": "1673-143397-0017",
+      "speaker_id": "1673",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1673/143397/1673-143397-0017.flac",
+      "text": "BUT IN THIS AWFUL MOMENT OF THE DANGER OF THE CHURCH THEIR VOW WAS SUPERSEDED BY A MORE SUBLIME AND INDISPENSABLE DUTY",
+      "duration": 7.055,
+      "sample_rate": 16000,
+      "risk": 94,
+      "logit_bonafide": -2.7342
+    },
+    {
+      "utt_id": "174-168635-0006",
+      "speaker_id": "174",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/174/168635/174-168635-0006.flac",
+      "text": "SHE FELT THAT WHICH SHE HAD NEVER FELT BEFORE A SENSATION OF EXPANSION",
+      "duration": 6.57,
+      "sample_rate": 16000,
+      "risk": 93,
+      "logit_bonafide": -2.5444
+    },
+    {
+      "utt_id": "174-168635-0012",
+      "speaker_id": "174",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/174/168635/174-168635-0012.flac",
+      "text": "HE HAD PAID HER SIX MONTHS IN ADVANCE AND HAD COMMISSIONED THE OLD WOMAN TO FURNISH THE CHAMBER AND DRESSING ROOM AS WE HAVE SEEN",
+      "duration": 8.36,
+      "sample_rate": 16000,
+      "risk": 100,
+      "logit_bonafide": -6.4221
+    },
+    {
+      "utt_id": "174-168635-0016",
+      "speaker_id": "174",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/174/168635/174-168635-0016.flac",
+      "text": "HE PASSED HOURS IN WATCHING HER DRESSING AND UNDRESSING HER DOLL AND IN LISTENING TO HER PRATTLE",
+      "duration": 7.06,
+      "sample_rate": 16000,
+      "risk": 98,
+      "logit_bonafide": -4.0416
+    },
+    {
+      "utt_id": "174-168635-0019",
+      "speaker_id": "174",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/174/168635/174-168635-0019.flac",
+      "text": "WHO KNOWS WHETHER JEAN VALJEAN HAD NOT BEEN ON THE EVE OF GROWING DISCOURAGED AND OF FALLING ONCE MORE",
+      "duration": 8.0,
+      "sample_rate": 16000,
+      "risk": 83,
+      "logit_bonafide": -1.5923
+    },
+    {
+      "utt_id": "174-50561-0011",
+      "speaker_id": "174",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/174/50561/174-50561-0011.flac",
+      "text": "THE LADIES IN YELLOW DRESSES STAND AGAIN IN A RING ABOUT THE EMPEROR'S DAUGHTER AND ARE FOR THE LAST TIME ACCOSTED BY THE SINGER WITH HIS LUTE",
+      "duration": 9.52,
+      "sample_rate": 16000,
+      "risk": 99,
+      "logit_bonafide": -4.7018
+    },
+    {
+      "utt_id": "174-84280-0003",
+      "speaker_id": "174",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/174/84280/174-84280-0003.flac",
+      "text": "WE RANGE WIDER LAST LONGER AND ESCAPE MORE AND MORE FROM INTENSITY TOWARDS UNDERSTANDING",
+      "duration": 7.445,
+      "sample_rate": 16000,
+      "risk": 3,
+      "logit_bonafide": 3.4157
+    },
+    {
+      "utt_id": "174-84280-0005",
+      "speaker_id": "174",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/174/84280/174-84280-0005.flac",
+      "text": "FOR A TIME THE DEATH OF MARY OBSCURED HER LIFE FOR ME BUT NOW HER LIVING PRESENCE IS MORE IN MY MIND AGAIN",
+      "duration": 8.61,
+      "sample_rate": 16000,
+      "risk": 89,
+      "logit_bonafide": -2.0825
+    },
+    {
+      "utt_id": "174-84280-0006",
+      "speaker_id": "174",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/174/84280/174-84280-0006.flac",
+      "text": "IT WAS THAT IDEA OF WASTE THAT DOMINATED MY MIND IN A STRANGE INTERVIEW I HAD WITH JUSTIN",
+      "duration": 7.03,
+      "sample_rate": 16000,
+      "risk": 48,
+      "logit_bonafide": 0.0832
+    },
+    {
+      "utt_id": "174-84280-0007",
+      "speaker_id": "174",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/174/84280/174-84280-0007.flac",
+      "text": "I BECAME GROTESQUELY ANXIOUS TO ASSURE HIM THAT INDEED SHE AND I HAD BEEN AS THEY SAY INNOCENT THROUGHOUT OUR LAST DAY TOGETHER",
+      "duration": 9.73,
+      "sample_rate": 16000,
+      "risk": 77,
+      "logit_bonafide": -1.1911
+    },
+    {
+      "utt_id": "1919-142785-0013",
+      "speaker_id": "1919",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1919/142785/1919-142785-0013.flac",
+      "text": "BEAT THE EGGS STIR TO THEM THE MILK AND POUNDED SUGAR AND PUT THE MIXTURE INTO A JUG",
+      "duration": 6.01,
+      "sample_rate": 16000,
+      "risk": 96,
+      "logit_bonafide": -3.2235
+    },
+    {
+      "utt_id": "1919-142785-0014",
+      "speaker_id": "1919",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1919/142785/1919-142785-0014.flac",
+      "text": "PLACE THE JUG IN A SAUCEPAN OF BOILING WATER KEEP STIRRING WELL UNTIL IT THICKENS BUT DO NOT ALLOW IT TO BOIL OR IT WILL CURDLE",
+      "duration": 8.13,
+      "sample_rate": 16000,
+      "risk": 5,
+      "logit_bonafide": 3.0334
+    },
+    {
+      "utt_id": "1919-142785-0017",
+      "speaker_id": "1919",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1919/142785/1919-142785-0017.flac",
+      "text": "THE LEMON THIS FRUIT IS A NATIVE OF ASIA AND IS MENTIONED BY VIRGIL AS AN ANTIDOTE TO POISON",
+      "duration": 7.105,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.6302
+    },
+    {
+      "utt_id": "1919-142785-0018",
+      "speaker_id": "1919",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1919/142785/1919-142785-0018.flac",
+      "text": "IT IS HARDIER THAN THE ORANGE AND AS ONE OF THE CITRON TRIBE WAS BROUGHT INTO EUROPE BY THE ARABIANS",
+      "duration": 7.06,
+      "sample_rate": 16000,
+      "risk": 69,
+      "logit_bonafide": -0.7833
+    },
+    {
+      "utt_id": "1919-142785-0019",
+      "speaker_id": "1919",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1919/142785/1919-142785-0019.flac",
+      "text": "THE LEMON WAS FIRST CULTIVATED IN ENGLAND IN THE BEGINNING OF THE SEVENTEENTH CENTURY AND IS NOW OFTEN TO BE FOUND IN OUR GREEN HOUSES",
+      "duration": 8.38,
+      "sample_rate": 16000,
+      "risk": 18,
+      "logit_bonafide": 1.526
+    },
+    {
+      "utt_id": "1919-142785-0020",
+      "speaker_id": "1919",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1919/142785/1919-142785-0020.flac",
+      "text": "THIS JUICE WHICH IS CALLED CITRIC ACID MAY BE PRESERVED IN BOTTLES FOR A CONSIDERABLE TIME BY COVERING IT WITH A THIN STRATUM OF OIL",
+      "duration": 9.34,
+      "sample_rate": 16000,
+      "risk": 97,
+      "logit_bonafide": -3.4834
+    },
+    {
+      "utt_id": "1919-142785-0022",
+      "speaker_id": "1919",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1919/142785/1919-142785-0022.flac",
+      "text": "SEASONABLE THIS SHOULD BE MADE ABOUT EASTER AS AT THIS TIME EGGS ARE PLENTIFUL AND CHEAP",
+      "duration": 6.77,
+      "sample_rate": 16000,
+      "risk": 2,
+      "logit_bonafide": 3.6736
+    },
+    {
+      "utt_id": "1919-142785-0023",
+      "speaker_id": "1919",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1919/142785/1919-142785-0023.flac",
+      "text": "A STORE OF PICKLED EGGS WILL BE FOUND VERY USEFUL AND ORNAMENTAL IN SERVING WITH MANY FIRST AND SECOND COURSE DISHES",
+      "duration": 7.24,
+      "sample_rate": 16000,
+      "risk": 82,
+      "logit_bonafide": -1.5036
+    },
+    {
+      "utt_id": "1919-142785-0025",
+      "speaker_id": "1919",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1919/142785/1919-142785-0025.flac",
+      "text": "THE GINGER PLANT KNOWN TO NATURALISTS AS ZINGIBER OFFICINALE IS A NATIVE OF THE EAST AND WEST INDIES",
+      "duration": 8.005,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.2567
+    },
+    {
+      "utt_id": "1919-142785-0027",
+      "speaker_id": "1919",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1919/142785/1919-142785-0027.flac",
+      "text": "BEAT THE YOLKS OF THE OTHER TWO EGGS ADD THEM WITH A LITTLE FLOUR AND SALT TO THOSE POUNDED MIX ALL WELL TOGETHER AND ROLL INTO BALLS",
+      "duration": 9.535,
+      "sample_rate": 16000,
+      "risk": 79,
+      "logit_bonafide": -1.3111
+    },
+    {
+      "utt_id": "1919-142785-0030",
+      "speaker_id": "1919",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1919/142785/1919-142785-0030.flac",
+      "text": "MODE PUT THE WHOLE OF THE INGREDIENTS INTO A BOTTLE AND LET IT REMAIN FOR A FORTNIGHT IN A WARM PLACE OCCASIONALLY SHAKING UP THE CONTENTS",
+      "duration": 9.37,
+      "sample_rate": 16000,
+      "risk": 10,
+      "logit_bonafide": 2.1677
+    },
+    {
+      "utt_id": "1919-142785-0033",
+      "speaker_id": "1919",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1919/142785/1919-142785-0033.flac",
+      "text": "NOTE THE WINE IN THIS SAUCE MAY BE OMITTED AND AN ONION SLICED AND FRIED OF A NICE BROWN SUBSTITUTED FOR IT",
+      "duration": 7.71,
+      "sample_rate": 16000,
+      "risk": 29,
+      "logit_bonafide": 0.8755
+    },
+    {
+      "utt_id": "1919-142785-0040",
+      "speaker_id": "1919",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1919/142785/1919-142785-0040.flac",
+      "text": "IT IS A NATIVE OF PORTUGAL AND WHEN ITS LEAVES ARE USED AS A SEASONING HERB THEY HAVE AN AGREEABLE AROMATIC FLAVOUR",
+      "duration": 7.92,
+      "sample_rate": 16000,
+      "risk": 9,
+      "logit_bonafide": 2.2987
+    },
+    {
+      "utt_id": "1919-142785-0043",
+      "speaker_id": "1919",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1919/142785/1919-142785-0043.flac",
+      "text": "NOW BEAT AND STRAIN THE EGGS WORK THESE UP WITH THE OTHER INGREDIENTS AND THE FORCEMEAT WILL BE READY FOR USE",
+      "duration": 7.085,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.3547
+    },
+    {
+      "utt_id": "1919-142785-0045",
+      "speaker_id": "1919",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1919/142785/1919-142785-0045.flac",
+      "text": "IF IT SHOULD BE IN AN UNSOUND STATE IT MUST BE ON NO ACCOUNT MADE USE OF",
+      "duration": 6.11,
+      "sample_rate": 16000,
+      "risk": 43,
+      "logit_bonafide": 0.2734
+    },
+    {
+      "utt_id": "1919-142785-0050",
+      "speaker_id": "1919",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1919/142785/1919-142785-0050.flac",
+      "text": "PLACE IT OVER THE FIRE KEEP CONSTANTLY STIRRING TO PREVENT ITS BURNING AND WHEN QUITE DRY PUT IN A SMALL PIECE OF BUTTER",
+      "duration": 8.79,
+      "sample_rate": 16000,
+      "risk": 85,
+      "logit_bonafide": -1.7738
+    },
+    {
+      "utt_id": "1919-142785-0051",
+      "speaker_id": "1919",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1919/142785/1919-142785-0051.flac",
+      "text": "PUT THE UDDER INTO A STEWPAN WITH SUFFICIENT WATER TO COVER IT LET IT STEW GENTLY TILL QUITE DONE WHEN TAKE IT OUT TO COOL",
+      "duration": 9.29,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.9621
+    },
+    {
+      "utt_id": "1919-142785-0054",
+      "speaker_id": "1919",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1919/142785/1919-142785-0054.flac",
+      "text": "IF THE QUENELLES ARE NOT FIRM ENOUGH ADD THE YOLK OF ANOTHER EGG BUT OMIT THE WHITE WHICH ONLY MAKES THEM HOLLOW AND PUFFY INSIDE",
+      "duration": 7.725,
+      "sample_rate": 16000,
+      "risk": 12,
+      "logit_bonafide": 1.9528
+    },
+    {
+      "utt_id": "1919-142785-0055",
+      "speaker_id": "1919",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1919/142785/1919-142785-0055.flac",
+      "text": "ANY ONE WITH THE SLIGHTEST PRETENSIONS TO REFINED COOKERY MUST IN THIS PARTICULAR IMPLICITLY FOLLOW THE EXAMPLE OF OUR FRIENDS ACROSS THE CHANNEL",
+      "duration": 9.51,
+      "sample_rate": 16000,
+      "risk": 18,
+      "logit_bonafide": 1.4939
+    },
+    {
+      "utt_id": "1919-142785-0057",
+      "speaker_id": "1919",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1919/142785/1919-142785-0057.flac",
+      "text": "THE FAT THEY ARE FRIED IN SHOULD BE CLEAR AND THE CRUMBS SHOULD NOT HAVE THE SLIGHTEST APPEARANCE OR TASTE OF HAVING BEEN IN THE LEAST DEGREE BURNT",
+      "duration": 8.31,
+      "sample_rate": 16000,
+      "risk": 45,
+      "logit_bonafide": 0.204
+    },
+    {
+      "utt_id": "1919-142785-0060",
+      "speaker_id": "1919",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1919/142785/1919-142785-0060.flac",
+      "text": "CONTINUE IN THIS MANNER TILL THE BORDER IS COMPLETED ARRANGING THE SIPPETS A PALE AND A DARK ONE ALTERNATELY",
+      "duration": 7.405,
+      "sample_rate": 16000,
+      "risk": 43,
+      "logit_bonafide": 0.294
+    },
+    {
+      "utt_id": "1988-147956-0017",
+      "speaker_id": "1988",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1988/147956/1988-147956-0017.flac",
+      "text": "IT WAS SO LONG THAT IT BUSHED OUT BEHIND HIS EARS AND MADE HIM LOOK LIKE THE OLD PORTRAITS I REMEMBERED IN VIRGINIA",
+      "duration": 6.3,
+      "sample_rate": 16000,
+      "risk": 79,
+      "logit_bonafide": -1.3483
+    },
+    {
+      "utt_id": "1988-147956-0019",
+      "speaker_id": "1988",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1988/147956/1988-147956-0019.flac",
+      "text": "WE STOOD PANTING ON THE EDGE OF THE RAVINE LOOKING DOWN AT THE TREES AND BUSHES THAT GREW BELOW US",
+      "duration": 6.135,
+      "sample_rate": 16000,
+      "risk": 2,
+      "logit_bonafide": 3.8379
+    },
+    {
+      "utt_id": "1988-147956-0020",
+      "speaker_id": "1988",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1988/147956/1988-147956-0020.flac",
+      "text": "THE WIND WAS SO STRONG THAT I HAD TO HOLD MY HAT ON AND THE GIRLS SKIRTS WERE BLOWN OUT BEFORE THEM",
+      "duration": 6.78,
+      "sample_rate": 16000,
+      "risk": 94,
+      "logit_bonafide": -2.7548
+    },
+    {
+      "utt_id": "1988-147956-0022",
+      "speaker_id": "1988",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1988/147956/1988-147956-0022.flac",
+      "text": "SHE POINTED INTO THE GOLD COTTONWOOD TREE BEHIND WHOSE TOP WE STOOD AND SAID AGAIN WHAT NAME",
+      "duration": 7.54,
+      "sample_rate": 16000,
+      "risk": 51,
+      "logit_bonafide": -0.0295
+    },
+    {
+      "utt_id": "1988-147956-0026",
+      "speaker_id": "1988",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1988/147956/1988-147956-0026.flac",
+      "text": "WE WERE SO DEEP IN THE GRASS THAT WE COULD SEE NOTHING BUT THE BLUE SKY OVER US AND THE GOLD TREE IN FRONT OF US",
+      "duration": 6.915,
+      "sample_rate": 16000,
+      "risk": 86,
+      "logit_bonafide": -1.8275
+    },
+    {
+      "utt_id": "1988-147956-0027",
+      "speaker_id": "1988",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1988/147956/1988-147956-0027.flac",
+      "text": "AFTER ANTONIA HAD SAID THE NEW WORDS OVER AND OVER SHE WANTED TO GIVE ME A LITTLE CHASED SILVER RING SHE WORE ON HER MIDDLE FINGER",
+      "duration": 7.73,
+      "sample_rate": 16000,
+      "risk": 17,
+      "logit_bonafide": 1.5581
+    },
+    {
+      "utt_id": "1988-148538-0007",
+      "speaker_id": "1988",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1988/148538/1988-148538-0007.flac",
+      "text": "CHAPTER SIXTEEN WHY THE NATIONAL VANITY OF THE AMERICANS IS MORE RESTLESS AND CAPTIOUS THAN THAT OF THE ENGLISH",
+      "duration": 7.44,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.7648
+    },
+    {
+      "utt_id": "1988-148538-0008",
+      "speaker_id": "1988",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1988/148538/1988-148538-0008.flac",
+      "text": "THE AMERICANS IN THEIR INTERCOURSE WITH STRANGERS APPEAR IMPATIENT OF THE SMALLEST CENSURE AND INSATIABLE OF PRAISE",
+      "duration": 6.815,
+      "sample_rate": 16000,
+      "risk": 58,
+      "logit_bonafide": -0.3359
+    },
+    {
+      "utt_id": "1988-148538-0009",
+      "speaker_id": "1988",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1988/148538/1988-148538-0009.flac",
+      "text": "IF I SAY TO AN AMERICAN THAT THE COUNTRY HE LIVES IN IS A FINE ONE AY HE REPLIES THERE IS NOT ITS FELLOW IN THE WORLD",
+      "duration": 7.4,
+      "sample_rate": 16000,
+      "risk": 94,
+      "logit_bonafide": -2.7737
+    },
+    {
+      "utt_id": "1988-148538-0010",
+      "speaker_id": "1988",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1988/148538/1988-148538-0010.flac",
+      "text": "IF I APPLAUD THE FREEDOM WHICH ITS INHABITANTS ENJOY HE ANSWERS FREEDOM IS A FINE THING BUT FEW NATIONS ARE WORTHY TO ENJOY IT",
+      "duration": 8.685,
+      "sample_rate": 16000,
+      "risk": 85,
+      "logit_bonafide": -1.7705
+    },
+    {
+      "utt_id": "1988-148538-0011",
+      "speaker_id": "1988",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1988/148538/1988-148538-0011.flac",
+      "text": "IN ARISTOCRATIC COUNTRIES THE GREAT POSSESS IMMENSE PRIVILEGES UPON WHICH THEIR PRIDE RESTS WITHOUT SEEKING TO RELY UPON THE LESSER ADVANTAGES WHICH ACCRUE TO THEM",
+      "duration": 9.55,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.761
+    },
+    {
+      "utt_id": "1988-24833-0001",
+      "speaker_id": "1988",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1988/24833/1988-24833-0001.flac",
+      "text": "SOMEHOW OR OTHER CAT HAS TAUGHT THEM THAT HE'S IN CHARGE HERE AND HE JUST CHASES THEM FOR FUN NOW AND AGAIN WHEN HE'S NOT BUSY SLEEPING",
+      "duration": 7.895,
+      "sample_rate": 16000,
+      "risk": 99,
+      "logit_bonafide": -5.0099
+    },
+    {
+      "utt_id": "1988-24833-0005",
+      "speaker_id": "1988",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1988/24833/1988-24833-0005.flac",
+      "text": "I EXPLAIN THAT I'M TAKING MUSIC AND ALSO BIOLOGY ALGEBRA ENGLISH AND FRENCH MUSIC HE SNORTS",
+      "duration": 6.455,
+      "sample_rate": 16000,
+      "risk": 97,
+      "logit_bonafide": -3.5973
+    },
+    {
+      "utt_id": "1988-24833-0009",
+      "speaker_id": "1988",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1988/24833/1988-24833-0009.flac",
+      "text": "SOMETIMES SCHOOLS DO LET KIDS TAKE A LOT OF SOFT COURSES AND THEN THEY'RE OUT ON A LIMB LATER HUH",
+      "duration": 6.52,
+      "sample_rate": 16000,
+      "risk": 96,
+      "logit_bonafide": -3.2896
+    },
+    {
+      "utt_id": "1988-24833-0011",
+      "speaker_id": "1988",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1988/24833/1988-24833-0011.flac",
+      "text": "BESIDES SAYS TOM HALF THE REASON YOU AND YOUR FATHER ARE ALWAYS BICKERING IS THAT YOU'RE SO MUCH ALIKE ME LIKE HIM SURE",
+      "duration": 9.69,
+      "sample_rate": 16000,
+      "risk": 25,
+      "logit_bonafide": 1.1238
+    },
+    {
+      "utt_id": "1988-24833-0017",
+      "speaker_id": "1988",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1988/24833/1988-24833-0017.flac",
+      "text": "I HEAR THE T V GOING FOR A FEW MINUTES THEN POP TURNS IT OFF AND GOES IN THE KITCHEN TO TALK TO MOM",
+      "duration": 6.12,
+      "sample_rate": 16000,
+      "risk": 76,
+      "logit_bonafide": -1.1698
+    },
+    {
+      "utt_id": "1988-24833-0020",
+      "speaker_id": "1988",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1988/24833/1988-24833-0020.flac",
+      "text": "I TURN OFF THE TELEVISION SET I'VE LOST TRACK OF WHAT'S HAPPENING AND IT DOESN'T SEEM TO BE THE GRANDFATHER WHO'S THE SPOOK AFTER ALL",
+      "duration": 6.4,
+      "sample_rate": 16000,
+      "risk": 100,
+      "logit_bonafide": -5.459
+    },
+    {
+      "utt_id": "1988-24833-0024",
+      "speaker_id": "1988",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1988/24833/1988-24833-0024.flac",
+      "text": "TOM DRINKS A LITTLE MORE COFFEE AND THEN HE GOES ON THE TROUBLE IS I CAN'T GET MARRIED ON THIS FLOWER SHOP JOB",
+      "duration": 6.005,
+      "sample_rate": 16000,
+      "risk": 98,
+      "logit_bonafide": -3.8295
+    },
+    {
+      "utt_id": "1993-147149-0001",
+      "speaker_id": "1993",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1993/147149/1993-147149-0001.flac",
+      "text": "WHAT BANKRUPTS IN THE WORLD WE FEEL WHEN DEATH LIKE SOME REMORSELESS CREDITOR SEIZES ON ALL WE FONDLY THOUGHT OUR OWN THE TWINS",
+      "duration": 9.535,
+      "sample_rate": 16000,
+      "risk": 11,
+      "logit_bonafide": 2.0662
+    },
+    {
+      "utt_id": "1993-147149-0004",
+      "speaker_id": "1993",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1993/147149/1993-147149-0004.flac",
+      "text": "MARGARET MET JEM WILSON SEVERAL DAYS AFTER HIS BROTHERS WERE SERIOUSLY ILL AND HEARD FROM HIM THE STATE OF THINGS AT HIS HOME",
+      "duration": 7.4,
+      "sample_rate": 16000,
+      "risk": 2,
+      "logit_bonafide": 4.1405
+    },
+    {
+      "utt_id": "1993-147149-0005",
+      "speaker_id": "1993",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1993/147149/1993-147149-0005.flac",
+      "text": "SHE STOPPED WITH HER HAND ON THE LATCH OF THE WILSONS DOOR TO STILL HER BEATING HEART AND LISTENED TO THE HUSHED QUIET WITHIN",
+      "duration": 7.98,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.3377
+    },
+    {
+      "utt_id": "1993-147149-0007",
+      "speaker_id": "1993",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1993/147149/1993-147149-0007.flac",
+      "text": "OVER THE CHILD WHICH YET BREATHED THE FATHER BENT WATCHING ANXIOUSLY FOR SOME GROUND OF HOPE WHERE HOPE THERE WAS NONE",
+      "duration": 7.91,
+      "sample_rate": 16000,
+      "risk": 4,
+      "logit_bonafide": 3.2642
+    },
+    {
+      "utt_id": "1993-147149-0019",
+      "speaker_id": "1993",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1993/147149/1993-147149-0019.flac",
+      "text": "DON'T JEM PLEASE DON'T WHISPERED SHE AGAIN BELIEVING THAT HIS SILENCE WAS ONLY ANOTHER FORM OF GRIEF",
+      "duration": 6.96,
+      "sample_rate": 16000,
+      "risk": 2,
+      "logit_bonafide": 3.7655
+    },
+    {
+      "utt_id": "1993-147964-0000",
+      "speaker_id": "1993",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1993/147964/1993-147964-0000.flac",
+      "text": "THEY SAT ABOUT THE HOUSE MOST OF THE DAY AS IF IT WERE SUNDAY GREASING THEIR BOOTS MENDING THEIR SUSPENDERS PLAITING WHIPLASHES",
+      "duration": 8.42,
+      "sample_rate": 16000,
+      "risk": 92,
+      "logit_bonafide": -2.4151
+    },
+    {
+      "utt_id": "1993-147964-0002",
+      "speaker_id": "1993",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1993/147964/1993-147964-0002.flac",
+      "text": "I HAD WANTED TO GET SOME PICTURE BOOKS FOR YULKA AND ANTONIA EVEN YULKA WAS ABLE TO READ A LITTLE NOW",
+      "duration": 6.33,
+      "sample_rate": 16000,
+      "risk": 91,
+      "logit_bonafide": -2.3708
+    },
+    {
+      "utt_id": "1993-147964-0004",
+      "speaker_id": "1993",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1993/147964/1993-147964-0004.flac",
+      "text": "ON THE WHITE PAGES I GROUPED SUNDAY SCHOOL CARDS AND ADVERTISING CARDS WHICH I HAD BROUGHT FROM MY OLD COUNTRY",
+      "duration": 7.3,
+      "sample_rate": 16000,
+      "risk": 78,
+      "logit_bonafide": -1.2797
+    },
+    {
+      "utt_id": "1993-147964-0007",
+      "speaker_id": "1993",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1993/147964/1993-147964-0007.flac",
+      "text": "HE USED TO HELP MY FATHER CUT CHRISTMAS TREES FOR ME IN VIRGINIA AND HE HAD NOT FORGOTTEN HOW MUCH I LIKED THEM",
+      "duration": 6.865,
+      "sample_rate": 16000,
+      "risk": 88,
+      "logit_bonafide": -1.9956
+    },
+    {
+      "utt_id": "1993-147964-0008",
+      "speaker_id": "1993",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1993/147964/1993-147964-0008.flac",
+      "text": "BY THE TIME WE HAD PLACED THE COLD FRESH SMELLING LITTLE TREE IN A CORNER OF THE SITTING ROOM IT WAS ALREADY CHRISTMAS EVE",
+      "duration": 7.04,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.3387
+    },
+    {
+      "utt_id": "1993-147964-0009",
+      "speaker_id": "1993",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1993/147964/1993-147964-0009.flac",
+      "text": "FROM UNDER THE LINING HE NOW PRODUCED A COLLECTION OF BRILLIANTLY COLORED PAPER FIGURES SEVERAL INCHES HIGH AND STIFF ENOUGH TO STAND ALONE",
+      "duration": 8.97,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.8826
+    },
+    {
+      "utt_id": "1993-147965-0003",
+      "speaker_id": "1993",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1993/147965/1993-147965-0003.flac",
+      "text": "BECAUSE HE TALKED SO LITTLE HIS WORDS HAD A PECULIAR FORCE THEY WERE NOT WORN DULL FROM CONSTANT USE",
+      "duration": 7.375,
+      "sample_rate": 16000,
+      "risk": 7,
+      "logit_bonafide": 2.6162
+    },
+    {
+      "utt_id": "1993-147965-0005",
+      "speaker_id": "1993",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1993/147965/1993-147965-0005.flac",
+      "text": "AT ABOUT FOUR O'CLOCK A VISITOR APPEARED MISTER SHIMERDA WEARING HIS RABBIT SKIN CAP AND COLLAR AND NEW MITTENS HIS WIFE HAD KNITTED",
+      "duration": 8.66,
+      "sample_rate": 16000,
+      "risk": 4,
+      "logit_bonafide": 3.1482
+    },
+    {
+      "utt_id": "1993-147965-0006",
+      "speaker_id": "1993",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1993/147965/1993-147965-0006.flac",
+      "text": "HE SAT STILL AND PASSIVE HIS HEAD RESTING AGAINST THE BACK OF THE WOODEN ROCKING CHAIR HIS HANDS RELAXED UPON THE ARMS",
+      "duration": 8.83,
+      "sample_rate": 16000,
+      "risk": 30,
+      "logit_bonafide": 0.8472
+    },
+    {
+      "utt_id": "1993-147965-0007",
+      "speaker_id": "1993",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/1993/147965/1993-147965-0007.flac",
+      "text": "HIS FACE HAD A LOOK OF WEARINESS AND PLEASURE LIKE THAT OF SICK PEOPLE WHEN THEY FEEL RELIEF FROM PAIN",
+      "duration": 7.57,
+      "sample_rate": 16000,
+      "risk": 89,
+      "logit_bonafide": -2.1117
+    },
+    {
+      "utt_id": "2035-147960-0005",
+      "speaker_id": "2035",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2035/147960/2035-147960-0005.flac",
+      "text": "I WHIRLED ROUND AND THERE ON ONE OF THOSE DRY GRAVEL BEDS WAS THE BIGGEST SNAKE I HAD EVER SEEN",
+      "duration": 6.585,
+      "sample_rate": 16000,
+      "risk": 98,
+      "logit_bonafide": -3.6923
+    },
+    {
+      "utt_id": "2035-147960-0008",
+      "speaker_id": "2035",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2035/147960/2035-147960-0008.flac",
+      "text": "A FAINT FETID SMELL CAME FROM HIM AND A THREAD OF GREEN LIQUID OOZED FROM HIS CRUSHED HEAD",
+      "duration": 6.21,
+      "sample_rate": 16000,
+      "risk": 96,
+      "logit_bonafide": -3.2539
+    },
+    {
+      "utt_id": "2035-147961-0002",
+      "speaker_id": "2035",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2035/147961/2035-147961-0002.flac",
+      "text": "SHE ASKED PETER TO WAIT A MOMENT AND WHEN SHE CAME BACK FROM THE KITCHEN SHE BROUGHT A BAG OF SANDWICHES AND DOUGHNUTS FOR US",
+      "duration": 6.995,
+      "sample_rate": 16000,
+      "risk": 28,
+      "logit_bonafide": 0.9501
+    },
+    {
+      "utt_id": "2035-147961-0005",
+      "speaker_id": "2035",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2035/147961/2035-147961-0005.flac",
+      "text": "THEY MADE ME THINK OF DEFEATED ARMIES RETREATING OR OF GHOSTS WHO WERE TRYING DESPERATELY TO GET IN FOR SHELTER AND THEN WENT MOANING ON",
+      "duration": 9.42,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.6965
+    },
+    {
+      "utt_id": "2035-152373-0000",
+      "speaker_id": "2035",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2035/152373/2035-152373-0000.flac",
+      "text": "THROUGHOUT THIS CENTURY THE POWER OF THE CHURCH WAS CONSTANTLY ON THE INCREASE AND IS VISIBLE IN MANY IMPORTANT CHANGES",
+      "duration": 7.875,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.7377
+    },
+    {
+      "utt_id": "2035-152373-0002",
+      "speaker_id": "2035",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2035/152373/2035-152373-0002.flac",
+      "text": "IT IS PRETTY CLEAR ALSO THAT THE LAST RALLY OF DRUIDISM AGAINST CHRISTIANITY TOOK PLACE BEHIND HIS BANNER ON THE PLAIN OF MOIRA",
+      "duration": 9.34,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.3352
+    },
+    {
+      "utt_id": "2035-152373-0003",
+      "speaker_id": "2035",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2035/152373/2035-152373-0003.flac",
+      "text": "THE POETS OF SUCCEEDING AGES HAVE DWELT MUCH IN DETAIL ON THE OCCURRENCES OF THIS MEMORABLE DAY",
+      "duration": 6.415,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.5912
+    },
+    {
+      "utt_id": "2035-152373-0004",
+      "speaker_id": "2035",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2035/152373/2035-152373-0004.flac",
+      "text": "LIKE THE TWO KINGS OF SPARTA THEY REIGNED JOINTLY DIVIDING BETWEEN THEM THE LABOURS AND CARES OF STATE",
+      "duration": 7.34,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.8681
+    },
+    {
+      "utt_id": "2035-152373-0006",
+      "speaker_id": "2035",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2035/152373/2035-152373-0006.flac",
+      "text": "LASTLY THE ROYAL BROTHERS FELL THEMSELVES VICTIMS TO THE EPIDEMIC WHICH SO SADLY SIGNALIZES THEIR REIGN",
+      "duration": 7.71,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.2967
+    },
+    {
+      "utt_id": "2035-152373-0008",
+      "speaker_id": "2035",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2035/152373/2035-152373-0008.flac",
+      "text": "AS LEADING TO THE MENTION OF OTHER INTERESTING EVENTS WE MUST SET THIS INROAD CLEARLY BEFORE THE READER",
+      "duration": 6.665,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.2433
+    },
+    {
+      "utt_id": "2035-152373-0010",
+      "speaker_id": "2035",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2035/152373/2035-152373-0010.flac",
+      "text": "THE KINGDOM OF NORTHUMBRIA AS THE NAME IMPLIES EMBRACED NEARLY ALL THE COUNTRY FROM THE HUMBER TO THE PICTISH BORDER",
+      "duration": 7.6,
+      "sample_rate": 16000,
+      "risk": 0,
+      "logit_bonafide": 5.4873
+    },
+    {
+      "utt_id": "2035-152373-0014",
+      "speaker_id": "2035",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2035/152373/2035-152373-0014.flac",
+      "text": "SO SLOW AND PATIENT IS THE PROCESS BY WHICH CHRISTIANITY INFUSES ITSELF INTO THE SOCIAL LIFE OF A CONVERTED PEOPLE",
+      "duration": 7.35,
+      "sample_rate": 16000,
+      "risk": 12,
+      "logit_bonafide": 1.9804
+    },
+    {
+      "utt_id": "2035-152373-0015",
+      "speaker_id": "2035",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2035/152373/2035-152373-0015.flac",
+      "text": "HERE THE HOLY PRELATE OF FERNS MET HIM AND RELATED A VISION IN WHICH HE HAD BEEN INSTRUCTED TO DEMAND THE ABOLITION OF THE IMPOST",
+      "duration": 8.51,
+      "sample_rate": 16000,
+      "risk": 4,
+      "logit_bonafide": 3.1331
+    },
+    {
+      "utt_id": "2035-152373-0016",
+      "speaker_id": "2035",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2035/152373/2035-152373-0016.flac",
+      "text": "THE TRIBUTE WAS AT THIS PERIOD ENORMOUS FIFTEEN THOUSAND HEAD OF CATTLE ANNUALLY",
+      "duration": 6.59,
+      "sample_rate": 16000,
+      "risk": 8,
+      "logit_bonafide": 2.4713
+    },
+    {
+      "utt_id": "2035-152373-0017",
+      "speaker_id": "2035",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2035/152373/2035-152373-0017.flac",
+      "text": "SAINT MOLING SURVIVED HIM THREE YEARS AND SAINT ADAMNAN SO INTIMATELY CONNECTED WITH HIS REIGN TEN YEARS",
+      "duration": 7.855,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.9687
+    },
+    {
+      "utt_id": "2035-152373-0018",
+      "speaker_id": "2035",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2035/152373/2035-152373-0018.flac",
+      "text": "NOTHING COULD BE MORE NATURAL THAN SUCH AN ASSEMBLY IN SUCH A PLACE AT SUCH A PERIOD",
+      "duration": 6.015,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.8402
+    },
+    {
+      "utt_id": "2078-142845-0014",
+      "speaker_id": "2078",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2078/142845/2078-142845-0014.flac",
+      "text": "ANOTHER ADVANTAGE THE RED WHEATS POSSESS IS THEIR COMPARATIVE IMMUNITY FROM THE ATTACKS OF MILDEW AND FLY",
+      "duration": 8.2,
+      "sample_rate": 16000,
+      "risk": 100,
+      "logit_bonafide": -6.4465
+    },
+    {
+      "utt_id": "2078-142845-0015",
+      "speaker_id": "2078",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2078/142845/2078-142845-0015.flac",
+      "text": "MODE BOIL THE RICE IN WATER UNTIL IT IS QUITE TENDER POUR OFF THE WATER AND PUT THE RICE BEFORE IT IS COLD TO THE FLOUR",
+      "duration": 9.84,
+      "sample_rate": 16000,
+      "risk": 70,
+      "logit_bonafide": -0.8595
+    },
+    {
+      "utt_id": "2078-142845-0017",
+      "speaker_id": "2078",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2078/142845/2078-142845-0017.flac",
+      "text": "MAIZE NEXT TO WHEAT AND RICE MAIZE IS THE GRAIN MOST USED IN THE NOURISHMENT OF MAN",
+      "duration": 6.485,
+      "sample_rate": 16000,
+      "risk": 4,
+      "logit_bonafide": 3.2392
+    },
+    {
+      "utt_id": "2078-142845-0019",
+      "speaker_id": "2078",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2078/142845/2078-142845-0019.flac",
+      "text": "SOME OF THE PREPARATIONS OF MAIZE FLOUR ARE VERY GOOD AND WHEN PARTAKEN IN MODERATION SUITABLE FOOD FOR ALMOST EVERYBODY",
+      "duration": 9.405,
+      "sample_rate": 16000,
+      "risk": 0,
+      "logit_bonafide": 5.4901
+    },
+    {
+      "utt_id": "2078-142845-0020",
+      "speaker_id": "2078",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2078/142845/2078-142845-0020.flac",
+      "text": "MODE LET THE TARTARIC ACID AND SALT BE REDUCED TO THE FINEST POSSIBLE POWDER THEN MIX THEM WELL WITH THE FLOUR",
+      "duration": 9.42,
+      "sample_rate": 16000,
+      "risk": 66,
+      "logit_bonafide": -0.6827
+    },
+    {
+      "utt_id": "2078-142845-0021",
+      "speaker_id": "2078",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2078/142845/2078-142845-0021.flac",
+      "text": "SOUR MILK OR BUTTERMILK MAY BE USED BUT THEN A LITTLE LESS ACID WILL BE NEEDED",
+      "duration": 6.14,
+      "sample_rate": 16000,
+      "risk": 67,
+      "logit_bonafide": -0.7061
+    },
+    {
+      "utt_id": "2078-142845-0027",
+      "speaker_id": "2078",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2078/142845/2078-142845-0027.flac",
+      "text": "NEVER USE NEW BREAD FOR MAKING ANY KIND OF TOAST AS IT EATS HEAVY AND BESIDES IS VERY EXTRAVAGANT",
+      "duration": 8.73,
+      "sample_rate": 16000,
+      "risk": 95,
+      "logit_bonafide": -3.0095
+    },
+    {
+      "utt_id": "2078-142845-0034",
+      "speaker_id": "2078",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2078/142845/2078-142845-0034.flac",
+      "text": "MUFFINS AND CRUMPETS SHOULD ALWAYS BE SERVED ON SEPARATE DISHES AND BOTH TOASTED AND SERVED AS EXPEDITIOUSLY AS POSSIBLE",
+      "duration": 9.755,
+      "sample_rate": 16000,
+      "risk": 94,
+      "logit_bonafide": -2.7563
+    },
+    {
+      "utt_id": "2078-142845-0045",
+      "speaker_id": "2078",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2078/142845/2078-142845-0045.flac",
+      "text": "THEY SHOULD BE KEPT IN A CLOSED TIN CANISTER IN A DRY PLACE TO PRESERVE THEIR CRISPNESS",
+      "duration": 7.135,
+      "sample_rate": 16000,
+      "risk": 76,
+      "logit_bonafide": -1.1565
+    },
+    {
+      "utt_id": "2078-142845-0050",
+      "speaker_id": "2078",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2078/142845/2078-142845-0050.flac",
+      "text": "MODE PUT THE MILK AND BUTTER INTO A SAUCEPAN AND KEEP SHAKING IT ROUND UNTIL THE LATTER IS MELTED",
+      "duration": 7.725,
+      "sample_rate": 16000,
+      "risk": 4,
+      "logit_bonafide": 3.3074
+    },
+    {
+      "utt_id": "2086-149214-0003",
+      "speaker_id": "2086",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2086/149214/2086-149214-0003.flac",
+      "text": "IF PERMITTED BY THE HISTORICAL CONNECTION WHICH THOUGH SLIGHT WAS ESSENTIAL TO HIS PLAN THE AUTHOR WOULD VERY WILLINGLY HAVE AVOIDED ANYTHING OF THIS NATURE",
+      "duration": 8.995,
+      "sample_rate": 16000,
+      "risk": 95,
+      "logit_bonafide": -3.0247
+    },
+    {
+      "utt_id": "2086-149220-0004",
+      "speaker_id": "2086",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2086/149220/2086-149220-0004.flac",
+      "text": "PHOEBE WONDERED WHOSE CARE AND TOIL IT COULD HAVE BEEN THAT HAD PLANTED THESE VEGETABLES AND KEPT THE SOIL SO CLEAN AND ORDERLY",
+      "duration": 7.22,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 5.2758
+    },
+    {
+      "utt_id": "2086-149220-0005",
+      "speaker_id": "2086",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2086/149220/2086-149220-0005.flac",
+      "text": "BEES TOO STRANGE TO SAY HAD THOUGHT IT WORTH THEIR WHILE TO COME HITHER POSSIBLY FROM THE RANGE OF HIVES BESIDE SOME FARM HOUSE MILES AWAY",
+      "duration": 9.09,
+      "sample_rate": 16000,
+      "risk": 7,
+      "logit_bonafide": 2.5228
+    },
+    {
+      "utt_id": "2086-149220-0008",
+      "speaker_id": "2086",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2086/149220/2086-149220-0008.flac",
+      "text": "IT WAS EVIDENT THAT THE RACE HAD DEGENERATED LIKE MANY A NOBLE RACE BESIDES IN CONSEQUENCE OF TOO STRICT A WATCHFULNESS TO KEEP IT PURE",
+      "duration": 8.89,
+      "sample_rate": 16000,
+      "risk": 3,
+      "logit_bonafide": 3.4844
+    },
+    {
+      "utt_id": "2086-149220-0015",
+      "speaker_id": "2086",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2086/149220/2086-149220-0015.flac",
+      "text": "THEY HAVE KNOWN ME MUCH LONGER BUT NEVER HONOR ME WITH ANY FAMILIARITY THOUGH HARDLY A DAY PASSES WITHOUT MY BRINGING THEM FOOD",
+      "duration": 8.19,
+      "sample_rate": 16000,
+      "risk": 67,
+      "logit_bonafide": -0.7303
+    },
+    {
+      "utt_id": "2086-149220-0016",
+      "speaker_id": "2086",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2086/149220/2086-149220-0016.flac",
+      "text": "MISS HEPZIBAH I SUPPOSE WILL INTERWEAVE THE FACT WITH HER OTHER TRADITIONS AND SET IT DOWN THAT THE FOWLS KNOW YOU TO BE A PYNCHEON",
+      "duration": 7.52,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.8396
+    },
+    {
+      "utt_id": "2086-149220-0017",
+      "speaker_id": "2086",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2086/149220/2086-149220-0017.flac",
+      "text": "AH BUT THESE HENS ANSWERED THE YOUNG MAN THESE HENS OF ARISTOCRATIC LINEAGE WOULD SCORN TO UNDERSTAND THE VULGAR LANGUAGE OF A BARN YARD FOWL",
+      "duration": 8.7,
+      "sample_rate": 16000,
+      "risk": 4,
+      "logit_bonafide": 3.2977
+    },
+    {
+      "utt_id": "2086-149220-0018",
+      "speaker_id": "2086",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2086/149220/2086-149220-0018.flac",
+      "text": "I PREFER TO THINK AND SO WOULD MISS HEPZIBAH THAT THEY RECOGNIZE THE FAMILY TONE FOR YOU ARE A PYNCHEON",
+      "duration": 6.83,
+      "sample_rate": 16000,
+      "risk": 83,
+      "logit_bonafide": -1.6137
+    },
+    {
+      "utt_id": "2086-149220-0023",
+      "speaker_id": "2086",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2086/149220/2086-149220-0023.flac",
+      "text": "MOST OF MY LIKENESSES DO LOOK UNAMIABLE BUT THE VERY SUFFICIENT REASON I FANCY IS BECAUSE THE ORIGINALS ARE SO",
+      "duration": 7.365,
+      "sample_rate": 16000,
+      "risk": 84,
+      "logit_bonafide": -1.6221
+    },
+    {
+      "utt_id": "2086-149220-0030",
+      "speaker_id": "2086",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2086/149220/2086-149220-0030.flac",
+      "text": "THE SUN AS YOU SEE TELLS QUITE ANOTHER STORY AND WILL NOT BE COAXED OUT OF IT AFTER HALF A DOZEN PATIENT ATTEMPTS ON MY PART",
+      "duration": 8.1,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 5.1314
+    },
+    {
+      "utt_id": "2086-149220-0031",
+      "speaker_id": "2086",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2086/149220/2086-149220-0031.flac",
+      "text": "HERE WE HAVE THE MAN SLY SUBTLE HARD IMPERIOUS AND WITHAL COLD AS ICE LOOK AT THAT EYE",
+      "duration": 8.58,
+      "sample_rate": 16000,
+      "risk": 4,
+      "logit_bonafide": 3.1183
+    },
+    {
+      "utt_id": "2086-149220-0033",
+      "speaker_id": "2086",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2086/149220/2086-149220-0033.flac",
+      "text": "WELL I DON'T WISH TO SEE IT ANY MORE OBSERVED PHOEBE TURNING AWAY HER EYES IT IS CERTAINLY VERY LIKE THE OLD PORTRAIT",
+      "duration": 7.435,
+      "sample_rate": 16000,
+      "risk": 1,
+      "logit_bonafide": 4.3113
+    },
+    {
+      "utt_id": "2086-149220-0036",
+      "speaker_id": "2086",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2086/149220/2086-149220-0036.flac",
+      "text": "IT IS NONSENSE SAID PHOEBE A LITTLE IMPATIENTLY FOR US TO TALK ABOUT A PICTURE WHICH YOU HAVE NEVER SEEN",
+      "duration": 6.32,
+      "sample_rate": 16000,
+      "risk": 54,
+      "logit_bonafide": -0.1761
+    },
+    {
+      "utt_id": "2086-149220-0040",
+      "speaker_id": "2086",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2086/149220/2086-149220-0040.flac",
+      "text": "OH REJOINED THE DAGUERREOTYPIST BECAUSE LIKE AN OLD LADY'S CUP OF TEA IT IS WATER BEWITCHED",
+      "duration": 6.7,
+      "sample_rate": 16000,
+      "risk": 6,
+      "logit_bonafide": 2.8363
+    },
+    {
+      "utt_id": "2277-149874-0003",
+      "speaker_id": "2277",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2277/149874/2277-149874-0003.flac",
+      "text": "HE WAS OF A CLEAN SAVING DISPOSITION AND HAD ALREADY PAID A NUMBER OF MONTHLY INSTALMENTS ON TWO LOTS FAR OUT ON THE WEST SIDE",
+      "duration": 7.7,
+      "sample_rate": 16000,
+      "risk": 35,
+      "logit_bonafide": 0.5987
+    },
+    {
+      "utt_id": "2277-149874-0005",
+      "speaker_id": "2277",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2277/149874/2277-149874-0005.flac",
+      "text": "SHE HAD SOME SLIGHT GIFT OF OBSERVATION AND THAT SENSE SO RICH IN EVERY WOMAN INTUITION",
+      "duration": 6.37,
+      "sample_rate": 16000,
+      "risk": 89,
+      "logit_bonafide": -2.0529
+    },
+    {
+      "utt_id": "2277-149874-0010",
+      "speaker_id": "2277",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2277/149874/2277-149874-0010.flac",
+      "text": "NOW NOW HE SAID WALKING THERE THERE AND THERE WAS A CERTAIN SWEDISH ACCENT NOTICEABLE IN HIS VOICE",
+      "duration": 7.42,
+      "sample_rate": 16000,
+      "risk": 98,
+      "logit_bonafide": -3.9256
+    },
+    {
+      "utt_id": "2277-149874-0019",
+      "speaker_id": "2277",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2277/149874/2277-149874-0019.flac",
+      "text": "NARROW BOARD WALKS EXTENDED OUT PASSING HERE A HOUSE AND THERE A STORE AT FAR INTERVALS EVENTUALLY ENDING ON THE OPEN PRAIRIE",
+      "duration": 8.45,
+      "sample_rate": 16000,
+      "risk": 54,
+      "logit_bonafide": -0.1645
+    },
+    {
+      "utt_id": "2277-149874-0020",
+      "speaker_id": "2277",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2277/149874/2277-149874-0020.flac",
+      "text": "IT GAVE AN IMPOSING APPEARANCE TO MOST OF THE WHOLESALE HOUSES WHOSE OFFICES WERE UPON THE GROUND FLOOR AND IN PLAIN VIEW OF THE STREET",
+      "duration": 7.38,
+      "sample_rate": 16000,
+      "risk": 96,
+      "logit_bonafide": -3.2395
+    },
+    {
+      "utt_id": "2277-149896-0000",
+      "speaker_id": "2277",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2277/149896/2277-149896-0000.flac",
+      "text": "HE WAS IN A FEVERED STATE OF MIND OWING TO THE BLIGHT HIS WIFE'S ACTION THREATENED TO CAST UPON HIS ENTIRE FUTURE",
+      "duration": 6.59,
+      "sample_rate": 16000,
+      "risk": 68,
+      "logit_bonafide": -0.7735
+    },
+    {
+      "utt_id": "2277-149896-0001",
+      "speaker_id": "2277",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2277/149896/2277-149896-0001.flac",
+      "text": "HE WOULD HAVE TO PAY HER THE MONEY WHICH SHE WOULD NOW REGULARLY DEMAND OR THERE WOULD BE TROUBLE IT DID NOT MATTER WHAT HE DID",
+      "duration": 7.145,
+      "sample_rate": 16000,
+      "risk": 98,
+      "logit_bonafide": -4.0186
+    },
+    {
+      "utt_id": "2277-149896-0008",
+      "speaker_id": "2277",
+      "path": "ml/data/_raw/LibriSpeech/dev-clean/2277/149896/2277-149896-0008.flac",
+      "text": "FOR SOME REASON HE FELT AS IF SOMETHING MIGHT COME THAT WAY AND WAS RELIEVED WHEN ALL THE ENVELOPES HAD BEEN SCANNED AND NOTHING SUSPICIOUS NOTICED",
+      "duration": 6.94,
+      "sample_rate": 16000,
+      "risk": 98,
+      "logit_bonafide": -3.9079
+    }
+  ]
+}
