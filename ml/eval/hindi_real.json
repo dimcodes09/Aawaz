@@ -1,0 +1,3004 @@
+{
+  "clips": [
+    {
+      "id": "hreal_000",
+      "path": "ml/eval/data/hindi_real/hreal_000.wav",
+      "label": "real",
+      "text": "कुछ अणुओं में अस्थिर केंद्रक होता है जिसका मतलब यह है कि उनमें थोड़े या बिना किसी झटके से टूटने की प्रवृत्ति होती है",
+      "duration_s": 9.12,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1766
+    },
+    {
+      "id": "hreal_001",
+      "path": "ml/eval/data/hindi_real/hreal_001.wav",
+      "label": "real",
+      "text": "ग्रीनलैंड को बहुत कम जगह बसाया गया था नॉर्स सगास में वे कहते हैं कि एरिक रेड हत्या के लिए आइसलैंड से निर्वासित किया गया था और आगे पश्चिम की यात्रा करते समय ग्रीनलैंड मिला जिसे ग्रीनलैंड नाम दिया गया",
+      "duration_s": 13.8,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1784
+    },
+    {
+      "id": "hreal_002",
+      "path": "ml/eval/data/hindi_real/hreal_002.wav",
+      "label": "real",
+      "text": "ऐसी कोई वैश्विक परिभाषा नहीं है जिसके लिए निर्मित सामान एंटीक होते हैं कुछ कर एजेंसियां 100 साल से पुराने सामान को एंटीक के तौर पर परिभाषित करती हैं",
+      "duration_s": 15.0,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1718
+    },
+    {
+      "id": "hreal_003",
+      "path": "ml/eval/data/hindi_real/hreal_003.wav",
+      "label": "real",
+      "text": "टेलीविजन रिपोर्टों में प्लांट से निकलने वाला सफेद धुआं दिखाया गया है",
+      "duration_s": 5.1,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1778
+    },
+    {
+      "id": "hreal_004",
+      "path": "ml/eval/data/hindi_real/hreal_004.wav",
+      "label": "real",
+      "text": "इंटरनेट पर यह खोज शत्रुतापूर्ण पर्यावरण पाठ्यक्रम के लिए अक्सर आपको एक स्थानीय कंपनी का पता प्रदान करेगी",
+      "duration_s": 13.2,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1828
+    },
+    {
+      "id": "hreal_005",
+      "path": "ml/eval/data/hindi_real/hreal_005.wav",
+      "label": "real",
+      "text": "अपनी सरकार के अलावा आप अन्य देशों की सरकारों की सलाह ले सकते हैं हालांकि उनकी सलाह उनके नागरिकों को ध्यान में रखकर दी जाती हैं",
+      "duration_s": 10.62,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1666
+    },
+    {
+      "id": "hreal_006",
+      "path": "ml/eval/data/hindi_real/hreal_006.wav",
+      "label": "real",
+      "text": "प्राचीनकाल से ही लोग सोने चांदी और तांबे जैसे रासायनिक तत्वों के बारे में ही जानकारी रखते हैं क्योंकि इन्हें प्रकृति में मूल स्वरूप में ढूंढा जा सकता है और इन्हें प्राथमिक उपकरणों के ज़रिए ढूंढना अपेक्षाकृत आसान है",
+      "duration_s": 17.1,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1836
+    },
+    {
+      "id": "hreal_007",
+      "path": "ml/eval/data/hindi_real/hreal_007.wav",
+      "label": "real",
+      "text": "इसे केमिकल का ph कहा जाता है आप लाल गोभी के जूस का इस्तेमाल करके एक संकेतक बना सकते हैं",
+      "duration_s": 8.22,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1792
+    },
+    {
+      "id": "hreal_008",
+      "path": "ml/eval/data/hindi_real/hreal_008.wav",
+      "label": "real",
+      "text": "सबसे नज़दीकी सिरे पर क्रस्ट की मोटाई करीब 70 किलोमीटर है और सबसे दूर के सिरे पर यह 100 किलोमीटर है",
+      "duration_s": 7.8,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1827
+    },
+    {
+      "id": "hreal_009",
+      "path": "ml/eval/data/hindi_real/hreal_009.wav",
+      "label": "real",
+      "text": "यह संबंधित है लेकिन आम तौर पर इसमें अल्पाइन शैली की स्की टूरिंग या माउंटेनीयरिंग शामिल नहीं होती है जिसे खड़े इलाकों में किया जाता है और जिसके लिए बहुत कड़ी स्की और बूट की ज़रूरत होती है",
+      "duration_s": 13.68,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1985
+    },
+    {
+      "id": "hreal_010",
+      "path": "ml/eval/data/hindi_real/hreal_010.wav",
+      "label": "real",
+      "text": "पुरुषों के स्टैंडिंग सुपर-जी में ऑस्ट्रेलिया के मिशेल गौरले ग्यारहवें स्थान पर रहे चेक प्रतियोगी ओल्डरिच जेलिनेक पुरुषों के सिटिंग सुपर-जी में सोलहवें स्थान पर रहे",
+      "duration_s": 14.28,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1996
+    },
+    {
+      "id": "hreal_011",
+      "path": "ml/eval/data/hindi_real/hreal_011.wav",
+      "label": "real",
+      "text": "केवल दो हफ़्तों में अमेरिकियों और फ़्री फ़्रेंच बलों ने दक्षिणी फ़्रांस को मुक्त कर दिया था और जर्मनी की ओर बढ़ रहे थे",
+      "duration_s": 12.9,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1702
+    },
+    {
+      "id": "hreal_012",
+      "path": "ml/eval/data/hindi_real/hreal_012.wav",
+      "label": "real",
+      "text": "ms बीमारी केंद्रीय तंत्रिका तंत्र पर असर करती है जिसमें दिमाग स्पाइनल कॉर्ड और ऑप्टिक नर्व शामिल हैं",
+      "duration_s": 9.0,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1955
+    },
+    {
+      "id": "hreal_013",
+      "path": "ml/eval/data/hindi_real/hreal_013.wav",
+      "label": "real",
+      "text": "हर कोई समाज से जुड़ा होता है और ट्रांसपोर्ट सिस्टम का उपयोग करता है लगभग सभी लोग ट्रांसपोर्ट सिस्टम के बारे में शिकायत करते हैं",
+      "duration_s": 10.26,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1797
+    },
+    {
+      "id": "hreal_014",
+      "path": "ml/eval/data/hindi_real/hreal_014.wav",
+      "label": "real",
+      "text": "विशेष रूप से सवाना पर बेहतरीन अफ़्रीकी वन्य जीवन को संपूर्ण रूप से देखने के लिए आमतौर पर सफ़ारी शब्द का उपयोग किया जाता है",
+      "duration_s": 8.88,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1992
+    },
+    {
+      "id": "hreal_015",
+      "path": "ml/eval/data/hindi_real/hreal_015.wav",
+      "label": "real",
+      "text": "गंभीर मौसम किसी भी खतरनाक मौसमी घटना के लिए वर्गीय शब्द है जिसमें नुकसान गंभीर सामाजिक व्यवधान या मानव जीवन की हानि की संभावना है",
+      "duration_s": 10.5,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1719
+    },
+    {
+      "id": "hreal_016",
+      "path": "ml/eval/data/hindi_real/hreal_016.wav",
+      "label": "real",
+      "text": "हालांकि यह अकेला नहीं है प्रयोग करना और प्रयोग एक ऐसा परीक्षण होता है जिसका इस्तेमाल करके एक या इससे ज़्यादा संभावित परिकल्पनाओं को ख़त्म करने सवाल करने और अवलोकन करने से भी वैज्ञानिक शोध को मार्गदर्शन मिलता है",
+      "duration_s": 17.94,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1681
+    },
+    {
+      "id": "hreal_017",
+      "path": "ml/eval/data/hindi_real/hreal_017.wav",
+      "label": "real",
+      "text": "कैल्शियम और पोटैशियम जैसे तत्वों को धातु माना जाता है बेशक चांदी और सोने जैसी धातुएं भी हैं",
+      "duration_s": 5.94,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 2006
+    },
+    {
+      "id": "hreal_018",
+      "path": "ml/eval/data/hindi_real/hreal_018.wav",
+      "label": "real",
+      "text": "हॉट चॉकलेट बेल्जियम के मानकों पर बनी है फलों का जूस महंगा है लेकिन बहुत अच्छा है",
+      "duration_s": 10.44,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1720
+    },
+    {
+      "id": "hreal_019",
+      "path": "ml/eval/data/hindi_real/hreal_019.wav",
+      "label": "real",
+      "text": "जिस समय घटनाएँ हुई उसके युग को सामान्य रूप से यूरोप के इतिहास में 11वीं 12वीं और 13वीं सदी ad 1000-1300 में यूरोपियन इतिहास के उच्च मध्य युग की अवधि के रूप में बताया जाता है",
+      "duration_s": 17.76,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1732
+    },
+    {
+      "id": "hreal_020",
+      "path": "ml/eval/data/hindi_real/hreal_020.wav",
+      "label": "real",
+      "text": "कुछ लोगों ये सोचते थे की कि वह सही था लेकिन बहुत से लोग इसके विपरीत मानते थे; की सौर मंडल सूर्य और यहां तक कि अन्य सितारों सहित पृथ्वी के चारों और चक्कर लगता था ।",
+      "duration_s": 19.74,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1874
+    },
+    {
+      "id": "hreal_021",
+      "path": "ml/eval/data/hindi_real/hreal_021.wav",
+      "label": "real",
+      "text": "यदि आप केवल शिपबोर्ड भ्रमण का उपयोग करके किनारे तक जाते हैं तो आपको एक अलग वीज़ा की आवश्यकता नहीं होगी 2009 तक",
+      "duration_s": 12.78,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1981
+    },
+    {
+      "id": "hreal_022",
+      "path": "ml/eval/data/hindi_real/hreal_022.wav",
+      "label": "real",
+      "text": "यहूदी और गैर-यहूदी की तरह अभी भी ऐसे कई पुरुष और महिलाएं जीवित हैं जो उस समय बचने में सफल रहे और कई जिनके प्रियजनों को मार दिया गया या उनके मरने तक उनसे काम करवाया गया",
+      "duration_s": 14.94,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1683
+    },
+    {
+      "id": "hreal_023",
+      "path": "ml/eval/data/hindi_real/hreal_023.wav",
+      "label": "real",
+      "text": "इटैलियन भी रोज़ाना इस्तेमाल होने वाली भाषा है जिसे राज्य में काम करने वाले अधिकांश लोग उपयोग में लाते हैं जबकि लेटिन का धार्मिक रस्मों में इस्तेमाल किया जाता है",
+      "duration_s": 18.36,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1807
+    },
+    {
+      "id": "hreal_024",
+      "path": "ml/eval/data/hindi_real/hreal_024.wav",
+      "label": "real",
+      "text": "लोग यह अनुमान नहीं लगा सकते हैं कि घर लौटने वाले यात्रियों के लिए धैर्य और समझ भी आवश्यक है",
+      "duration_s": 7.74,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1818
+    },
+    {
+      "id": "hreal_025",
+      "path": "ml/eval/data/hindi_real/hreal_025.wav",
+      "label": "real",
+      "text": "इंटरनेट लोगों और अंतर-परस्पर संचार दोनों के तत्वों को मिलाता है",
+      "duration_s": 5.46,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1802
+    },
+    {
+      "id": "hreal_026",
+      "path": "ml/eval/data/hindi_real/hreal_026.wav",
+      "label": "real",
+      "text": "तकनीकी निर्धारण की ज़्यादातर व्याख्याएं दो सामान्य विचारों के बारे में बताती हैं तकनीकी विकास पर सांस्कृतिक या राजनीतिक असर का कोई भी प्रभाव नहीं पड़ता है और परिणामस्वरूप सामाजिक रूप से अनुकूलित होने के बजाय वह तकनीक निहित समाजों को प्रभावित करती है",
+      "duration_s": 18.6,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1743
+    },
+    {
+      "id": "hreal_027",
+      "path": "ml/eval/data/hindi_real/hreal_027.wav",
+      "label": "real",
+      "text": "केवल दो हफ़्तों में अमेरिकियों और फ़्री फ़्रेंच बलों ने दक्षिणी फ़्रांस को मुक्त कर दिया था और जर्मनी की ओर बढ़ रहे थे",
+      "duration_s": 9.72,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1702
+    },
+    {
+      "id": "hreal_028",
+      "path": "ml/eval/data/hindi_real/hreal_028.wav",
+      "label": "real",
+      "text": "यूनिवर्सिटी ऑफ़ डंडी के प्रोफ़ेसर पामेला फ़र्ग्यूसन लिखते हैं अगर संदिग्धों के फ़ोटो आदि प्रकाशित होते हैं तो पत्रकारों को यह ख़तरनाक मार्ग पर चलना लगता है",
+      "duration_s": 12.36,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1843
+    },
+    {
+      "id": "hreal_029",
+      "path": "ml/eval/data/hindi_real/hreal_029.wav",
+      "label": "real",
+      "text": "उनका सिंगापुर के उप-प्रधान मंत्री वोंग कान सेंग ने स्वागत किया और उन्होंने सिंगापुर के प्रधानमंत्री ली सिएन लूंग के साथ व्यापार और आतंकवाद के मामले पर बातचीत की",
+      "duration_s": 12.36,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1847
+    },
+    {
+      "id": "hreal_030",
+      "path": "ml/eval/data/hindi_real/hreal_030.wav",
+      "label": "real",
+      "text": "विखंडन बम इस सिद्धांत पर काम करता है कि कई प्रोटॉन और न्यूट्रॉन वाले एक नाभिक को एक साथ रखने के लिए ऊर्जा लगती है",
+      "duration_s": 12.48,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1815
+    },
+    {
+      "id": "hreal_031",
+      "path": "ml/eval/data/hindi_real/hreal_031.wav",
+      "label": "real",
+      "text": "ऐसा माना जाता है कि पेरिस के निवासी अहंकारी असभ्य और अभिमानी होते हैं",
+      "duration_s": 7.02,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1910
+    },
+    {
+      "id": "hreal_032",
+      "path": "ml/eval/data/hindi_real/hreal_032.wav",
+      "label": "real",
+      "text": "1963 में बांध बनने के बाद मौसमी बाढ़ जो पूरे नदी में तलछट फैला देगी वह रुक गई थी",
+      "duration_s": 8.22,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1721
+    },
+    {
+      "id": "hreal_033",
+      "path": "ml/eval/data/hindi_real/hreal_033.wav",
+      "label": "real",
+      "text": "यह ऑरोरा बोरेलिस को देखने का एक अच्छा अवसर प्रदान करता है क्योंकि आकाश में उस समय अंधकार सा ही रहेगा",
+      "duration_s": 8.7,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1767
+    },
+    {
+      "id": "hreal_034",
+      "path": "ml/eval/data/hindi_real/hreal_034.wav",
+      "label": "real",
+      "text": "यह शहर देश के बाकी शहरों से अलग है क्योंकि यह किसी अफ्रीकी शहर की बजाय अरब शहर लगता है",
+      "duration_s": 8.82,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1958
+    },
+    {
+      "id": "hreal_035",
+      "path": "ml/eval/data/hindi_real/hreal_035.wav",
+      "label": "real",
+      "text": "पुलिस अधीक्षक चंद्र शेखर सोलंकी ने कहा कि आरोपी ढके हुए चेहरे के साथ अदालत में पेश हुए थे",
+      "duration_s": 8.7,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1669
+    },
+    {
+      "id": "hreal_036",
+      "path": "ml/eval/data/hindi_real/hreal_036.wav",
+      "label": "real",
+      "text": "ज़्यादा परंपरागत चर्चों में ईस्टर सप्ताहांत में शनिवार रात को ईस्टर विजिल का आयोजन किया जाता है जिसमें लोग क्रिस के पुनर्जन्म का उत्सव मनाने के लिए आधी रात के समय उत्सव मनाना शुरू करते हैं",
+      "duration_s": 14.64,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1706
+    },
+    {
+      "id": "hreal_037",
+      "path": "ml/eval/data/hindi_real/hreal_037.wav",
+      "label": "real",
+      "text": "बाद में उन्हें कैम्ब्रिज में एडेनब्रुक के अस्पताल में स्थानांतरित कर दिया गया",
+      "duration_s": 8.4,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1953
+    },
+    {
+      "id": "hreal_038",
+      "path": "ml/eval/data/hindi_real/hreal_038.wav",
+      "label": "real",
+      "text": "तीसरी शताब्दी ईसा पूर्व में मिस्रियों द्वारा निर्मित ग्रेट पिरामिड मृत फिरौन का सम्मान करने के लिए निर्मित कई बड़ी पिरामिड संरचनाओं में से एक है",
+      "duration_s": 12.24,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1769
+    },
+    {
+      "id": "hreal_039",
+      "path": "ml/eval/data/hindi_real/hreal_039.wav",
+      "label": "real",
+      "text": "महिलाएं यह अनुशंसा की जाती है कि कोई भी महिला यात्री वास्तविक वैवाहिक स्थिति के बावजूद कहती है कि वह विवाहित है",
+      "duration_s": 8.52,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1982
+    },
+    {
+      "id": "hreal_040",
+      "path": "ml/eval/data/hindi_real/hreal_040.wav",
+      "label": "real",
+      "text": "भवनों की परेड जिसने हांगकांग की स्कायलाइन को चमचमाते बार चार्ट की तरह बनाया है उसने विक्टोरिया हार्बर के पानी की मौज़ूदगी को देखने लायक बनाया है",
+      "duration_s": 12.48,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1801
+    },
+    {
+      "id": "hreal_041",
+      "path": "ml/eval/data/hindi_real/hreal_041.wav",
+      "label": "real",
+      "text": "गंभीर मौसम किसी भी खतरनाक मौसमी घटना के लिए वर्गीय शब्द है जिसमें नुकसान गंभीर सामाजिक व्यवधान या मानव जीवन की हानि की संभावना है",
+      "duration_s": 10.8,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1719
+    },
+    {
+      "id": "hreal_042",
+      "path": "ml/eval/data/hindi_real/hreal_042.wav",
+      "label": "real",
+      "text": "स्प्रिंगबोक्स के लिए इसने पांच-मैचों की हार का सिलसिला समाप्त कर दिया",
+      "duration_s": 6.36,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1978
+    },
+    {
+      "id": "hreal_043",
+      "path": "ml/eval/data/hindi_real/hreal_043.wav",
+      "label": "real",
+      "text": "लोग अब कंप्यूटर स्क्रीन पर संदेश लिखते हैं शार्पनर का उपयोग करने की आवश्यकता नहीं पड़ती",
+      "duration_s": 6.72,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1820
+    },
+    {
+      "id": "hreal_044",
+      "path": "ml/eval/data/hindi_real/hreal_044.wav",
+      "label": "real",
+      "text": "हांगकांग द्वीप हांगकांग के क्षेत्र को उसका नाम देता है और यह वह स्थान है जिसे कई पर्यटक मुख्य केंद्र बिंदु मानते हैं",
+      "duration_s": 11.16,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1742
+    },
+    {
+      "id": "hreal_045",
+      "path": "ml/eval/data/hindi_real/hreal_045.wav",
+      "label": "real",
+      "text": "तीसरी शताब्दी ईसा पूर्व में मिस्रियों द्वारा निर्मित ग्रेट पिरामिड मृत फिरौन का सम्मान करने के लिए निर्मित कई बड़ी पिरामिड संरचनाओं में से एक है",
+      "duration_s": 15.96,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1769
+    },
+    {
+      "id": "hreal_046",
+      "path": "ml/eval/data/hindi_real/hreal_046.wav",
+      "label": "real",
+      "text": "जैसे-जैसे ग्रीक का ज्ञान घटता गया पश्चिम ने खुद को अपनी ग्रीक दार्शनिक और वैज्ञानिक जड़ों से कटा हुआ पाया",
+      "duration_s": 11.34,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1895
+    },
+    {
+      "id": "hreal_047",
+      "path": "ml/eval/data/hindi_real/hreal_047.wav",
+      "label": "real",
+      "text": "यह शहर देश के बाकी शहरों से अलग है क्योंकि यह किसी अफ्रीकी शहर की बजाय अरब शहर लगता है",
+      "duration_s": 7.68,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1958
+    },
+    {
+      "id": "hreal_048",
+      "path": "ml/eval/data/hindi_real/hreal_048.wav",
+      "label": "real",
+      "text": "प्राचीन संस्कृतियों और जनजातियों ने दूध बाल मांस और चमड़े को अपनी आसान पहुंच में बनाए रखना शुरू कर दिया",
+      "duration_s": 13.32,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1886
+    },
+    {
+      "id": "hreal_049",
+      "path": "ml/eval/data/hindi_real/hreal_049.wav",
+      "label": "real",
+      "text": "अक्टूबर में शुरू हुए व्यापक शासन विरोधी प्रदर्शनों के लिए आयोग का गठन मार्टेली की प्रतिक्रिया स्वरूप हुआ था",
+      "duration_s": 9.66,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1966
+    },
+    {
+      "id": "hreal_050",
+      "path": "ml/eval/data/hindi_real/hreal_050.wav",
+      "label": "real",
+      "text": "एक सामान्य लोकप्रिय डिनर विशेष रूप से गर्मी के मौसम में पा एम्बे ओली है ब्रेड के साथ ऑलिव ऑयल टमाटर और कोई भी उपलब्ध रुचिकर सामग्री जैसे पनीर ट्यूना मछली आदि",
+      "duration_s": 18.96,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1695
+    },
+    {
+      "id": "hreal_051",
+      "path": "ml/eval/data/hindi_real/hreal_051.wav",
+      "label": "real",
+      "text": "चीज़ों पर कुछ बनाकर या खरोंच कर इस जगह को नुक़सान न पहुंचाएं",
+      "duration_s": 5.82,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1791
+    },
+    {
+      "id": "hreal_052",
+      "path": "ml/eval/data/hindi_real/hreal_052.wav",
+      "label": "real",
+      "text": "यूरोप एक ऐसा महाद्वीप है जो अपेक्षाकृत छोटा है लेकिन इसमें कई स्वतंत्र देश हैं सामान्य परिस्थिति में कई देशों की यात्रा करने का मतलब कई बार वीज़ा आवेदन और पासपोर्ट कंट्रोल की प्रक्रिया से गुज़रना है",
+      "duration_s": 18.48,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1689
+    },
+    {
+      "id": "hreal_053",
+      "path": "ml/eval/data/hindi_real/hreal_053.wav",
+      "label": "real",
+      "text": "महिलाएं यह अनुशंसा की जाती है कि कोई भी महिला यात्री वास्तविक वैवाहिक स्थिति के बावजूद कहती है कि वह विवाहित है",
+      "duration_s": 7.8,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1982
+    },
+    {
+      "id": "hreal_054",
+      "path": "ml/eval/data/hindi_real/hreal_054.wav",
+      "label": "real",
+      "text": "उनका सिंगापुर के उप-प्रधान मंत्री वोंग कान सेंग ने स्वागत किया और उन्होंने सिंगापुर के प्रधानमंत्री ली सिएन लूंग के साथ व्यापार और आतंकवाद के मामले पर बातचीत की",
+      "duration_s": 12.12,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1847
+    },
+    {
+      "id": "hreal_055",
+      "path": "ml/eval/data/hindi_real/hreal_055.wav",
+      "label": "real",
+      "text": "इसलिए यह माना जा रहा है कि नोटेशन को सिर्फ़ एक लेबल के रूप में जोड़ा गया था",
+      "duration_s": 6.36,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1772
+    },
+    {
+      "id": "hreal_056",
+      "path": "ml/eval/data/hindi_real/hreal_056.wav",
+      "label": "real",
+      "text": "आपके हाथों की नमी बाहरी परतों के साथ क्रिया करेगी जो अजीब महसूस करेगी और एक तरह का आवरण बनाएगी",
+      "duration_s": 9.72,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1803
+    },
+    {
+      "id": "hreal_057",
+      "path": "ml/eval/data/hindi_real/hreal_057.wav",
+      "label": "real",
+      "text": "ऐसी कोई वैश्विक परिभाषा नहीं है जिसके लिए निर्मित सामान एंटीक होते हैं कुछ कर एजेंसियां 100 साल से पुराने सामान को एंटीक के तौर पर परिभाषित करती हैं",
+      "duration_s": 14.94,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1718
+    },
+    {
+      "id": "hreal_058",
+      "path": "ml/eval/data/hindi_real/hreal_058.wav",
+      "label": "real",
+      "text": "सबसे नज़दीकी सिरे पर क्रस्ट की मोटाई करीब 70 किलोमीटर है और सबसे दूर के सिरे पर यह 100 किलोमीटर है",
+      "duration_s": 9.18,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1827
+    },
+    {
+      "id": "hreal_059",
+      "path": "ml/eval/data/hindi_real/hreal_059.wav",
+      "label": "real",
+      "text": "लोग अब कंप्यूटर स्क्रीन पर संदेश लिखते हैं शार्पनर का उपयोग करने की आवश्यकता नहीं पड़ती",
+      "duration_s": 6.9,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1820
+    },
+    {
+      "id": "hreal_060",
+      "path": "ml/eval/data/hindi_real/hreal_060.wav",
+      "label": "real",
+      "text": "चांद की सतह चट्टानों और धूल से बनी है चांद की बाहरी परत को क्रस्ट कहते हैं",
+      "duration_s": 6.24,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1844
+    },
+    {
+      "id": "hreal_061",
+      "path": "ml/eval/data/hindi_real/hreal_061.wav",
+      "label": "real",
+      "text": "हमारे ग्रह की नदियों से महासागरों में जाने वाले पानी का 20% हिस्सा अमेज़न से आता है",
+      "duration_s": 8.4,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1875
+    },
+    {
+      "id": "hreal_062",
+      "path": "ml/eval/data/hindi_real/hreal_062.wav",
+      "label": "real",
+      "text": "सुंदरबन दुनिया का सबसे बड़ा तटीय मैंग्रोव क्षेत्र है जो तट से बांग्लादेशी और भारतीय पहाड़ी क्षेत्र में 80 किमी 50 मील तक फैला हुआ है।",
+      "duration_s": 12.48,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1893
+    },
+    {
+      "id": "hreal_063",
+      "path": "ml/eval/data/hindi_real/hreal_063.wav",
+      "label": "real",
+      "text": "इसी तरह पुरुषों के लिए घुटनों को ढंकने वाले ट्राउज़र पहनना ज़रूरी है",
+      "duration_s": 5.82,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1974
+    },
+    {
+      "id": "hreal_064",
+      "path": "ml/eval/data/hindi_real/hreal_064.wav",
+      "label": "real",
+      "text": "पुरुषों को दृढ़ता से नकारें और अपनी बात पर बेहिचक अड़ी रहें सांस्कृतिक अंतरों के होने या नहीं होने से यह सही नहीं हो जाता!",
+      "duration_s": 10.32,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1873
+    },
+    {
+      "id": "hreal_065",
+      "path": "ml/eval/data/hindi_real/hreal_065.wav",
+      "label": "real",
+      "text": "यहूदी और गैर-यहूदी की तरह अभी भी ऐसे कई पुरुष और महिलाएं जीवित हैं जो उस समय बचने में सफल रहे और कई जिनके प्रियजनों को मार दिया गया या उनके मरने तक उनसे काम करवाया गया",
+      "duration_s": 16.56,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1683
+    },
+    {
+      "id": "hreal_066",
+      "path": "ml/eval/data/hindi_real/hreal_066.wav",
+      "label": "real",
+      "text": "बाघ की दहाड़ किसी शेर की तेज़ आवाज़ वाली दहाड़ की तरह नहीं होती है लेकिन उसकी बंधी हुई चिल्लाने जैसी होती है",
+      "duration_s": 10.2,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1913
+    },
+    {
+      "id": "hreal_067",
+      "path": "ml/eval/data/hindi_real/hreal_067.wav",
+      "label": "real",
+      "text": "अस्पताल में काम करते हुए लिगिन्स ने अपने खाली समय के दौरान समय से पहले प्रसव की जांच शुरू कर दी",
+      "duration_s": 9.48,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1887
+    },
+    {
+      "id": "hreal_068",
+      "path": "ml/eval/data/hindi_real/hreal_068.wav",
+      "label": "real",
+      "text": "यह खोज पक्षियों में पंखों के विकास की पूरी जानकारी भी प्रदान करती है",
+      "duration_s": 6.24,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1750
+    },
+    {
+      "id": "hreal_069",
+      "path": "ml/eval/data/hindi_real/hreal_069.wav",
+      "label": "real",
+      "text": "हालांकि यह अकेला नहीं है प्रयोग करना और प्रयोग एक ऐसा परीक्षण होता है जिसका इस्तेमाल करके एक या इससे ज़्यादा संभावित परिकल्पनाओं को ख़त्म करने सवाल करने और अवलोकन करने से भी वैज्ञानिक शोध को मार्गदर्शन मिलता है",
+      "duration_s": 13.68,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1681
+    },
+    {
+      "id": "hreal_070",
+      "path": "ml/eval/data/hindi_real/hreal_070.wav",
+      "label": "real",
+      "text": "अटलांटिक तूफ़ान मौसम का दसवां तूफ़ान उपोष्णकटिबंधीय तूफ़ान जेरी आज अटलांटिक महासागर में बना है",
+      "duration_s": 9.78,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1993
+    },
+    {
+      "id": "hreal_071",
+      "path": "ml/eval/data/hindi_real/hreal_071.wav",
+      "label": "real",
+      "text": "अंत में कई ऐसी छोटी बिल्लियाँ लूज़ पेट कैट्स सहित हैं जो कीट रोडंट्स छिपकलियों और पक्षियों जैसे कई छोटे जीवों को खाती हैं",
+      "duration_s": 13.26,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1933
+    },
+    {
+      "id": "hreal_072",
+      "path": "ml/eval/data/hindi_real/hreal_072.wav",
+      "label": "real",
+      "text": "सामान के ट्रांसपोर्ट के लिए जहाज़ों का इस्तेमाल करना समुद्रों के एक सिरे से दूसरे सिरे तक बड़ी मात्रा में लोगों और सामान को लाने और ले जाने का बहुत ज़्यादा प्रभावी तरीका है",
+      "duration_s": 16.92,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1956
+    },
+    {
+      "id": "hreal_073",
+      "path": "ml/eval/data/hindi_real/hreal_073.wav",
+      "label": "real",
+      "text": "जिसके परिणामस्वरूप मंच पर कलाकार गांजे भरी सिगरटें पीते हैं और ये थिएटर खुद दर्शकों को भी इसमें साथ शामिल होने के लिए प्रेरित करते हैं",
+      "duration_s": 11.34,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1861
+    },
+    {
+      "id": "hreal_074",
+      "path": "ml/eval/data/hindi_real/hreal_074.wav",
+      "label": "real",
+      "text": "अगर आपने फ़िल्म नेशनल ट्रेज़र देखी है तो आपको लगेगा कि स्वतंत्रता के घोषणा-पत्र के पीछे एक ख़ज़ाने का नक्शा लिखा गया था",
+      "duration_s": 12.24,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1849
+    },
+    {
+      "id": "hreal_075",
+      "path": "ml/eval/data/hindi_real/hreal_075.wav",
+      "label": "real",
+      "text": "कहा जाता है कि वह 20 साल की उम्र में ही जीर्ण हो गया था एक बयान में बीबर ने कहा हांलांकि मैं मौजूद नहीं था और न ही सीधे इस दुखद दुर्घटना से जुड़ा हुआ था मेरी संवेदनाएं और प्रार्थनाएं पीड़ित के परिवार के साथ हैं",
+      "duration_s": 18.06,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1960
+    },
+    {
+      "id": "hreal_076",
+      "path": "ml/eval/data/hindi_real/hreal_076.wav",
+      "label": "real",
+      "text": "यह संबंधित है लेकिन आम तौर पर इसमें अल्पाइन शैली की स्की टूरिंग या माउंटेनीयरिंग शामिल नहीं होती है जिसे खड़े इलाकों में किया जाता है और जिसके लिए बहुत कड़ी स्की और बूट की ज़रूरत होती है",
+      "duration_s": 13.44,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1985
+    },
+    {
+      "id": "hreal_077",
+      "path": "ml/eval/data/hindi_real/hreal_077.wav",
+      "label": "real",
+      "text": "बेशक इस परंपरा के पीछे ईसाई धर्मशास्त्र के स्पष्टीकरण दिए जाते हैं लेकिन एक प्री-क्रिश्चयन स्प्रिंग और फ़र्टिलिटी रस्म भी हो सकती है",
+      "duration_s": 12.84,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1922
+    },
+    {
+      "id": "hreal_078",
+      "path": "ml/eval/data/hindi_real/hreal_078.wav",
+      "label": "real",
+      "text": "जो भी ऊंचाई या पहाड़ी दर्रे पर गाड़ी चलाने जा रहा है उसे हिम बर्फ या ठंड के तापमान की संभावना के विचार को मन में रखना चाहिए",
+      "duration_s": 9.9,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1952
+    },
+    {
+      "id": "hreal_079",
+      "path": "ml/eval/data/hindi_real/hreal_079.wav",
+      "label": "real",
+      "text": "वहीं स्पेक्ट्रम का दूसरा सिरा कोई व्यक्ति किसी ऐसे अपिरिचित व्यक्ति का रूप लेता है जिसे लगता है कि उसे टीम में सब कुछ बदल देना चाहिए और उसे अपने हिसाब से बनाना चाहिए",
+      "duration_s": 13.68,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1868
+    },
+    {
+      "id": "hreal_080",
+      "path": "ml/eval/data/hindi_real/hreal_080.wav",
+      "label": "real",
+      "text": "किया गया अधिकांश काम सैद्धांतिक था लेकिन सैजिटेरियस गैलेक्सी से बने ऑब्ज़र्वेशन को सिम्युलेट करने के लिए प्रोग्राम को लिखा गया था",
+      "duration_s": 9.96,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1925
+    },
+    {
+      "id": "hreal_081",
+      "path": "ml/eval/data/hindi_real/hreal_081.wav",
+      "label": "real",
+      "text": "गंभीर मौसम किसी भी खतरनाक मौसमी घटना के लिए वर्गीय शब्द है जिसमें नुकसान गंभीर सामाजिक व्यवधान या मानव जीवन की हानि की संभावना है",
+      "duration_s": 15.0,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1719
+    },
+    {
+      "id": "hreal_082",
+      "path": "ml/eval/data/hindi_real/hreal_082.wav",
+      "label": "real",
+      "text": "अलगाव और पुनर्संयोजन भिन्नता प्रत्येक पीढ़ी के साथ दो पूलों के बीच आगे-पीछे होती रहती है",
+      "duration_s": 10.08,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1687
+    },
+    {
+      "id": "hreal_083",
+      "path": "ml/eval/data/hindi_real/hreal_083.wav",
+      "label": "real",
+      "text": "पौधों से सबसे आसानी से मिलने वाले संसाधनों में पत्तियों और फलियों में मिलने वाले प्रोटीन होते लेकिन हम जैसे प्राइमेट्स के लिए उसे पकाए बिना पचाना मुश्किल होता है",
+      "duration_s": 19.74,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 2009
+    },
+    {
+      "id": "hreal_084",
+      "path": "ml/eval/data/hindi_real/hreal_084.wav",
+      "label": "real",
+      "text": "लेकिन भूमध्य रेखा के कुछ ही डिग्री उत्तर में मौजूद  अत्यधिक उष्णकटिबंध” में होने की वजह से आपको गर्मी हमेशा और तेज़ धूप जब आसमान साफ़ हो जो कि ज़्यादातर होता है का सामना करना पड़ेगा",
+      "duration_s": 18.96,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1973
+    },
+    {
+      "id": "hreal_085",
+      "path": "ml/eval/data/hindi_real/hreal_085.wav",
+      "label": "real",
+      "text": "पौधे फ़ोटोसिंथेसिस द्वारा सूर्य से अपना भोजन बनाते हैं वह छाया भी देते हैं",
+      "duration_s": 5.76,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1746
+    },
+    {
+      "id": "hreal_086",
+      "path": "ml/eval/data/hindi_real/hreal_086.wav",
+      "label": "real",
+      "text": "जियानकार्लो फिशिचेला ने अपनी कार पर नियंत्रण खो दिया और शुरू करने के कुछ समय बाद ही दौड़ समाप्त कर दी",
+      "duration_s": 8.88,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1853
+    },
+    {
+      "id": "hreal_087",
+      "path": "ml/eval/data/hindi_real/hreal_087.wav",
+      "label": "real",
+      "text": "साई के साथ-साथ सभी संज्ञा शब्द हमेशा अंग्रेज़ी के बड़े अक्षर से ही शुरू होते हैं भले ही वे वाक्य के बीच में ही क्यों न हों",
+      "duration_s": 8.52,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1675
+    },
+    {
+      "id": "hreal_088",
+      "path": "ml/eval/data/hindi_real/hreal_088.wav",
+      "label": "real",
+      "text": "1889 में यह बंदरगाह कुख्यात नौसैनिक गतिरोध का ठिकाना था उस समय जर्मनी अमेरिका और ब्रिटेन के सात जहाजों ने इस बंदरगाह से जाने से इनकार कर दिया था",
+      "duration_s": 12.06,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1723
+    },
+    {
+      "id": "hreal_089",
+      "path": "ml/eval/data/hindi_real/hreal_089.wav",
+      "label": "real",
+      "text": "अमेरिकी जिमनास्टिक्स संयुक्त राज्य ओलंपिक समिति के पत्र का समर्थन करता है साथ ही सभी एथलीटों को एक सुरक्षित माहौल देने के लिए ओलंपिक परिवार के होने की अहमियत स्वीकार करता है",
+      "duration_s": 16.26,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1788
+    },
+    {
+      "id": "hreal_090",
+      "path": "ml/eval/data/hindi_real/hreal_090.wav",
+      "label": "real",
+      "text": "यह कहते हुए कि वे चीन के आर्थिक उत्पादन के आधार पर बनाए जाएंगे उन्होंने कटौती के लिए कोई आंकड़ा निर्धारित नहीं किया",
+      "duration_s": 10.44,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1661
+    },
+    {
+      "id": "hreal_091",
+      "path": "ml/eval/data/hindi_real/hreal_091.wav",
+      "label": "real",
+      "text": "ये ज़्यादातर रेत के तट हैं जहां तैरना सुरक्षित माना जाता है इनमें से ज़्यादातर में पोहुकुटावा पेड़ों की छाया रहती है",
+      "duration_s": 15.72,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1965
+    },
+    {
+      "id": "hreal_092",
+      "path": "ml/eval/data/hindi_real/hreal_092.wav",
+      "label": "real",
+      "text": "यह शहर अफ़्रीका के कुछ सबसे सस्ते पहाड़ी गोरिल्ला ट्रेकिंग के साथ ही नायरागोंगो ज्वालामुखी की चढ़ाई करने का बेस भी है",
+      "duration_s": 10.2,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1919
+    },
+    {
+      "id": "hreal_093",
+      "path": "ml/eval/data/hindi_real/hreal_093.wav",
+      "label": "real",
+      "text": "मध्य युग के अंत में पश्चिमी यूरोप ने अपनी शैली विकसित करना शुरू कर दिया धर्मयुद्ध के परिणामस्वरूप उस समय के सबसे बड़े विकास में से एक लोगों ने कपड़ों को बांधने के लिए बटन का उपयोग करना शुरू किया",
+      "duration_s": 18.6,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1859
+    },
+    {
+      "id": "hreal_094",
+      "path": "ml/eval/data/hindi_real/hreal_094.wav",
+      "label": "real",
+      "text": "शेर प्राइड नामक बड़े समूहों में रहने वाली सबसे बड़ी सामाजिक बिल्लियां हैं",
+      "duration_s": 5.1,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1737
+    },
+    {
+      "id": "hreal_095",
+      "path": "ml/eval/data/hindi_real/hreal_095.wav",
+      "label": "real",
+      "text": "उनके पैरों में पपड़ियां और पंजे हैं वे अंडे देते हैं और वे किसी टी-रेक्स की तरह अपने दो पीछे वाले पैरों पर चलते हैं",
+      "duration_s": 8.58,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1998
+    },
+    {
+      "id": "hreal_096",
+      "path": "ml/eval/data/hindi_real/hreal_096.wav",
+      "label": "real",
+      "text": "अगर आपने फ़िल्म नेशनल ट्रेज़र देखी है तो आपको लगेगा कि स्वतंत्रता के घोषणा-पत्र के पीछे एक ख़ज़ाने का नक्शा लिखा गया था",
+      "duration_s": 13.44,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1849
+    },
+    {
+      "id": "hreal_097",
+      "path": "ml/eval/data/hindi_real/hreal_097.wav",
+      "label": "real",
+      "text": "लड़ाई के आख़िरी दो सालों में पहले के साथी अब दुश्मन बन गए थे और शीत युद्ध की शुरुआत हो चुकी थी",
+      "duration_s": 8.76,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1808
+    },
+    {
+      "id": "hreal_098",
+      "path": "ml/eval/data/hindi_real/hreal_098.wav",
+      "label": "real",
+      "text": "यह वह जगह है जहां ब्रिटिश उपनिवेशवादियों ने अपना बनाया और इसलिए अगर आप इस जगह के औपनिवेशिक अतीत के सबूतों को ढूंढ रहे हैं तो यह एक अच्छी जगह है",
+      "duration_s": 16.92,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1892
+    },
+    {
+      "id": "hreal_099",
+      "path": "ml/eval/data/hindi_real/hreal_099.wav",
+      "label": "real",
+      "text": "आप गोमा के आस-पास घूमने के लिए बोडा-बोडा मोटरसाइकिल टैक्सी ले सकते हैं. छोटी सैर के लिए आम तौर पर स्थानीय किराया करीब 500 कांगोलीज़ फ़्रैंक लगता है",
+      "duration_s": 14.64,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1915
+    },
+    {
+      "id": "hreal_100",
+      "path": "ml/eval/data/hindi_real/hreal_100.wav",
+      "label": "real",
+      "text": "आमतौर पर आप हमेशा पर्यटकों और बेचने वालों की आवाज़ सुनते हैं ध्वनि और प्रकाश की कहानी स्टोरी बुक जैसी है",
+      "duration_s": 9.0,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1934
+    },
+    {
+      "id": "hreal_101",
+      "path": "ml/eval/data/hindi_real/hreal_101.wav",
+      "label": "real",
+      "text": "यातायात बहाव दो बिंदुओं के बीच व्यक्तिगत चालकों और वाहनों की गतिविधि और एक दूसरे के साथ की जाने वाली पारस्परिक क्रिया का अध्ययन है",
+      "duration_s": 13.68,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1823
+    },
+    {
+      "id": "hreal_102",
+      "path": "ml/eval/data/hindi_real/hreal_102.wav",
+      "label": "real",
+      "text": "यूएसए जिमनास्टिक्स और यूएसओसी का एक ही लक्ष्य है एथलीटों को सुरक्षित सकारात्मक और सशक्त वातावरण में अपने सपनों का अनुसरण करने के लिए जिमनास्टिक्स और अन्य लोगों के खेल को जितना संभव हो सके उतना सुरक्षित बनाना",
+      "duration_s": 19.44,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1896
+    },
+    {
+      "id": "hreal_103",
+      "path": "ml/eval/data/hindi_real/hreal_103.wav",
+      "label": "real",
+      "text": "यहूदी और गैर-यहूदी की तरह अभी भी ऐसे कई पुरुष और महिलाएं जीवित हैं जो उस समय बचने में सफल रहे और कई जिनके प्रियजनों को मार दिया गया या उनके मरने तक उनसे काम करवाया गया",
+      "duration_s": 12.18,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1683
+    },
+    {
+      "id": "hreal_104",
+      "path": "ml/eval/data/hindi_real/hreal_104.wav",
+      "label": "real",
+      "text": "सन 1976 तक माचू पिचू के तीस प्रतिशत हिस्से का जीर्णोद्धार कर दिया गया था और जीर्णोद्धार का कार्य आज तक जारी है",
+      "duration_s": 10.2,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1928
+    },
+    {
+      "id": "hreal_105",
+      "path": "ml/eval/data/hindi_real/hreal_105.wav",
+      "label": "real",
+      "text": "तुर्की के राष्ट्रपति रजब तैयब इरदुगान के साथ ट्रंप की फ़ोन पर चर्चा होने के बाद घोषणा की गई थी",
+      "duration_s": 10.62,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1779
+    },
+    {
+      "id": "hreal_106",
+      "path": "ml/eval/data/hindi_real/hreal_106.wav",
+      "label": "real",
+      "text": "उत्तर की ओर के बड़े क्षेत्र में आबादी बहुत ही कम है और कुछ इलाकों में तो लगभग कोई इंसानी आबादी नहीं है",
+      "duration_s": 7.62,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1741
+    },
+    {
+      "id": "hreal_107",
+      "path": "ml/eval/data/hindi_real/hreal_107.wav",
+      "label": "real",
+      "text": "अमेरिकी जिमनास्टिक्स संयुक्त राज्य ओलंपिक समिति के पत्र का समर्थन करता है साथ ही सभी एथलीटों को एक सुरक्षित माहौल देने के लिए ओलंपिक परिवार के होने की अहमियत स्वीकार करता है",
+      "duration_s": 15.42,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1788
+    },
+    {
+      "id": "hreal_108",
+      "path": "ml/eval/data/hindi_real/hreal_108.wav",
+      "label": "real",
+      "text": "नेक्स्टजेन प्रणाली बारे में एफएए का दावा है कि इससे विमान को छोटे मार्गों से उड़ाना और हर साल लाखों गैलन ईंधन बचाना संभव होगा और इससे कार्बन उत्सर्जन में भी कमी आएगी",
+      "duration_s": 18.84,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1862
+    },
+    {
+      "id": "hreal_109",
+      "path": "ml/eval/data/hindi_real/hreal_109.wav",
+      "label": "real",
+      "text": "कंफेडेरशन के अनुच्छेद के तहत क्रांतिकारी युद्ध के दौरान तेरह राज्यों ने पहली बार एक कमजोर केंद्रीय सरकार का गठन किया जिसमें कांग्रेस इसका एकमात्र घटक थी",
+      "duration_s": 14.04,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1673
+    },
+    {
+      "id": "hreal_110",
+      "path": "ml/eval/data/hindi_real/hreal_110.wav",
+      "label": "real",
+      "text": "मनोविज्ञान सहित विज्ञान के सभी मामलों पर अरस्तू के विचारों को स्वीकार किया जाता है",
+      "duration_s": 6.66,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1926
+    },
+    {
+      "id": "hreal_111",
+      "path": "ml/eval/data/hindi_real/hreal_111.wav",
+      "label": "real",
+      "text": "जिस समय घटनाएँ हुई उसके युग को सामान्य रूप से यूरोप के इतिहास में 11वीं 12वीं और 13वीं सदी ad 1000-1300 में यूरोपियन इतिहास के उच्च मध्य युग की अवधि के रूप में बताया जाता है",
+      "duration_s": 15.0,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1732
+    },
+    {
+      "id": "hreal_112",
+      "path": "ml/eval/data/hindi_real/hreal_112.wav",
+      "label": "real",
+      "text": "उसी महीने एक अन्य विमान मशहद के एक रनवे से आगे निकल गया और एक दीवार से टकरा गया जिसमें सत्रह की मौत हो गई",
+      "duration_s": 12.78,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 2004
+    },
+    {
+      "id": "hreal_113",
+      "path": "ml/eval/data/hindi_real/hreal_113.wav",
+      "label": "real",
+      "text": "हर कोई समाज से जुड़ा होता है और ट्रांसपोर्ट सिस्टम का उपयोग करता है लगभग सभी लोग ट्रांसपोर्ट सिस्टम के बारे में शिकायत करते हैं",
+      "duration_s": 13.08,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1797
+    },
+    {
+      "id": "hreal_114",
+      "path": "ml/eval/data/hindi_real/hreal_114.wav",
+      "label": "real",
+      "text": "सड़कों पर ज़्यादा दुर्घटना की वजह बहुत ज़्यादा कार ओनरशिप है जिससे शरीर में हुई टूट-फूट को सुधारने के लिए हेल्थकेयर में नई तकनीकों के आविष्कार को बढ़ावा मिला है",
+      "duration_s": 15.54,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1984
+    },
+    {
+      "id": "hreal_115",
+      "path": "ml/eval/data/hindi_real/hreal_115.wav",
+      "label": "real",
+      "text": "1963 में बांध बनने के बाद मौसमी बाढ़ जो पूरे नदी में तलछट फैला देगी वह रुक गई थी",
+      "duration_s": 10.56,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1721
+    },
+    {
+      "id": "hreal_116",
+      "path": "ml/eval/data/hindi_real/hreal_116.wav",
+      "label": "real",
+      "text": "कीटविज्ञानियों द्वारा बग शब्द का उपयोग कीटों के इस समूह के लिए एक औपचारिक तौर पर किया जाता है",
+      "duration_s": 8.04,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1949
+    },
+    {
+      "id": "hreal_117",
+      "path": "ml/eval/data/hindi_real/hreal_117.wav",
+      "label": "real",
+      "text": "1920 के दशक के दौरान ज़्यादातर नागरिकों और देशों में शांतिवाद और अलगाव का नज़रिया प्रचलित था",
+      "duration_s": 9.9,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1988
+    },
+    {
+      "id": "hreal_118",
+      "path": "ml/eval/data/hindi_real/hreal_118.wav",
+      "label": "real",
+      "text": "यू.एस. कॉर्प्स ऑफ़ इंजीनियर्स ने अंदाजा लगाया कि 6 इंच बारिश पहले से क्षतिग्रस्त बांधों को तोड़ सकती है",
+      "duration_s": 7.8,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 2007
+    },
+    {
+      "id": "hreal_119",
+      "path": "ml/eval/data/hindi_real/hreal_119.wav",
+      "label": "real",
+      "text": "विशेष रूप से यह दावा किया जाता है कि किसी व्यक्ति की सूक्ष्म अभिव्यक्तियों की सही व्याख्या करके यह समझा सकता है कि वह झूठ बोल रहा है या नहीं",
+      "duration_s": 10.2,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1884
+    },
+    {
+      "id": "hreal_120",
+      "path": "ml/eval/data/hindi_real/hreal_120.wav",
+      "label": "real",
+      "text": "ब्लॉग से छात्र लेखन में सुधार करने में भी मदद मिल सकती है जहां छात्र अपने ब्लॉग अनुभव की शुरुआत अक्सर बेतरतीब व्याकरण और वर्तनी के साथ करते हैं वहीं दर्शकों की मौजूदगी से इसमें आम तौर पर बदलाव आता है",
+      "duration_s": 18.48,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1990
+    },
+    {
+      "id": "hreal_121",
+      "path": "ml/eval/data/hindi_real/hreal_121.wav",
+      "label": "real",
+      "text": "इसके शुरुआती दिनों में इस शो को केवल लंबे समय तक चलने वाली इंटरनेट रेडियो साइट toginet रेडियो टॉक रेडियो पर केंद्रित एक साइट पर फ़ीचर किया गया था",
+      "duration_s": 19.74,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1798
+    },
+    {
+      "id": "hreal_122",
+      "path": "ml/eval/data/hindi_real/hreal_122.wav",
+      "label": "real",
+      "text": "हालांकि यह सच नहीं है हालांकि दस्तावेज़ के पीछे कुछ लिखा हुआ है लेकिन यह कोई ख़ज़ाने का नक्शा नहीं है",
+      "duration_s": 7.14,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1935
+    },
+    {
+      "id": "hreal_123",
+      "path": "ml/eval/data/hindi_real/hreal_123.wav",
+      "label": "real",
+      "text": "अधिकांश छोटे द्वीप स्वतंत्र राष्ट्र हैं या फ़्रांस से संबंधित हैं और लग्ज़री बीच रिसॉर्ट के रूप में जाने जाते हैं",
+      "duration_s": 11.7,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1912
+    },
+    {
+      "id": "hreal_124",
+      "path": "ml/eval/data/hindi_real/hreal_124.wav",
+      "label": "real",
+      "text": "मध्यपूर्व की गर्म जलवायु में घर उतना ज़रूरी नहीं था",
+      "duration_s": 5.46,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1871
+    },
+    {
+      "id": "hreal_125",
+      "path": "ml/eval/data/hindi_real/hreal_125.wav",
+      "label": "real",
+      "text": "चूंकि उनकी शुरुआती दिनों में प्रकाश प्रदूषण आज की तरह की समस्या नहीं थी वे आमतौर पर शहरों में या परिसरों में स्थित हैं जहां आधुनिक समय में निर्मित जगहों की तुलना में पहुंचना आसान होता हैं",
+      "duration_s": 13.68,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1806
+    },
+    {
+      "id": "hreal_126",
+      "path": "ml/eval/data/hindi_real/hreal_126.wav",
+      "label": "real",
+      "text": "फ़ोटोग्राफ़रों ने बाद में एक वृद्ध महिला की जगह ले ली क्योंकि उसे शौचालय जाना ज़रूरी था मेंडोज़ा को गोली मार दी गई थी",
+      "duration_s": 9.84,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1761
+    },
+    {
+      "id": "hreal_127",
+      "path": "ml/eval/data/hindi_real/hreal_127.wav",
+      "label": "real",
+      "text": "वैज्ञानिक यह निष्कर्ष निकालने में सक्षम थे कि काला पदार्थ अन्य काले पदार्थ को उसी तरह प्रभावित करता है जिस तरह से आम पदार्थ करता है",
+      "duration_s": 10.32,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1734
+    },
+    {
+      "id": "hreal_128",
+      "path": "ml/eval/data/hindi_real/hreal_128.wav",
+      "label": "real",
+      "text": "ब्लॉगिंग एक ऐसा टूल है जो सहयोग को प्रेरित करता है और छात्रों को पारंपरिक स्कूल के दिन से बेहतर सीखने के लिए प्रोत्साहित करता है",
+      "duration_s": 10.26,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1787
+    },
+    {
+      "id": "hreal_129",
+      "path": "ml/eval/data/hindi_real/hreal_129.wav",
+      "label": "real",
+      "text": "वाइल्ड कार्ड खरीद लेना फ़ायदेमंद भी हो सकता है क्योंकि इससे आप दक्षिण अफ़्रीका के चुनिंदा पार्क या सभी दक्षिण अफ़्रीकी नेशनल पार्क देख सकते हैं",
+      "duration_s": 11.46,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1668
+    },
+    {
+      "id": "hreal_130",
+      "path": "ml/eval/data/hindi_real/hreal_130.wav",
+      "label": "real",
+      "text": "अस्पताल ने संक्रमण नियंत्रण के लिए नियमों का पालन किया है इन नियमों में दूसरों के संभावित संक्रमण को रोकने के लिए रोगी को दूसरों से अलग करना शामिल है",
+      "duration_s": 15.72,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1938
+    },
+    {
+      "id": "hreal_131",
+      "path": "ml/eval/data/hindi_real/hreal_131.wav",
+      "label": "real",
+      "text": "जापान की परमाणु एजेंसी के अनुसार प्लांट में रेडियोधर्मी सीज़ियम और आयोडीन की पहचान की गई है",
+      "duration_s": 8.52,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1692
+    },
+    {
+      "id": "hreal_132",
+      "path": "ml/eval/data/hindi_real/hreal_132.wav",
+      "label": "real",
+      "text": "यह शहर अफ़्रीका के कुछ सबसे सस्ते पहाड़ी गोरिल्ला ट्रेकिंग के साथ ही नायरागोंगो ज्वालामुखी की चढ़ाई करने का बेस भी है",
+      "duration_s": 11.22,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1919
+    },
+    {
+      "id": "hreal_133",
+      "path": "ml/eval/data/hindi_real/hreal_133.wav",
+      "label": "real",
+      "text": "तुर्की के राष्ट्रपति रजब तैयब इरदुगान के साथ ट्रंप की फ़ोन पर चर्चा होने के बाद घोषणा की गई थी",
+      "duration_s": 11.34,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1779
+    },
+    {
+      "id": "hreal_134",
+      "path": "ml/eval/data/hindi_real/hreal_134.wav",
+      "label": "real",
+      "text": "ज़्यादा टैक्स वाले देशों में रहने वाले पर्यटक कभी-कभी खास तौर पर मादक पेय और तम्बाकू जैसे उत्पादों पर काफ़ी बचत कर सकते हैं",
+      "duration_s": 10.26,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1829
+    },
+    {
+      "id": "hreal_135",
+      "path": "ml/eval/data/hindi_real/hreal_135.wav",
+      "label": "real",
+      "text": "1920 के दशक के दौरान ज़्यादातर नागरिकों और देशों में शांतिवाद और अलगाव का नज़रिया प्रचलित था",
+      "duration_s": 8.7,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1988
+    },
+    {
+      "id": "hreal_136",
+      "path": "ml/eval/data/hindi_real/hreal_136.wav",
+      "label": "real",
+      "text": "अगर आप सर्दियों में उत्तरी बाटलिक को पार करते हैं तो आपको केबिन स्थान की जांच करनी होगी  क्योंकि क्योंकि जो लोग ज्यादा प्रभावित है उन्हें बर्फ से गुजरने पर काफी भयानक शोर महसूस होगा ।",
+      "duration_s": 12.78,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 2000
+    },
+    {
+      "id": "hreal_137",
+      "path": "ml/eval/data/hindi_real/hreal_137.wav",
+      "label": "real",
+      "text": "पुरुषों को दृढ़ता से नकारें और अपनी बात पर बेहिचक अड़ी रहें सांस्कृतिक अंतरों के होने या नहीं होने से यह सही नहीं हो जाता!",
+      "duration_s": 12.18,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1873
+    },
+    {
+      "id": "hreal_138",
+      "path": "ml/eval/data/hindi_real/hreal_138.wav",
+      "label": "real",
+      "text": "लक्खा सिंह ने छप्पन भोग भजन भी प्रस्तुत किया गायक राजू खंडेलवाल उनके साथ थे",
+      "duration_s": 7.44,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1891
+    },
+    {
+      "id": "hreal_139",
+      "path": "ml/eval/data/hindi_real/hreal_139.wav",
+      "label": "real",
+      "text": "11:35 बजे अग्नि बचाव दल ने अंततः आग बुझा दी थी",
+      "duration_s": 9.0,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1748
+    },
+    {
+      "id": "hreal_140",
+      "path": "ml/eval/data/hindi_real/hreal_140.wav",
+      "label": "real",
+      "text": "चुनिंदा रूट पर बड़ी कंपनियों के खुद के विमान हैं लेकिन अन्य रूट पर और छोटी फ़र्म के लिए यह एक समस्या है",
+      "duration_s": 9.9,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1691
+    },
+    {
+      "id": "hreal_141",
+      "path": "ml/eval/data/hindi_real/hreal_141.wav",
+      "label": "real",
+      "text": "हालांकि एआई में विज्ञान कथाओं का एक मज़बूत अर्थ होता है लेकिन एआई कंप्यूटर विज्ञान की एक बहुत ही अहम शाखा बनाता है जिसमें बर्ताव से निपटना किसी मशीन में सीखना और बुद्धिमान अनुकूलन शामिल है",
+      "duration_s": 17.16,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1901
+    },
+    {
+      "id": "hreal_142",
+      "path": "ml/eval/data/hindi_real/hreal_142.wav",
+      "label": "real",
+      "text": "महाराजा और महारानी के ख़िलाफ़ चीखते-चिल्लाते लोगों की भीड़ से घिरी एक गाड़ी में सफर करते हुए वे लोग पेरिस वापस आए",
+      "duration_s": 13.32,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1845
+    },
+    {
+      "id": "hreal_143",
+      "path": "ml/eval/data/hindi_real/hreal_143.wav",
+      "label": "real",
+      "text": "जियानकार्लो फिशिचेला ने अपनी कार पर नियंत्रण खो दिया और शुरू करने के कुछ समय बाद ही दौड़ समाप्त कर दी",
+      "duration_s": 12.6,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1853
+    },
+    {
+      "id": "hreal_144",
+      "path": "ml/eval/data/hindi_real/hreal_144.wav",
+      "label": "real",
+      "text": "कहा जाता है कि वह 20 साल की उम्र में ही जीर्ण हो गया था एक बयान में बीबर ने कहा हांलांकि मैं मौजूद नहीं था और न ही सीधे इस दुखद दुर्घटना से जुड़ा हुआ था मेरी संवेदनाएं और प्रार्थनाएं पीड़ित के परिवार के साथ हैं",
+      "duration_s": 16.5,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1960
+    },
+    {
+      "id": "hreal_145",
+      "path": "ml/eval/data/hindi_real/hreal_145.wav",
+      "label": "real",
+      "text": "द्वीप-समूह पेनिनसुला की उत्तर दिशा में 120 किमी दूर स्थित है विलास लास एस्ट्रेलास जैसे रिहायशी इलाके के साथ किंग ज़ॉर्ज सबसे बड़ा आइलैंड है",
+      "duration_s": 13.44,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1758
+    },
+    {
+      "id": "hreal_146",
+      "path": "ml/eval/data/hindi_real/hreal_146.wav",
+      "label": "real",
+      "text": "1963 में बांध बनने के बाद मौसमी बाढ़ जो पूरे नदी में तलछट फैला देगी वह रुक गई थी",
+      "duration_s": 8.64,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1721
+    },
+    {
+      "id": "hreal_147",
+      "path": "ml/eval/data/hindi_real/hreal_147.wav",
+      "label": "real",
+      "text": "सुंदरबन को यूनेस्को द्वारा विश्व धरोहर घोषित किया है जंगल का वह हिस्सा जो भारत में है उसको सुंदरबन नेशनल पार्क कहा जाता है",
+      "duration_s": 8.88,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1918
+    },
+    {
+      "id": "hreal_148",
+      "path": "ml/eval/data/hindi_real/hreal_148.wav",
+      "label": "real",
+      "text": "सन 1976 तक माचू पिचू के तीस प्रतिशत हिस्से का जीर्णोद्धार कर दिया गया था और जीर्णोद्धार का कार्य आज तक जारी है",
+      "duration_s": 10.74,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1928
+    },
+    {
+      "id": "hreal_149",
+      "path": "ml/eval/data/hindi_real/hreal_149.wav",
+      "label": "real",
+      "text": "ये जोड़े अपने बच्चे के लिए गोद लेने की योजना बनाने का विकल्प चुन सकते हैं",
+      "duration_s": 5.64,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1941
+    },
+    {
+      "id": "hreal_150",
+      "path": "ml/eval/data/hindi_real/hreal_150.wav",
+      "label": "real",
+      "text": "इसी तरह पुरुषों के लिए घुटनों को ढंकने वाले ट्राउज़र पहनना ज़रूरी है",
+      "duration_s": 5.76,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1974
+    },
+    {
+      "id": "hreal_151",
+      "path": "ml/eval/data/hindi_real/hreal_151.wav",
+      "label": "real",
+      "text": "उत्तरी मैरिएनस इमरजेंसी प्रबंधन कार्यलय की ओर से कहा गया कि राष्ट्र में नुकसान की कोई सूचना प्राप्त नहीं हुई थी",
+      "duration_s": 9.24,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1876
+    },
+    {
+      "id": "hreal_152",
+      "path": "ml/eval/data/hindi_real/hreal_152.wav",
+      "label": "real",
+      "text": "अधिकांश आधुनिक अनुसंधान दूरबीनों में अनुकूल वायुमंडलीय परिस्थितियों के साथ दूरदराज के क्षेत्रों में काम करने के लिए बहुत सुविधाएं हैं",
+      "duration_s": 11.58,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1890
+    },
+    {
+      "id": "hreal_153",
+      "path": "ml/eval/data/hindi_real/hreal_153.wav",
+      "label": "real",
+      "text": "कुछ क्षेत्रों में पानी को एक मिनट के लिए उबालना काफी होता है अन्य क्षेत्रों में कई मिनट तक उबलाने की आवश्यकता होती है",
+      "duration_s": 7.2,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1674
+    },
+    {
+      "id": "hreal_154",
+      "path": "ml/eval/data/hindi_real/hreal_154.wav",
+      "label": "real",
+      "text": "पपड़ी पतली होने के कारण आस-पास पर कई मारिया होंगी लावा के लिए सतह पर बढ़ना आसान था",
+      "duration_s": 9.96,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1754
+    },
+    {
+      "id": "hreal_155",
+      "path": "ml/eval/data/hindi_real/hreal_155.wav",
+      "label": "real",
+      "text": "एरोस्मिथ ने अपने दौरे के अपने शेष संगीत कार्यक्रमों को रद्द कर दिया है",
+      "duration_s": 7.38,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1679
+    },
+    {
+      "id": "hreal_156",
+      "path": "ml/eval/data/hindi_real/hreal_156.wav",
+      "label": "real",
+      "text": "माऊ आंदोलन द्वारा स्वतंत्रता के लिए आयोजित संघर्ष के दौरान नगर में एक शांतिपूर्ण सभा में प्रमुख तापुआ तामासेसे सेलोफ़ी तृतीय की हत्या हो गई",
+      "duration_s": 15.0,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1872
+    },
+    {
+      "id": "hreal_157",
+      "path": "ml/eval/data/hindi_real/hreal_157.wav",
+      "label": "real",
+      "text": "असल में किसी को इसकी मौजूदगी का पता होने पर भी इसे ढूंढना बिल्कुल भी आसान नहीं है एक बार गुफ़ा में पहुंच जाने पर वहां आप एकदम अकेले हो जाते हैं",
+      "duration_s": 13.26,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1900
+    },
+    {
+      "id": "hreal_158",
+      "path": "ml/eval/data/hindi_real/hreal_158.wav",
+      "label": "real",
+      "text": "रणनीति महत्वपूर्ण सैन्य और असैन्य आपूर्ति को काटते हुए प्रभावी साबित हुई हालांकि इस नाकाबंदी ने पिछले दो शताब्दियों के कई अंतरराष्ट्रीय समझौतों द्वारा आमतौर पर स्वीकृत अंतर्राष्ट्रीय कानून का उल्लंघन किया",
+      "duration_s": 19.38,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1923
+    },
+    {
+      "id": "hreal_159",
+      "path": "ml/eval/data/hindi_real/hreal_159.wav",
+      "label": "real",
+      "text": "इंटरनेट लोगों और अंतर-परस्पर संचार दोनों के तत्वों को मिलाता है",
+      "duration_s": 6.36,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1802
+    },
+    {
+      "id": "hreal_160",
+      "path": "ml/eval/data/hindi_real/hreal_160.wav",
+      "label": "real",
+      "text": "बेशक इस परंपरा के पीछे ईसाई धर्मशास्त्र के स्पष्टीकरण दिए जाते हैं लेकिन एक प्री-क्रिश्चयन स्प्रिंग और फ़र्टिलिटी रस्म भी हो सकती है",
+      "duration_s": 17.76,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1922
+    },
+    {
+      "id": "hreal_161",
+      "path": "ml/eval/data/hindi_real/hreal_161.wav",
+      "label": "real",
+      "text": "बच्चों को कई वजहों से फ़ॉस्टर केयर में रखा जाता है जिनमें अनदेखी करना बुरा बर्ताव करना और यहां तक कि ज़बरदस्ती वसूली करना भी शामिल है",
+      "duration_s": 11.88,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1694
+    },
+    {
+      "id": "hreal_162",
+      "path": "ml/eval/data/hindi_real/hreal_162.wav",
+      "label": "real",
+      "text": "यातायात बहाव दो बिंदुओं के बीच व्यक्तिगत चालकों और वाहनों की गतिविधि और एक दूसरे के साथ की जाने वाली पारस्परिक क्रिया का अध्ययन है",
+      "duration_s": 9.0,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1823
+    },
+    {
+      "id": "hreal_163",
+      "path": "ml/eval/data/hindi_real/hreal_163.wav",
+      "label": "real",
+      "text": "इस प्रकार जब पेंसिल आई तो यह कई लोगों के लिए एक अच्छी दोस्त थी",
+      "duration_s": 8.16,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1880
+    },
+    {
+      "id": "hreal_164",
+      "path": "ml/eval/data/hindi_real/hreal_164.wav",
+      "label": "real",
+      "text": "यदि आपको देश की सड़कों पर वाहन चलाने की आदत नहीं है तो अपने साथ यह जानकारी रखें : स्टीप ग्रेड्‍स पतली गलियाँ और ख़तरनाक मोड़",
+      "duration_s": 12.06,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1793
+    },
+    {
+      "id": "hreal_165",
+      "path": "ml/eval/data/hindi_real/hreal_165.wav",
+      "label": "real",
+      "text": "ज़्यादा परंपरागत चर्चों में ईस्टर सप्ताहांत में शनिवार रात को ईस्टर विजिल का आयोजन किया जाता है जिसमें लोग क्रिस के पुनर्जन्म का उत्सव मनाने के लिए आधी रात के समय उत्सव मनाना शुरू करते हैं",
+      "duration_s": 15.0,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1706
+    },
+    {
+      "id": "hreal_166",
+      "path": "ml/eval/data/hindi_real/hreal_166.wav",
+      "label": "real",
+      "text": "पपड़ी पतली होने के कारण आस-पास पर कई मारिया होंगी लावा के लिए सतह पर बढ़ना आसान था",
+      "duration_s": 9.54,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1754
+    },
+    {
+      "id": "hreal_167",
+      "path": "ml/eval/data/hindi_real/hreal_167.wav",
+      "label": "real",
+      "text": "वर्तमान में जो कीड़े अपने पंखों को वापस नहीं मोड़ सकते हैं उनमें केवल ड्रैगनफ़्लाई और मेफलीज़ हैं",
+      "duration_s": 8.28,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1677
+    },
+    {
+      "id": "hreal_168",
+      "path": "ml/eval/data/hindi_real/hreal_168.wav",
+      "label": "real",
+      "text": "ये पानी में जाने वाली किसी भी चीज़ पर भी हमला किया करते थे यहां तक कि टी रेक्स जैसे विशालकाय डायनासोर का भी कोई मुकाबला नहीं होगा",
+      "duration_s": 13.92,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1738
+    },
+    {
+      "id": "hreal_169",
+      "path": "ml/eval/data/hindi_real/hreal_169.wav",
+      "label": "real",
+      "text": "विशेष रूप से यह दावा किया जाता है कि किसी व्यक्ति की सूक्ष्म अभिव्यक्तियों की सही व्याख्या करके यह समझा सकता है कि वह झूठ बोल रहा है या नहीं",
+      "duration_s": 15.96,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1884
+    },
+    {
+      "id": "hreal_170",
+      "path": "ml/eval/data/hindi_real/hreal_170.wav",
+      "label": "real",
+      "text": "सुंदरबन को यूनेस्को द्वारा विश्व धरोहर घोषित किया है जंगल का वह हिस्सा जो भारत में है उसको सुंदरबन नेशनल पार्क कहा जाता है",
+      "duration_s": 12.24,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1918
+    },
+    {
+      "id": "hreal_171",
+      "path": "ml/eval/data/hindi_real/hreal_171.wav",
+      "label": "real",
+      "text": "गीज़ा में मौजूद ग्रेट पिरामिड सात अजूबा में से केवल एक है जो आज भी खड़ा है",
+      "duration_s": 7.32,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1838
+    },
+    {
+      "id": "hreal_172",
+      "path": "ml/eval/data/hindi_real/hreal_172.wav",
+      "label": "real",
+      "text": "वर्चुअल स्कैफ़ोल्ड सॉफ़्टवेयर का ही अंदरूनी हिस्सा होते हैं और वे ऐसी प्रक्रियाओं पर सवाल उठाते हैं उनका संकेत देते हैं और उनके बारे में जानकारी देते हैं जो छात्र के लिए अकेले संभालने में चुनौती भरी होती हैं",
+      "duration_s": 19.68,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1995
+    },
+    {
+      "id": "hreal_173",
+      "path": "ml/eval/data/hindi_real/hreal_173.wav",
+      "label": "real",
+      "text": "यह बीमारी सूअरों के कारण होती है जो बाद में मच्छरों के माध्यम से मनुष्यों में आती है",
+      "duration_s": 6.84,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1762
+    },
+    {
+      "id": "hreal_174",
+      "path": "ml/eval/data/hindi_real/hreal_174.wav",
+      "label": "real",
+      "text": "2002 में गोमा को न्यिरगोंगो ज्वालामुखी ने लावा द्वारा नष्ट कर दिया गया था जिसने शहर की अधिकांश सड़कों विशेष रूप से शहर के बीच के भाग को दफन कर दिया था",
+      "duration_s": 14.04,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1951
+    },
+    {
+      "id": "hreal_175",
+      "path": "ml/eval/data/hindi_real/hreal_175.wav",
+      "label": "real",
+      "text": "ऊपर साफ़ वातावरण सुंदर आसमान और आस-पास के कई पहाड़ों के अलावा और कुछ भी नहीं नज़र आता है इसलिए इस गुफ़ा के अंदर से दुनिया का छोटा सा हिस्सा ही देखा या सुना जा सकता है",
+      "duration_s": 14.04,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1841
+    },
+    {
+      "id": "hreal_176",
+      "path": "ml/eval/data/hindi_real/hreal_176.wav",
+      "label": "real",
+      "text": "केवल जर्म-लाइन कोशिकाओं में वृद्धि बच्चों तक पहुंच सकती है जबकि अन्य कहीं होने वाली वृद्धि से कोशिकाएं नष्ट हो सकती हैं या कैंसर हो सकता है",
+      "duration_s": 7.68,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1757
+    },
+    {
+      "id": "hreal_177",
+      "path": "ml/eval/data/hindi_real/hreal_177.wav",
+      "label": "real",
+      "text": "मोसासौरस अपने समय का सबसे बड़ा शिकारी था इसलिए उसे अन्य मोसासौरस के अलावा किसी का भय नहीं था",
+      "duration_s": 11.76,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1760
+    },
+    {
+      "id": "hreal_178",
+      "path": "ml/eval/data/hindi_real/hreal_178.wav",
+      "label": "real",
+      "text": "10 00-11 00 बजे एमडीटी के बीच यार्ड में कैदियों द्वारा आग लगा दी गई थी",
+      "duration_s": 6.24,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1885
+    },
+    {
+      "id": "hreal_179",
+      "path": "ml/eval/data/hindi_real/hreal_179.wav",
+      "label": "real",
+      "text": "माना जाता है कि ईरान की ज़ाग्रोस पहाड़ियों में 10,000 साल पहले बकरी पालन की शुरुआत हुई थी",
+      "duration_s": 12.24,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1701
+    },
+    {
+      "id": "hreal_180",
+      "path": "ml/eval/data/hindi_real/hreal_180.wav",
+      "label": "real",
+      "text": "अधिकांश छोटे द्वीप स्वतंत्र राष्ट्र हैं या फ़्रांस से संबंधित हैं और लग्ज़री बीच रिसॉर्ट के रूप में जाने जाते हैं",
+      "duration_s": 9.48,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1912
+    },
+    {
+      "id": "hreal_181",
+      "path": "ml/eval/data/hindi_real/hreal_181.wav",
+      "label": "real",
+      "text": "उनका काम ऐसी गुणवत्ता और विस्तार के पहचान का है कि वह टिकट संग्रहकर्ताओं के बीच बहुत कम घरेलू नामों में से एक है कुछ उनके काम को अकेले बटोरने में माहिर हैं",
+      "duration_s": 19.8,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1790
+    },
+    {
+      "id": "hreal_182",
+      "path": "ml/eval/data/hindi_real/hreal_182.wav",
+      "label": "real",
+      "text": "1537 में असूनचिओन की स्थापना के बाद से पैराग्वे अपने स्वदेशी चरित्र और पहचान को बनाए रखने में कामयाब रहा है",
+      "duration_s": 9.72,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1765
+    },
+    {
+      "id": "hreal_183",
+      "path": "ml/eval/data/hindi_real/hreal_183.wav",
+      "label": "real",
+      "text": "दुर्घटना के बाद गिब्सन को अस्पताल पहुंचाया गया लेकिन कुछ ही समय बाद उनकी मृत्यु हो गई",
+      "duration_s": 6.36,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1826
+    },
+    {
+      "id": "hreal_184",
+      "path": "ml/eval/data/hindi_real/hreal_184.wav",
+      "label": "real",
+      "text": "डुवैल जो विवाहित है और उसके दो वयस्क बच्चे हैं उसने मिलर पर बड़ा असर नहीं किया जिस से कहानी संबंधित है",
+      "duration_s": 13.62,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1816
+    },
+    {
+      "id": "hreal_185",
+      "path": "ml/eval/data/hindi_real/hreal_185.wav",
+      "label": "real",
+      "text": "रोलैंडो मेंडोज़ा ने अपनी m16 राइफल से पर्यटकों के ऊपर फायर किया",
+      "duration_s": 6.6,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1736
+    },
+    {
+      "id": "hreal_186",
+      "path": "ml/eval/data/hindi_real/hreal_186.wav",
+      "label": "real",
+      "text": "रोम में अलग-अलग जगहों पर कई बड़े टेलीविज़न स्क्रीन लगाए गए ताकि लोग समारोह देख सकें",
+      "duration_s": 9.9,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1917
+    },
+    {
+      "id": "hreal_187",
+      "path": "ml/eval/data/hindi_real/hreal_187.wav",
+      "label": "real",
+      "text": "पिछले हफ्ते meti ने घोषणा की कि apple ने 34 ओवरहीटिंग के मामले सामने आये है  जिसे कंपनी ने गंभीरता से नहीं लिया ।",
+      "duration_s": 12.96,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1710
+    },
+    {
+      "id": "hreal_188",
+      "path": "ml/eval/data/hindi_real/hreal_188.wav",
+      "label": "real",
+      "text": "मस्तिष्क विकृति और व्यवहार के बीच संबंध अनुसंधान में वैज्ञानिकों का समर्थन करते हैं",
+      "duration_s": 9.12,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1821
+    },
+    {
+      "id": "hreal_189",
+      "path": "ml/eval/data/hindi_real/hreal_189.wav",
+      "label": "real",
+      "text": "कंफेडेरशन के अनुच्छेद के तहत क्रांतिकारी युद्ध के दौरान तेरह राज्यों ने पहली बार एक कमजोर केंद्रीय सरकार का गठन किया जिसमें कांग्रेस इसका एकमात्र घटक थी",
+      "duration_s": 12.06,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1673
+    },
+    {
+      "id": "hreal_190",
+      "path": "ml/eval/data/hindi_real/hreal_190.wav",
+      "label": "real",
+      "text": "बच्चों को कई वजहों से फ़ॉस्टर केयर में रखा जाता है जिनमें अनदेखी करना बुरा बर्ताव करना और यहां तक कि ज़बरदस्ती वसूली करना भी शामिल है",
+      "duration_s": 13.68,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1694
+    },
+    {
+      "id": "hreal_191",
+      "path": "ml/eval/data/hindi_real/hreal_191.wav",
+      "label": "real",
+      "text": "यूरोप एक ऐसा महाद्वीप है जो अपेक्षाकृत छोटा है लेकिन इसमें कई स्वतंत्र देश हैं सामान्य परिस्थिति में कई देशों की यात्रा करने का मतलब कई बार वीज़ा आवेदन और पासपोर्ट कंट्रोल की प्रक्रिया से गुज़रना है",
+      "duration_s": 17.04,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1689
+    },
+    {
+      "id": "hreal_192",
+      "path": "ml/eval/data/hindi_real/hreal_192.wav",
+      "label": "real",
+      "text": "वैज्ञानिकों को यह समझने की उम्मीद है कि ग्रह कैसे बनते हैं खासकर पृथ्वी कैसे बनी चूंकि धूमकेतु पृथ्वी से बहुत पहले टकरा चुके थे",
+      "duration_s": 9.72,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1882
+    },
+    {
+      "id": "hreal_193",
+      "path": "ml/eval/data/hindi_real/hreal_193.wav",
+      "label": "real",
+      "text": "टेलीविजन रिपोर्टों में प्लांट से निकलने वाला सफेद धुआं दिखाया गया है",
+      "duration_s": 8.46,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1778
+    },
+    {
+      "id": "hreal_194",
+      "path": "ml/eval/data/hindi_real/hreal_194.wav",
+      "label": "real",
+      "text": "पुलिस अधीक्षक चंद्र शेखर सोलंकी ने कहा कि आरोपी ढके हुए चेहरे के साथ अदालत में पेश हुए थे",
+      "duration_s": 8.76,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1669
+    },
+    {
+      "id": "hreal_195",
+      "path": "ml/eval/data/hindi_real/hreal_195.wav",
+      "label": "real",
+      "text": "रूमानियत में सांस्कृतिक नियतिवाद का बड़ा तत्व था जो गोएथे फिच्ते और श्लेगल जैसे लेखकों से लिया गया",
+      "duration_s": 13.74,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1660
+    },
+    {
+      "id": "hreal_196",
+      "path": "ml/eval/data/hindi_real/hreal_196.wav",
+      "label": "real",
+      "text": "उपग्रह को एक रॉकेट से अंतरिक्ष में भेजा गया था वैज्ञानिक अंतरिक्ष में दूरबीनों का उपयोग करते हैं क्योंकि पृथ्वी का वायुमंडल हमारे कुछ प्रकाश और दृश्य को अशुद्ध करता है",
+      "duration_s": 12.12,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1714
+    },
+    {
+      "id": "hreal_197",
+      "path": "ml/eval/data/hindi_real/hreal_197.wav",
+      "label": "real",
+      "text": "जितनी कम चिंता उतनी ज़्यादा सकारात्मक जीवन ऊर्जा का संचार हर इंसान परम शांति और संतोष पा सकता है",
+      "duration_s": 10.68,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1943
+    },
+    {
+      "id": "hreal_198",
+      "path": "ml/eval/data/hindi_real/hreal_198.wav",
+      "label": "real",
+      "text": "बीसवीं सदी के शोध से पता चला है कि आनुवंशिक भिन्नता के दो पूल हैं छुपा हुआ और अभिव्यक्त",
+      "duration_s": 13.02,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1914
+    },
+    {
+      "id": "hreal_199",
+      "path": "ml/eval/data/hindi_real/hreal_199.wav",
+      "label": "real",
+      "text": "स्कीइंग मार्ग को एक हाईकिंग लंबी पैदल यात्रा मार्ग जैसा ही सोचें।",
+      "duration_s": 8.64,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1839
+    },
+    {
+      "id": "hreal_200",
+      "path": "ml/eval/data/hindi_real/hreal_200.wav",
+      "label": "real",
+      "text": "बच्चों को कई वजहों से फ़ॉस्टर केयर में रखा जाता है जिनमें अनदेखी करना बुरा बर्ताव करना और यहां तक कि ज़बरदस्ती वसूली करना भी शामिल है",
+      "duration_s": 11.4,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1694
+    },
+    {
+      "id": "hreal_201",
+      "path": "ml/eval/data/hindi_real/hreal_201.wav",
+      "label": "real",
+      "text": "यह रिपोर्ट इराक के प्रति प्रशासन की वर्तमान नीति के लगभग सभी पहलुओं के प्रति बेहद आलोचनात्मक है और यह इसकी दिशा में तत्काल परिवर्तन का आग्रह करती है",
+      "duration_s": 10.86,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1709
+    },
+    {
+      "id": "hreal_202",
+      "path": "ml/eval/data/hindi_real/hreal_202.wav",
+      "label": "real",
+      "text": "प्राकृतिक वातावरण में पौधे सबसे अच्छे दिखते हैं इसलिए सिर्फ एक नमूने को भी हटाने के प्रलोभन को रोकें",
+      "duration_s": 7.68,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1745
+    },
+    {
+      "id": "hreal_203",
+      "path": "ml/eval/data/hindi_real/hreal_203.wav",
+      "label": "real",
+      "text": "मार्टेली ने कल नौ सदस्यों के एक नए अनंतिम चुनाव परिषद cep में शपथ ली",
+      "duration_s": 7.92,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1703
+    },
+    {
+      "id": "hreal_204",
+      "path": "ml/eval/data/hindi_real/hreal_204.wav",
+      "label": "real",
+      "text": "हालांकि टुबर्क्युलोसिस वाले लोगों के पूरे समूह में एक्सडीआर-टीबी का प्रतिशत अभी भी कम है दक्षिण अफ़्रीका में किसी भी विशेष समय पर कुल 330,000 लोगों में से 6,000 संक्रमित हैं",
+      "duration_s": 13.56,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1997
+    },
+    {
+      "id": "hreal_205",
+      "path": "ml/eval/data/hindi_real/hreal_205.wav",
+      "label": "real",
+      "text": "ओलिवर सैक्स ने अपने पेपर द प्रेसिडेंट स्पीच में संकेत दिया कि कैसे जो लोग दिमागी नुकसान के कारण भाषण को समझ नहीं पाते हैं फिर भी वे ईमानदारी का सही आकलन कर पाते हैं",
+      "duration_s": 14.94,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1678
+    },
+    {
+      "id": "hreal_206",
+      "path": "ml/eval/data/hindi_real/hreal_206.wav",
+      "label": "real",
+      "text": "जैसे-जैसे ग्रीक का ज्ञान घटता गया पश्चिम ने खुद को अपनी ग्रीक दार्शनिक और वैज्ञानिक जड़ों से कटा हुआ पाया",
+      "duration_s": 7.32,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1895
+    },
+    {
+      "id": "hreal_207",
+      "path": "ml/eval/data/hindi_real/hreal_207.wav",
+      "label": "real",
+      "text": "सामान के ट्रांसपोर्ट के लिए जहाज़ों का इस्तेमाल करना समुद्रों के एक सिरे से दूसरे सिरे तक बड़ी मात्रा में लोगों और सामान को लाने और ले जाने का बहुत ज़्यादा प्रभावी तरीका है",
+      "duration_s": 13.74,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1956
+    },
+    {
+      "id": "hreal_208",
+      "path": "ml/eval/data/hindi_real/hreal_208.wav",
+      "label": "real",
+      "text": "प्लिटवाइस नेशनल पार्क घने जंगल से घिरा है जहां मुख्य रूप से बीच स्प्रूस और फ़र के पेड़ लगे हुए हैं और यहां अल्पाइन और भूमध्य वनस्पति मिलती हैं",
+      "duration_s": 12.96,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1831
+    },
+    {
+      "id": "hreal_209",
+      "path": "ml/eval/data/hindi_real/hreal_209.wav",
+      "label": "real",
+      "text": "लेकिन उन पक्षियों के बारे में बहुत सी चीजें हैं जो अभी भी डायनासोर जैसे दिखते हैं",
+      "duration_s": 6.54,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 2005
+    },
+    {
+      "id": "hreal_210",
+      "path": "ml/eval/data/hindi_real/hreal_210.wav",
+      "label": "real",
+      "text": "लीक के अनुसार दस्तावेज़ सीमा विवाद को संदर्भित करेगा जो फ़िलिस्तीन 1967 के मध्यपूर्व युद्ध से पहले सीमाओं के आधार पर चाहता है",
+      "duration_s": 10.62,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1665
+    },
+    {
+      "id": "hreal_211",
+      "path": "ml/eval/data/hindi_real/hreal_211.wav",
+      "label": "real",
+      "text": "रोम में अलग-अलग जगहों पर कई बड़े टेलीविज़न स्क्रीन लगाए गए ताकि लोग समारोह देख सकें",
+      "duration_s": 8.94,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1917
+    },
+    {
+      "id": "hreal_212",
+      "path": "ml/eval/data/hindi_real/hreal_212.wav",
+      "label": "real",
+      "text": "यह डिवाइस को हवा में मूव करके खिलाड़ियों को एक्शन और मूवमेंट कंट्रोल करने की अनुमति देगा",
+      "duration_s": 7.56,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 2002
+    },
+    {
+      "id": "hreal_213",
+      "path": "ml/eval/data/hindi_real/hreal_213.wav",
+      "label": "real",
+      "text": "हालांकि शेंगेन ज़ोन इस मामले में कुछ हद तक एक देश की तरह काम करता है",
+      "duration_s": 6.42,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1817
+    },
+    {
+      "id": "hreal_214",
+      "path": "ml/eval/data/hindi_real/hreal_214.wav",
+      "label": "real",
+      "text": "अपनी सरकार के अलावा आप अन्य देशों की सरकारों की सलाह ले सकते हैं हालांकि उनकी सलाह उनके नागरिकों को ध्यान में रखकर दी जाती हैं",
+      "duration_s": 10.2,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1666
+    },
+    {
+      "id": "hreal_215",
+      "path": "ml/eval/data/hindi_real/hreal_215.wav",
+      "label": "real",
+      "text": "उनकी अनुशासित रक्षा गेंदबाजी की कला और टीम के अच्छे काम ने उन्हें बाहर खड़ा कर दिया और अब यह साफ हो गया था की ये टीम टक्कर देगी",
+      "duration_s": 12.54,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1954
+    },
+    {
+      "id": "hreal_216",
+      "path": "ml/eval/data/hindi_real/hreal_216.wav",
+      "label": "real",
+      "text": "उन्होंने आगे कहा कि हालांकि उन्हें ऐसे दायित्व लेने के लिए नहीं कहा जाना चाहिए जो उनके विकास के चरण जिम्मेदारी और क्षमताओं से परे हैं",
+      "duration_s": 15.06,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1857
+    },
+    {
+      "id": "hreal_217",
+      "path": "ml/eval/data/hindi_real/hreal_217.wav",
+      "label": "real",
+      "text": "एरोस्मिथ ने अपने दौरे के अपने शेष संगीत कार्यक्रमों को रद्द कर दिया है",
+      "duration_s": 6.36,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1679
+    },
+    {
+      "id": "hreal_218",
+      "path": "ml/eval/data/hindi_real/hreal_218.wav",
+      "label": "real",
+      "text": "वैज्ञानिक यह निष्कर्ष निकालने में सक्षम थे कि काला पदार्थ अन्य काले पदार्थ को उसी तरह प्रभावित करता है जिस तरह से आम पदार्थ करता है",
+      "duration_s": 10.2,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1734
+    },
+    {
+      "id": "hreal_219",
+      "path": "ml/eval/data/hindi_real/hreal_219.wav",
+      "label": "real",
+      "text": "वर्तमान सीनेटर और अर्जेंटीना की प्रथम महिला क्रिस्टीना फ़र्नांडीज़ डी किर्चनेर ने कल शाम ब्यूनस आयर्स से 50 किलोमीटर 31 मील दूर शहर ला प्लाटा में अपने राष्ट्रपति पद की उम्मीदवारी की घोषणा की",
+      "duration_s": 17.76,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1877
+    },
+    {
+      "id": "hreal_220",
+      "path": "ml/eval/data/hindi_real/hreal_220.wav",
+      "label": "real",
+      "text": "उनका ऊष्मीय व्यवहार पृथ्वी की बड़ी गुफाओं जैसा स्थिर नहीं है जो अक्सर काफी स्थिर तापमान बनाए रखती हैं लेकिन यह जमीन के इन गहरे छेद के अनुरूप है,” यूनाइटेड स्टेट्स जियोलॉजिकल सर्वे यूएसजीएस की भूगर्भीय टीम और फ्लैगस्टाफ एरिजोना में स्थित उत्तरी एरिजोना विश्वविद्यालय के ग्लेन कुशिंग ने कहा।",
+      "duration_s": 19.62,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1670
+    },
+    {
+      "id": "hreal_221",
+      "path": "ml/eval/data/hindi_real/hreal_221.wav",
+      "label": "real",
+      "text": "कुछ क्षेत्रों में पानी को एक मिनट के लिए उबालना काफी होता है अन्य क्षेत्रों में कई मिनट तक उबलाने की आवश्यकता होती है",
+      "duration_s": 9.0,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1674
+    },
+    {
+      "id": "hreal_222",
+      "path": "ml/eval/data/hindi_real/hreal_222.wav",
+      "label": "real",
+      "text": "लक्खा सिंह ने छप्पन भोग भजन भी प्रस्तुत किया गायक राजू खंडेलवाल उनके साथ थे",
+      "duration_s": 6.12,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1891
+    },
+    {
+      "id": "hreal_223",
+      "path": "ml/eval/data/hindi_real/hreal_223.wav",
+      "label": "real",
+      "text": "विलासिता के एक उपरिकेंद्र होने के लिए इसको लगभग 400 a.d से  1100 a.d तक जाना गया।",
+      "duration_s": 9.48,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1724
+    },
+    {
+      "id": "hreal_224",
+      "path": "ml/eval/data/hindi_real/hreal_224.wav",
+      "label": "real",
+      "text": "स्कैफ़ोल्डिंग सीखने की एक विधि नहीं है बल्कि ऐसे लोगों को मददगार होती है जो किसी नई चीज़ को सीख रहे हों जैसे नया कंप्यूटर प्रोग्राम चलना या एक नया प्रोजेक्ट शुरू करना",
+      "duration_s": 14.1,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1785
+    },
+    {
+      "id": "hreal_225",
+      "path": "ml/eval/data/hindi_real/hreal_225.wav",
+      "label": "real",
+      "text": "ब्रह्मांड की सभी वस्तुएं पदार्थ से बनी हैं सारे पदार्थ सूक्ष्तम कणों से बनें हैं जिन्हें अणु कहा जाता है",
+      "duration_s": 9.12,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1698
+    },
+    {
+      "id": "hreal_226",
+      "path": "ml/eval/data/hindi_real/hreal_226.wav",
+      "label": "real",
+      "text": "साई के साथ-साथ सभी संज्ञा शब्द हमेशा अंग्रेज़ी के बड़े अक्षर से ही शुरू होते हैं भले ही वे वाक्य के बीच में ही क्यों न हों",
+      "duration_s": 9.3,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1675
+    },
+    {
+      "id": "hreal_227",
+      "path": "ml/eval/data/hindi_real/hreal_227.wav",
+      "label": "real",
+      "text": "जिसके परिणामस्वरूप मंच पर कलाकार गांजे भरी सिगरटें पीते हैं और ये थिएटर खुद दर्शकों को भी इसमें साथ शामिल होने के लिए प्रेरित करते हैं",
+      "duration_s": 12.72,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1861
+    },
+    {
+      "id": "hreal_228",
+      "path": "ml/eval/data/hindi_real/hreal_228.wav",
+      "label": "real",
+      "text": "असल में फील्ड ट्रिप साझा करना यात्रा पर विचार करने और भविष्य की कक्षाओं के साथ अनुभव करने का एक शानदार तरीका है",
+      "duration_s": 9.9,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1881
+    },
+    {
+      "id": "hreal_229",
+      "path": "ml/eval/data/hindi_real/hreal_229.wav",
+      "label": "real",
+      "text": "ज़्यादा परंपरागत चर्चों में ईस्टर सप्ताहांत में शनिवार रात को ईस्टर विजिल का आयोजन किया जाता है जिसमें लोग क्रिस के पुनर्जन्म का उत्सव मनाने के लिए आधी रात के समय उत्सव मनाना शुरू करते हैं",
+      "duration_s": 12.84,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1706
+    },
+    {
+      "id": "hreal_230",
+      "path": "ml/eval/data/hindi_real/hreal_230.wav",
+      "label": "real",
+      "text": "यह तर्कसंगत लग रहा है क्योंकि ऐसा महसूस नहीं होता है कि पृथ्वी चल रही है है कि नहीं",
+      "duration_s": 8.88,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1770
+    },
+    {
+      "id": "hreal_231",
+      "path": "ml/eval/data/hindi_real/hreal_231.wav",
+      "label": "real",
+      "text": "ये जोड़े अपने बच्चे के लिए गोद लेने की योजना बनाने का विकल्प चुन सकते हैं",
+      "duration_s": 5.76,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1941
+    },
+    {
+      "id": "hreal_232",
+      "path": "ml/eval/data/hindi_real/hreal_232.wav",
+      "label": "real",
+      "text": "मौजूद लोगों की संख्या इतनी बड़ी थी कि सेंट पीटर्स स्क्वायर में अंतिम संस्कार के लिए हर किसी के लिए पहुंच पाना मुमकिन नहीं था",
+      "duration_s": 13.32,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1764
+    },
+    {
+      "id": "hreal_233",
+      "path": "ml/eval/data/hindi_real/hreal_233.wav",
+      "label": "real",
+      "text": "इस साल की शुरुआत में 53 साल के कुओमो ने अपना शासनकाल शुरू किया और पिछले महीने समलैंगिक विवाह को वैध बनाने वाले बिल पर हस्ताक्षर किए",
+      "duration_s": 17.94,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1722
+    },
+    {
+      "id": "hreal_234",
+      "path": "ml/eval/data/hindi_real/hreal_234.wav",
+      "label": "real",
+      "text": "अलगाव और पुनर्संयोजन भिन्नता प्रत्येक पीढ़ी के साथ दो पूलों के बीच आगे-पीछे होती रहती है",
+      "duration_s": 8.76,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1687
+    },
+    {
+      "id": "hreal_235",
+      "path": "ml/eval/data/hindi_real/hreal_235.wav",
+      "label": "real",
+      "text": "जो भी ऊंचाई या पहाड़ी दर्रे पर गाड़ी चलाने जा रहा है उसे हिम बर्फ या ठंड के तापमान की संभावना के विचार को मन में रखना चाहिए",
+      "duration_s": 15.18,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1952
+    },
+    {
+      "id": "hreal_236",
+      "path": "ml/eval/data/hindi_real/hreal_236.wav",
+      "label": "real",
+      "text": "चांद की सतह चट्टानों और धूल से बनी है चांद की बाहरी परत को क्रस्ट कहते हैं",
+      "duration_s": 7.32,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1844
+    },
+    {
+      "id": "hreal_237",
+      "path": "ml/eval/data/hindi_real/hreal_237.wav",
+      "label": "real",
+      "text": "बाली में इस एजेंडे के अन्य विषयों में दुनिया के बचे हुए जंगलों को बचाने और ऐसी तकनीकों का आदान प्रदान करना का विषय शामिल है जिससे कि विकासशील देशों को कम प्रदूषणकारी तरीकों से आगे बढ़ने में मदद मिले",
+      "duration_s": 18.6,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 2008
+    },
+    {
+      "id": "hreal_238",
+      "path": "ml/eval/data/hindi_real/hreal_238.wav",
+      "label": "real",
+      "text": "इसने हमें ट्रेन कार और इसी प्रकार के कई अन्य परिवहन के साधन दिए हैंं",
+      "duration_s": 6.6,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1889
+    },
+    {
+      "id": "hreal_239",
+      "path": "ml/eval/data/hindi_real/hreal_239.wav",
+      "label": "real",
+      "text": "परिसर के किनारे ज़्यादातर इमारतें फिर से बनाई गई हैं ताकि पर्यटकों को बेहतर ढंग से पता चल सके कि वे मूल रूप में कैसी दिखाई देती थी",
+      "duration_s": 10.2,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1768
+    },
+    {
+      "id": "hreal_240",
+      "path": "ml/eval/data/hindi_real/hreal_240.wav",
+      "label": "real",
+      "text": "गीज़ा पठार  गीज़ा नेक्रोपोलिस” या मृतकों की मिस्र की घाटी में कई पिरामिड जिनमें से द ग्रेट पिरामिड सबसे बड़ा है कई छोटी कब्रें कई मंदिर और महान स्फिंक्स हैं",
+      "duration_s": 12.42,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1824
+    },
+    {
+      "id": "hreal_241",
+      "path": "ml/eval/data/hindi_real/hreal_241.wav",
+      "label": "real",
+      "text": "बुधवार के आयोजन के बाद कारपानेडो ने चैंपियनशिप में दो इंडिविज़ुअल रेस में हिस्सा लिया",
+      "duration_s": 9.84,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1799
+    },
+    {
+      "id": "hreal_242",
+      "path": "ml/eval/data/hindi_real/hreal_242.wav",
+      "label": "real",
+      "text": "मोसासौरस अपने समय का सबसे बड़ा शिकारी था इसलिए उसे अन्य मोसासौरस के अलावा किसी का भय नहीं था",
+      "duration_s": 9.54,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1760
+    },
+    {
+      "id": "hreal_243",
+      "path": "ml/eval/data/hindi_real/hreal_243.wav",
+      "label": "real",
+      "text": "इस साल की शुरुआत में 53 साल के कुओमो ने अपना शासनकाल शुरू किया और पिछले महीने समलैंगिक विवाह को वैध बनाने वाले बिल पर हस्ताक्षर किए",
+      "duration_s": 13.08,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1722
+    },
+    {
+      "id": "hreal_244",
+      "path": "ml/eval/data/hindi_real/hreal_244.wav",
+      "label": "real",
+      "text": "एक बम गवर्नर जनरल के कार्यालय के बाहर फटा था",
+      "duration_s": 7.02,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1755
+    },
+    {
+      "id": "hreal_245",
+      "path": "ml/eval/data/hindi_real/hreal_245.wav",
+      "label": "real",
+      "text": "वाहन को उसी दिन तकरीबन 1200 gmt के समय पर दुर्घटनास्थल से दूर ले जाया गया",
+      "duration_s": 8.76,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1854
+    },
+    {
+      "id": "hreal_246",
+      "path": "ml/eval/data/hindi_real/hreal_246.wav",
+      "label": "real",
+      "text": "मध्य युग के अंत में पश्चिमी यूरोप ने अपनी शैली विकसित करना शुरू कर दिया धर्मयुद्ध के परिणामस्वरूप उस समय के सबसे बड़े विकास में से एक लोगों ने कपड़ों को बांधने के लिए बटन का उपयोग करना शुरू किया",
+      "duration_s": 13.92,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1859
+    },
+    {
+      "id": "hreal_247",
+      "path": "ml/eval/data/hindi_real/hreal_247.wav",
+      "label": "real",
+      "text": "इसने हमें ट्रेन कार और इसी प्रकार के कई अन्य परिवहन के साधन दिए हैंं",
+      "duration_s": 5.52,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1889
+    },
+    {
+      "id": "hreal_248",
+      "path": "ml/eval/data/hindi_real/hreal_248.wav",
+      "label": "real",
+      "text": "अभी भी प्राधिकारियों से सलाह लें सभी संकेतों का पालन करें और सुरक्षा चेतावनियों पर पूरा ध्यान दें",
+      "duration_s": 6.6,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1959
+    },
+    {
+      "id": "hreal_249",
+      "path": "ml/eval/data/hindi_real/hreal_249.wav",
+      "label": "real",
+      "text": "हालांकि धीमे कम्युनिकेशन चैनल की वजह से पश्चिम का रहन-सहन 25-30 साल पीछे जा सकता है",
+      "duration_s": 7.14,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1904
+    },
+    {
+      "id": "hreal_250",
+      "path": "ml/eval/data/hindi_real/hreal_250.wav",
+      "label": "real",
+      "text": "ms बीमारी केंद्रीय तंत्रिका तंत्र पर असर करती है जिसमें दिमाग स्पाइनल कॉर्ड और ऑप्टिक नर्व शामिल हैं",
+      "duration_s": 10.02,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1955
+    },
+    {
+      "id": "hreal_251",
+      "path": "ml/eval/data/hindi_real/hreal_251.wav",
+      "label": "real",
+      "text": "इस प्रारूप सबसे सरल पूर्ण-संख्या अनुपात प्राप्त करने के लिए बारह से भाग देना के अभिमुखता अनुपात को इसलिए 3:2 कहा जाता है।",
+      "duration_s": 9.24,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1846
+    },
+    {
+      "id": "hreal_252",
+      "path": "ml/eval/data/hindi_real/hreal_252.wav",
+      "label": "real",
+      "text": "तूफान और बवंडर की तरह आंधी ओले भारी बारिश और जंगल की आग तीव्र मौसम का हिस्सा और असर हैं",
+      "duration_s": 12.96,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1971
+    },
+    {
+      "id": "hreal_253",
+      "path": "ml/eval/data/hindi_real/hreal_253.wav",
+      "label": "real",
+      "text": "नेक्स्टजेन प्रणाली बारे में एफएए का दावा है कि इससे विमान को छोटे मार्गों से उड़ाना और हर साल लाखों गैलन ईंधन बचाना संभव होगा और इससे कार्बन उत्सर्जन में भी कमी आएगी",
+      "duration_s": 14.22,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1862
+    },
+    {
+      "id": "hreal_254",
+      "path": "ml/eval/data/hindi_real/hreal_254.wav",
+      "label": "real",
+      "text": "लोकप्रिय खेलों में फ़ुटबॉल बास्केटबॉल वॉलीबॉल वाटर पोलो तलवारबाज़ी रग्बी साइकिलिंग आइस हॉकी रोलर हॉकी और एफ़ 1 मोटर रेसिंग शामिल हैं",
+      "duration_s": 15.72,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1832
+    },
+    {
+      "id": "hreal_255",
+      "path": "ml/eval/data/hindi_real/hreal_255.wav",
+      "label": "real",
+      "text": "पुनर्निर्माण की कोशिश की स्पष्ट आलोचना वॉशिंगटन के कथित घनिष्ट लोगों को पुनर्निर्माण के ठेके दिए जाने पर केंद्रित रही है",
+      "duration_s": 10.92,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1837
+    },
+    {
+      "id": "hreal_256",
+      "path": "ml/eval/data/hindi_real/hreal_256.wav",
+      "label": "real",
+      "text": "याद रखें कि मुख्य स्टेज पर म्यूज़िक बंद हो जाने के बाद भी फ़ेस्टिवल के कुछ हिस्से ऐसे होंगे जो देर रात तक संगीत बजाते रहेंगे",
+      "duration_s": 13.32,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1771
+    },
+    {
+      "id": "hreal_257",
+      "path": "ml/eval/data/hindi_real/hreal_257.wav",
+      "label": "real",
+      "text": "उनकी अनुशासित रक्षा गेंदबाजी की कला और टीम के अच्छे काम ने उन्हें बाहर खड़ा कर दिया और अब यह साफ हो गया था की ये टीम टक्कर देगी",
+      "duration_s": 13.56,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1954
+    },
+    {
+      "id": "hreal_258",
+      "path": "ml/eval/data/hindi_real/hreal_258.wav",
+      "label": "real",
+      "text": "वेटिकन सिटी की जनसंख्या लगभग 800 है यह विश्व का सबसे कम जनसंख्या वाला सबसे छोटा स्वतंत्र राष्ट्र है",
+      "duration_s": 7.08,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1975
+    },
+    {
+      "id": "hreal_259",
+      "path": "ml/eval/data/hindi_real/hreal_259.wav",
+      "label": "real",
+      "text": "आपके हाथों की नमी बाहरी परतों के साथ क्रिया करेगी जो अजीब महसूस करेगी और एक तरह का आवरण बनाएगी",
+      "duration_s": 11.04,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1803
+    },
+    {
+      "id": "hreal_260",
+      "path": "ml/eval/data/hindi_real/hreal_260.wav",
+      "label": "real",
+      "text": "रात के समय 150 और 200 के बीच प्रतियों बनती है  जिन्हे अब  डनलप ब्रॉडसाइड्स” के रूप में जाना जाता है।",
+      "duration_s": 9.06,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1776
+    },
+    {
+      "id": "hreal_261",
+      "path": "ml/eval/data/hindi_real/hreal_261.wav",
+      "label": "real",
+      "text": "लीक के अनुसार दस्तावेज़ सीमा विवाद को संदर्भित करेगा जो फ़िलिस्तीन 1967 के मध्यपूर्व युद्ध से पहले सीमाओं के आधार पर चाहता है",
+      "duration_s": 12.24,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1665
+    },
+    {
+      "id": "hreal_262",
+      "path": "ml/eval/data/hindi_real/hreal_262.wav",
+      "label": "real",
+      "text": "11:35 बजे अग्नि बचाव दल ने अंततः आग बुझा दी थी",
+      "duration_s": 7.5,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1748
+    },
+    {
+      "id": "hreal_263",
+      "path": "ml/eval/data/hindi_real/hreal_263.wav",
+      "label": "real",
+      "text": "कैल्शियम और पोटैशियम जैसे तत्वों को धातु माना जाता है बेशक चांदी और सोने जैसी धातुएं भी हैं",
+      "duration_s": 6.36,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 2006
+    },
+    {
+      "id": "hreal_264",
+      "path": "ml/eval/data/hindi_real/hreal_264.wav",
+      "label": "real",
+      "text": "वाइल्ड कार्ड खरीद लेना फ़ायदेमंद भी हो सकता है क्योंकि इससे आप दक्षिण अफ़्रीका के चुनिंदा पार्क या सभी दक्षिण अफ़्रीकी नेशनल पार्क देख सकते हैं",
+      "duration_s": 10.92,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1668
+    },
+    {
+      "id": "hreal_265",
+      "path": "ml/eval/data/hindi_real/hreal_265.wav",
+      "label": "real",
+      "text": "नींद की रुकावट आपके सामान्य नींद की अवधि के दौरान आपको जगाने की प्रक्रिया है और थोड़े समय बाद 10-60 मिनट यह चली जाती है ।",
+      "duration_s": 14.1,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1773
+    },
+    {
+      "id": "hreal_266",
+      "path": "ml/eval/data/hindi_real/hreal_266.wav",
+      "label": "real",
+      "text": "यूरोप एक ऐसा महाद्वीप है जो अपेक्षाकृत छोटा है लेकिन इसमें कई स्वतंत्र देश हैं सामान्य परिस्थिति में कई देशों की यात्रा करने का मतलब कई बार वीज़ा आवेदन और पासपोर्ट कंट्रोल की प्रक्रिया से गुज़रना है",
+      "duration_s": 15.66,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1689
+    },
+    {
+      "id": "hreal_267",
+      "path": "ml/eval/data/hindi_real/hreal_267.wav",
+      "label": "real",
+      "text": "यह कहने की कोई ज़रूरत नहीं कि यदि आप रोमांस लैंग्वेज़ जानते हैं तो आपके लिए पुर्तगाली सीखना आसान होगा",
+      "duration_s": 9.6,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1994
+    },
+    {
+      "id": "hreal_268",
+      "path": "ml/eval/data/hindi_real/hreal_268.wav",
+      "label": "real",
+      "text": "अभी भी प्राधिकारियों से सलाह लें सभी संकेतों का पालन करें और सुरक्षा चेतावनियों पर पूरा ध्यान दें",
+      "duration_s": 9.96,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1959
+    },
+    {
+      "id": "hreal_269",
+      "path": "ml/eval/data/hindi_real/hreal_269.wav",
+      "label": "real",
+      "text": "इटली के कई अन्य शहरों और दुनिया के बाकी हिस्सों में खासकर पोलैंड में इस तरह के सेटअप बनाए गए थे जिन्हें बड़ी संख्या में लोगों ने देखा था",
+      "duration_s": 12.9,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1840
+    },
+    {
+      "id": "hreal_270",
+      "path": "ml/eval/data/hindi_real/hreal_270.wav",
+      "label": "real",
+      "text": "लेटन ने पीएम से मुलाकात के दौरान कंज़र्वेटिव पार्टी के पर्यावरण बिल में बदलाव के लिए कहा था अब कंज़र्वेटिव पार्टी के पर्यावरण बिल को पूरी तरह से फिर से लिखने के लिए कहा जा रहा है",
+      "duration_s": 15.66,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1967
+    },
+    {
+      "id": "hreal_271",
+      "path": "ml/eval/data/hindi_real/hreal_271.wav",
+      "label": "real",
+      "text": "यह रिपोर्ट इराक के प्रति प्रशासन की वर्तमान नीति के लगभग सभी पहलुओं के प्रति बेहद आलोचनात्मक है और यह इसकी दिशा में तत्काल परिवर्तन का आग्रह करती है",
+      "duration_s": 13.44,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1709
+    },
+    {
+      "id": "hreal_272",
+      "path": "ml/eval/data/hindi_real/hreal_272.wav",
+      "label": "real",
+      "text": "गोभी का जूस अम्लीय या आधारभूत क्षारीय रसायन के आधार पर रंग बदलता है",
+      "duration_s": 9.72,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1728
+    },
+    {
+      "id": "hreal_273",
+      "path": "ml/eval/data/hindi_real/hreal_273.wav",
+      "label": "real",
+      "text": "चुनिंदा रूट पर बड़ी कंपनियों के खुद के विमान हैं लेकिन अन्य रूट पर और छोटी फ़र्म के लिए यह एक समस्या है",
+      "duration_s": 10.08,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1691
+    },
+    {
+      "id": "hreal_274",
+      "path": "ml/eval/data/hindi_real/hreal_274.wav",
+      "label": "real",
+      "text": "चीर धाराएं समुद्र तट पर लगकर लौटने वाली लहरों का प्रवाह होता है अक्सर एक चट्टान या इसी तरह के पदार्थों पर",
+      "duration_s": 9.3,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1851
+    },
+    {
+      "id": "hreal_275",
+      "path": "ml/eval/data/hindi_real/hreal_275.wav",
+      "label": "real",
+      "text": "यह कहते हुए कि वे चीन के आर्थिक उत्पादन के आधार पर बनाए जाएंगे उन्होंने कटौती के लिए कोई आंकड़ा निर्धारित नहीं किया",
+      "duration_s": 8.4,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1661
+    },
+    {
+      "id": "hreal_276",
+      "path": "ml/eval/data/hindi_real/hreal_276.wav",
+      "label": "real",
+      "text": "चुनिंदा रूट पर बड़ी कंपनियों के खुद के विमान हैं लेकिन अन्य रूट पर और छोटी फ़र्म के लिए यह एक समस्या है",
+      "duration_s": 8.04,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1691
+    },
+    {
+      "id": "hreal_277",
+      "path": "ml/eval/data/hindi_real/hreal_277.wav",
+      "label": "real",
+      "text": "सभी दक्षिण अफ्रीकी राष्ट्रीय उद्यानों के साथ ही पार्क में दैनिक संरक्षण और प्रवेश के लिए शुल्क लगता हैं",
+      "duration_s": 6.48,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1676
+    },
+    {
+      "id": "hreal_278",
+      "path": "ml/eval/data/hindi_real/hreal_278.wav",
+      "label": "real",
+      "text": "माना जाता है कि ईरान की ज़ाग्रोस पहाड़ियों में 10,000 साल पहले बकरी पालन की शुरुआत हुई थी",
+      "duration_s": 7.98,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1701
+    },
+    {
+      "id": "hreal_279",
+      "path": "ml/eval/data/hindi_real/hreal_279.wav",
+      "label": "real",
+      "text": "वाइल्ड कार्ड खरीद लेना फ़ायदेमंद भी हो सकता है क्योंकि इससे आप दक्षिण अफ़्रीका के चुनिंदा पार्क या सभी दक्षिण अफ़्रीकी नेशनल पार्क देख सकते हैं",
+      "duration_s": 12.18,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1668
+    },
+    {
+      "id": "hreal_280",
+      "path": "ml/eval/data/hindi_real/hreal_280.wav",
+      "label": "real",
+      "text": "इसके शुरुआती दिनों में इस शो को केवल लंबे समय तक चलने वाली इंटरनेट रेडियो साइट toginet रेडियो टॉक रेडियो पर केंद्रित एक साइट पर फ़ीचर किया गया था",
+      "duration_s": 12.6,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1798
+    },
+    {
+      "id": "hreal_281",
+      "path": "ml/eval/data/hindi_real/hreal_281.wav",
+      "label": "real",
+      "text": "ये ज़्यादातर रेत के तट हैं जहां तैरना सुरक्षित माना जाता है इनमें से ज़्यादातर में पोहुकुटावा पेड़ों की छाया रहती है",
+      "duration_s": 14.28,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1965
+    },
+    {
+      "id": "hreal_282",
+      "path": "ml/eval/data/hindi_real/hreal_282.wav",
+      "label": "real",
+      "text": "आप गोमा के आस-पास घूमने के लिए बोडा-बोडा मोटरसाइकिल टैक्सी ले सकते हैं. छोटी सैर के लिए आम तौर पर स्थानीय किराया करीब 500 कांगोलीज़ फ़्रैंक लगता है",
+      "duration_s": 14.4,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1915
+    },
+    {
+      "id": "hreal_283",
+      "path": "ml/eval/data/hindi_real/hreal_283.wav",
+      "label": "real",
+      "text": "राज्यपाल के कार्यालय ने बताया कि घायलों में से उन्नीस पुलिस अधिकारी थे",
+      "duration_s": 8.52,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1860
+    },
+    {
+      "id": "hreal_284",
+      "path": "ml/eval/data/hindi_real/hreal_284.wav",
+      "label": "real",
+      "text": "मस्तिष्क विकृति और व्यवहार के बीच संबंध अनुसंधान में वैज्ञानिकों का समर्थन करते हैं",
+      "duration_s": 8.1,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1821
+    },
+    {
+      "id": "hreal_285",
+      "path": "ml/eval/data/hindi_real/hreal_285.wav",
+      "label": "real",
+      "text": "माऊ आंदोलन द्वारा स्वतंत्रता के लिए आयोजित संघर्ष के दौरान नगर में एक शांतिपूर्ण सभा में प्रमुख तापुआ तामासेसे सेलोफ़ी तृतीय की हत्या हो गई",
+      "duration_s": 13.8,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1872
+    },
+    {
+      "id": "hreal_286",
+      "path": "ml/eval/data/hindi_real/hreal_286.wav",
+      "label": "real",
+      "text": "पहाड़ी इलाकों में ज़्यादा दुर्घटना हुई इसकी वजह आपसी दुश्मनी को माना जाता है",
+      "duration_s": 5.58,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1987
+    },
+    {
+      "id": "hreal_287",
+      "path": "ml/eval/data/hindi_real/hreal_287.wav",
+      "label": "real",
+      "text": "मध्यपूर्व की गर्म जलवायु में घर उतना ज़रूरी नहीं था",
+      "duration_s": 6.18,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1871
+    },
+    {
+      "id": "hreal_288",
+      "path": "ml/eval/data/hindi_real/hreal_288.wav",
+      "label": "real",
+      "text": "इसके मुंह के तालु में एक अतिरिक्त सेट के साथ ही 70 से ज़्यादा रेजर की तरह नुकीले दांतों से भरे इसके लंबे जबड़े थे जिसका अर्थ है कि उसके रास्ते से गुज़रने वाली किसी भी चीज़ के लिए कोई बचाव नहीं था",
+      "duration_s": 17.46,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1869
+    },
+    {
+      "id": "hreal_289",
+      "path": "ml/eval/data/hindi_real/hreal_289.wav",
+      "label": "real",
+      "text": "अंडरवॉटर टोपोलॉजी के कारण कुछ गहरे सेक्शन्स में रिटर्न फ़्लो सांद्र होता है और यहां से गहरे पानी में तेज़ प्रवाह हो सकता है",
+      "duration_s": 13.2,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1717
+    },
+    {
+      "id": "hreal_290",
+      "path": "ml/eval/data/hindi_real/hreal_290.wav",
+      "label": "real",
+      "text": "उन्होंने अफवाहों को राजनीतिक बकवास और मूर्खतापूर्ण कहा",
+      "duration_s": 5.1,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1957
+    },
+    {
+      "id": "hreal_291",
+      "path": "ml/eval/data/hindi_real/hreal_291.wav",
+      "label": "real",
+      "text": "अन्य नामांकनों में बेस्ट पिक्चर डायरेक्टर सिनेमेटोग्राफ़ी कॉस्ट्यूम डिज़ाइन फ़िल्म-संपादन मूल स्कोर प्रोडक्शन डिज़ाइन ध्वनि संपादन ध्वनि मिश्रण और ओरिजनल स्क्रीनप्ले शामिल हैं",
+      "duration_s": 18.42,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1789
+    },
+    {
+      "id": "hreal_292",
+      "path": "ml/eval/data/hindi_real/hreal_292.wav",
+      "label": "real",
+      "text": "सावधान रहें कि कपड़े को बहुत गर्म न होने दें जो सिकुड़न का कारण बन सकता है या बहुत गरम होने पर जल सकता है।",
+      "duration_s": 13.44,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1672
+    },
+    {
+      "id": "hreal_293",
+      "path": "ml/eval/data/hindi_real/hreal_293.wav",
+      "label": "real",
+      "text": "गोभी का जूस अम्लीय या आधारभूत क्षारीय रसायन के आधार पर रंग बदलता है",
+      "duration_s": 6.96,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1728
+    },
+    {
+      "id": "hreal_294",
+      "path": "ml/eval/data/hindi_real/hreal_294.wav",
+      "label": "real",
+      "text": "हमारे ग्रह की नदियों से महासागरों में जाने वाले पानी का 20% हिस्सा अमेज़न से आता है",
+      "duration_s": 7.92,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1875
+    },
+    {
+      "id": "hreal_295",
+      "path": "ml/eval/data/hindi_real/hreal_295.wav",
+      "label": "real",
+      "text": "हम पक्के तौर पर नहीं जानते हैं लेकिन इसकी कांटेदार जीभ हो सकती है इसके आहार में कछुए बड़ी मछली दूसरे मोसासॉर शामिल थे और ये एक नरभक्षी भी हो सकता है",
+      "duration_s": 16.08,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1970
+    },
+    {
+      "id": "hreal_296",
+      "path": "ml/eval/data/hindi_real/hreal_296.wav",
+      "label": "real",
+      "text": "तथा क्रांति के बाद व्यवसाय सभी पुरुष आवेदकों के लिए खुले थे जिसमें सबसे महत्त्वाकांक्षी और सफल होने वाले सफल हो सकते थे",
+      "duration_s": 7.56,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1939
+    },
+    {
+      "id": "hreal_297",
+      "path": "ml/eval/data/hindi_real/hreal_297.wav",
+      "label": "real",
+      "text": "आम शब्दों में जब प्रबंधक अपने पूर्व सहयोगियों का नेतृत्व करना शुरू करते हैं तो दो तरह के बर्ताव सामने आते हैं. स्पेक्ट्रम का एक सिरा  उन लड़कों में से एक” या लड़कियों में से एक बने रहने की कोशिश कर रहा है",
+      "duration_s": 14.4,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1667
+    },
+    {
+      "id": "hreal_298",
+      "path": "ml/eval/data/hindi_real/hreal_298.wav",
+      "label": "real",
+      "text": "शत्रुता फैलाने के तुरंत बाद ब्रिटेन ने जर्मनी की समुद्री घेराबंदी शुरू कर दी थी",
+      "duration_s": 7.08,
+      "gender": 0,
+      "speaker_id": null,
+      "source_id": 1907
+    },
+    {
+      "id": "hreal_299",
+      "path": "ml/eval/data/hindi_real/hreal_299.wav",
+      "label": "real",
+      "text": "यह ऑरोरा बोरेलिस को देखने का एक अच्छा अवसर प्रदान करता है क्योंकि आकाश में उस समय अंधकार सा ही रहेगा",
+      "duration_s": 10.68,
+      "gender": 1,
+      "speaker_id": null,
+      "source_id": 1767
+    }
+  ]
+}
