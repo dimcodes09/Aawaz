@@ -14,6 +14,7 @@ import android.widget.Toast
 import com.ps26104.aawaz.R
 import com.ps26104.aawaz.detector.AudioCaptureService
 import com.ps26104.aawaz.detector.ModeAController
+import com.ps26104.aawaz.detector.ModeAPipeline
 import com.ps26104.aawaz.detector.WebRtcPcmSink
 import java.util.Locale
 
@@ -111,6 +112,17 @@ class DiagnosticsActivity : Activity() {
             modeAProbe?.stop()
         }
 
+        findViewById<Button>(R.id.modeToggleButton).setOnClickListener { button ->
+            val pipeline = ModeAController.pipeline(this)
+            pipeline.scoreMode = if (pipeline.scoreMode == ModeAPipeline.ScoreMode.FIRST_WINDOW) {
+                ModeAPipeline.ScoreMode.STREAMING
+            } else {
+                ModeAPipeline.ScoreMode.FIRST_WINDOW
+            }
+            (button as Button).text = "MODE: " + pipeline.scoreMode + " (tap to toggle)"
+            Log.i(TAG, "===== MODEA SCORE MODE -> " + pipeline.scoreMode + " =====")
+        }
+
         findViewById<Button>(R.id.testRealButton).setOnClickListener {
             runClip("modea_real_48k.wav", "REAL CLIP")
         }
@@ -169,7 +181,9 @@ class DiagnosticsActivity : Activity() {
         feedThread = Thread({
             ModeAController.stop()
             ModeAController.start(this)
-            worker.feed(fileName, label)
+            val demo = ModeAController.pipeline(this).scoreMode ==
+                ModeAPipeline.ScoreMode.FIRST_WINDOW
+            worker.feed(fileName, label, targetSeconds = 20, loop = !demo)
             val pipeline = ModeAController.pipeline(this)
             Log.i(
                 TAG,
@@ -188,7 +202,11 @@ class DiagnosticsActivity : Activity() {
         val pipeline = ModeAController.pipeline(this)
         modeaText.text = String.format(
             Locale.US,
-            "MODE A%nrunning   : %s%nep        : %s%nwindows   : %d%nmedian ms : %.1f",
+            "MODE A%nmode      : %s%nRISK      : %d  %s%nraw risk  : %s%nrunning   : %s%nep        : %s%nwindows   : %d%nmedian ms : %.1f",
+            pipeline.scoreMode,
+            pipeline.currentReading.score,
+            pipeline.currentReading.state,
+            if (pipeline.lastRawRisk < 0) "-" else pipeline.lastRawRisk.toString(),
             pipeline.isRunning,
             pipeline.executionProvider,
             pipeline.inferenceCount,

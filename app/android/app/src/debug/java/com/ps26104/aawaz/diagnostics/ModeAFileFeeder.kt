@@ -40,7 +40,7 @@ class ModeAFileFeeder(private val context: Context) {
      * thread until [targetSeconds] of audio has been delivered, looping the
      * clip if it is shorter. Must be a 48 kHz mono 16-bit PCM WAV.
      */
-    fun feed(fileName: String, label: String, targetSeconds: Int = 20) {
+    fun feed(fileName: String, label: String, targetSeconds: Int = 20, loop: Boolean = true) {
         cancelled = false
         val dir = context.getExternalFilesDir(null)
         if (dir == null) {
@@ -70,7 +70,14 @@ class ModeAFileFeeder(private val context: Context) {
         }
 
         val sink: PcmFrameSink = ModeAController.pipeline(context)
-        val totalFrames = targetSeconds * 1000 / FRAME_MS.toInt()
+        val clipFrames = wav.samples.size / FRAME_SAMPLES
+        val totalFrames = if (loop) {
+            targetSeconds * 1000 / FRAME_MS.toInt()
+        } else {
+            // Demo mode plays the clip once from its start. Looping would splice
+            // the end back onto the beginning and change what the model sees.
+            clipFrames
+        }
         val frame = ShortArray(FRAME_SAMPLES)
         var readPos = 0
 
@@ -79,9 +86,10 @@ class ModeAFileFeeder(private val context: Context) {
             TAG,
             String.format(
                 Locale.US,
-                "MODEA_FEED: %d samples (%.2f s) at %d Hz, looping to %d s (%d frames)",
+                "MODEA_FEED: %d samples (%.2f s) at %d Hz, %s, %d frames",
                 wav.samples.size, wav.samples.size / 48000.0, wav.sampleRate,
-                targetSeconds, totalFrames
+                if (loop) "looping to " + targetSeconds + " s" else "single pass from start",
+                totalFrames
             )
         )
 
@@ -93,6 +101,8 @@ class ModeAFileFeeder(private val context: Context) {
                 readPos++
                 if (readPos == wav.samples.size) readPos = 0
             }
+            // readPos wrapping is only meaningful when looping; a single pass
+            // stops at clipFrames before it can wrap.
             sink.onPcmFrames(frame, FRAME_SAMPLES, wav.sampleRate, wav.channels)
             sent++
 

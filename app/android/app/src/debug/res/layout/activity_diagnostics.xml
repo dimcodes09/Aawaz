@@ -89,6 +89,12 @@
             android:text="mode A idle" />
 
         <Button
+            android:id="@+id/modeToggleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MODE: FIRST-WINDOW (tap to toggle)" />
+
+        <Button
             android:id="@+id/testRealButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

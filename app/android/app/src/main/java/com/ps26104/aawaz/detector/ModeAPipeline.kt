@@ -36,6 +36,19 @@ class ModeAPipeline(context: Context) : PcmFrameSink {
         fun onRisk(reading: RiskAggregator.Reading)
     }
 
+    /**
+     * How much of the stream gets scored.
+     *
+     * FIRST_WINDOW is the demo path. The checkpoint only behaves correctly on a
+     * window aligned to the start of the audio, with the recording's own leading
+     * silence intact (see docs/00 and the silence-leakage finding), so we score
+     * that one window and stop. Nothing is reconstructed or padded.
+     *
+     * STREAMING keeps scoring every hop. It is retained deliberately because it
+     * is what demonstrates the silence-leakage finding.
+     */
+    enum class ScoreMode { FIRST_WINDOW, STREAMING }
+
     private val appContext = context.applicationContext
     private val resampler = Resampler48to16()
     private val ringBuffer = RingBuffer()
@@ -60,6 +73,13 @@ class ModeAPipeline(context: Context) : PcmFrameSink {
     @Volatile
     var listener: Listener? = null
 
+    /** Demo default. Flip to STREAMING from the debug screen to show the finding. */
+    @Volatile
+    var scoreMode: ScoreMode = ScoreMode.FIRST_WINDOW
+
+    @Volatile
+    private var firstWindowDone = false
+
     @Volatile
     private var droppedWindows = 0
 
@@ -78,6 +98,15 @@ class ModeAPipeline(context: Context) : PcmFrameSink {
     val executionProvider: String
         get() = detector.executionProvider
 
+    /** Latest emitted reading, for the debug readout and the demo screen. */
+    val currentReading: RiskAggregator.Reading
+        get() = if (aggregator.windowCount == 0) aggregator.current() else lastReading
+
+    /** Raw (unsmoothed) risk of the most recent scored window, -1 if none. */
+    @Volatile
+    var lastRawRisk: Int = -1
+        private set
+
     fun start() {
         if (running.getAndSet(true)) return
         Log.i(TAG, "===== MODE A PIPELINE START =====")
@@ -87,6 +116,8 @@ class ModeAPipeline(context: Context) : PcmFrameSink {
         aggregator.reset()
         detector.resetLatencies()
         droppedWindows = 0
+        firstWindowDone = false
+        lastRawRisk = -1
         lastReading = aggregator.current()
 
         try {
@@ -111,7 +142,8 @@ class ModeAPipeline(context: Context) : PcmFrameSink {
             TAG,
             "MODEA: window=" + RingBuffer.CAPACITY + " samples (" +
                 String.format(Locale.US, "%.4f", RingBuffer.CAPACITY / 16000.0) +
-                " s) hop=" + RingBuffer.HOP + " samples (1.0 s) ep=" + detector.executionProvider
+                " s) hop=" + RingBuffer.HOP + " samples (1.0 s) mode=" + scoreMode +
+                " ep=" + detector.executionProvider
         )
     }
 
@@ -146,6 +178,8 @@ class ModeAPipeline(context: Context) : PcmFrameSink {
         channels: Int
     ) {
         if (!running.get()) return
+        // In demo mode the verdict is final once the opening window is scored.
+        if (scoreMode == ScoreMode.FIRST_WINDOW && firstWindowDone) return
         if (sampleRate != Resampler48to16.INPUT_RATE || channels != 1) {
             // Guard rather than silently mis-resample. Logged once per frame is
             // too noisy, so only report the first offending frame.
@@ -183,6 +217,20 @@ class ModeAPipeline(context: Context) : PcmFrameSink {
             }
             val reading = aggregator.update(result.risk)
             lastReading = reading
+            lastRawRisk = result.risk
+            if (scoreMode == ScoreMode.FIRST_WINDOW) {
+                firstWindowDone = true
+                Log.i(
+                    TAG,
+                    String.format(
+                        Locale.US,
+                        "MODEA_FIRST_WINDOW,risk=%d,state=%s,spoof_logit=%.4f," +
+                            "bonafide_logit=%.4f,latency_ms=%.1f,ep=%s",
+                        result.risk, reading.state, result.spoofLogit,
+                        result.bonafideLogit, result.latencyMs, detector.executionProvider
+                    )
+                )
+            }
             Log.i(
                 TAG,
                 String.format(

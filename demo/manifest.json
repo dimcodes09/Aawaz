@@ -1,0 +1,149 @@
+{
+  "clips": [
+    {
+      "pair": 1,
+      "text": "IT IS OBVIOUSLY UNNECESSARY FOR US TO POINT OUT HOW LUMINOUS THESE CRITICISMS ARE HOW DELICATE IN EXPRESSION",
+      "voice": "en-US-JennyNeural",
+      "real": {
+        "file": "demo_real_01.wav",
+        "risk": 1,
+        "duration_s": 9.01
+      },
+      "fake": {
+        "file": "demo_fake_01.wav",
+        "risk": 94,
+        "duration_s": 6.82
+      }
+    },
+    {
+      "pair": 2,
+      "text": "PAINTING HE TELLS US IS OF A DIFFERENT QUALITY TO MATHEMATICS AND FINISH IN ART IS ADDING MORE FACT",
+      "voice": "en-IE-EmilyNeural",
+      "real": {
+        "file": "demo_real_02.wav",
+        "risk": 1,
+        "duration_s": 9.24
+      },
+      "fake": {
+        "file": "demo_fake_02.wav",
+        "risk": 95,
+        "duration_s": 6.43
+      }
+    },
+    {
+      "pair": 3,
+      "text": "MISTER QUILTER HAS MISSED HIS CHANCE FOR HE HAS FAILED EVEN TO MAKE HIMSELF THE TUPPER OF PAINTING",
+      "voice": "en-AU-NatashaNeural",
+      "real": {
+        "file": "demo_real_03.wav",
+        "risk": 1,
+        "duration_s": 7.1
+      },
+      "fake": {
+        "file": "demo_fake_03.wav",
+        "risk": 99,
+        "duration_s": 6.17
+      }
+    }
+  ],
+  "rejected": [
+    {
+      "pair": "real_00/fake_00",
+      "reasons": [
+        "real 5.9s outside 6.0-10.0s",
+        "fake 5.7s outside 6.0-10.0s"
+      ],
+      "real_risk": 1,
+      "fake_risk": 98,
+      "real_s": 5.86,
+      "fake_s": 5.66
+    },
+    {
+      "pair": "real_01/fake_01",
+      "reasons": [
+        "real 4.8s outside 6.0-10.0s",
+        "fake 4.2s outside 6.0-10.0s"
+      ],
+      "real_risk": 1,
+      "fake_risk": 95,
+      "real_s": 4.82,
+      "fake_s": 4.2
+    },
+    {
+      "pair": "real_02/fake_02",
+      "reasons": [
+        "real 12.5s outside 6.0-10.0s"
+      ],
+      "real_risk": 1,
+      "fake_risk": 96,
+      "real_s": 12.48,
+      "fake_s": 9.55
+    },
+    {
+      "pair": "real_03/fake_03",
+      "reasons": [
+        "fake risk 67 <= 80"
+      ],
+      "real_risk": 1,
+      "fake_risk": 67,
+      "real_s": 9.9,
+      "fake_s": 7.34
+    },
+    {
+      "pair": "real_04/fake_04",
+      "reasons": [
+        "real 29.4s outside 6.0-10.0s",
+        "fake 21.0s outside 6.0-10.0s"
+      ],
+      "real_risk": 2,
+      "fake_risk": 99,
+      "real_s": 29.4,
+      "fake_s": 21.02
+    },
+    {
+      "pair": "real_06/fake_06",
+      "reasons": [
+        "real 5.6s outside 6.0-10.0s",
+        "fake 4.8s outside 6.0-10.0s"
+      ],
+      "real_risk": 3,
+      "fake_risk": 100,
+      "real_s": 5.64,
+      "fake_s": 4.82
+    },
+    {
+      "pair": "real_08/fake_08",
+      "reasons": [
+        "real 5.1s outside 6.0-10.0s",
+        "fake 3.5s outside 6.0-10.0s",
+        "fake risk 3 <= 80"
+      ],
+      "real_risk": 9,
+      "fake_risk": 3,
+      "real_s": 5.12,
+      "fake_s": 3.46
+    },
+    {
+      "pair": "real_09/fake_09",
+      "reasons": [
+        "real 18.3s outside 6.0-10.0s",
+        "fake 15.9s outside 6.0-10.0s"
+      ],
+      "real_risk": 1,
+      "fake_risk": 99,
+      "real_s": 18.29,
+      "fake_s": 15.94
+    }
+  ],
+  "rules": {
+    "window": "window 0 only",
+    "leading_silence": "intact",
+    "real_max_risk": 20,
+    "fake_min_risk": 80,
+    "duration_s": [
+      6.0,
+      10.0
+    ],
+    "output_sr": 48000
+  }
+}
