@@ -5,6 +5,7 @@ import android.media.AudioManager
 import android.util.Log
 import com.ps26104.aawaz.detector.AudioCaptureService
 import com.ps26104.aawaz.detector.CallStateMonitor
+import com.ps26104.aawaz.detector.ModeAController
 import com.ps26104.aawaz.detector.WebRtcPcmSink
 import org.webrtc.AudioTrack
 import org.webrtc.DefaultVideoDecoderFactory
@@ -211,9 +212,11 @@ class ModeALoopbackProbe(private val context: Context) {
         if (sink != null) return
         remoteAudioTrack = track
         val monitor = callStateMonitor
+        // Frames go straight into the Mode A pipeline on the audio thread.
         val pcmSink = WebRtcPcmSink(
             context,
-            callStateProvider = { monitor?.currentState ?: CallStateMonitor.STATE_UNKNOWN }
+            callStateProvider = { monitor?.currentState ?: CallStateMonitor.STATE_UNKNOWN },
+            frameSink = ModeAController.pipeline(context)
         )
         sink = pcmSink
         track.addSink(pcmSink)

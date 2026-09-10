@@ -1,0 +1,87 @@
+package com.ps26104.aawaz.bridge
+
+import com.facebook.react.bridge.Arguments
+import com.facebook.react.bridge.Promise
+import com.facebook.react.bridge.ReactApplicationContext
+import com.facebook.react.bridge.ReactContextBaseJavaModule
+import com.facebook.react.bridge.ReactMethod
+import com.facebook.react.bridge.WritableMap
+import com.facebook.react.modules.core.DeviceEventManagerModule
+import com.ps26104.aawaz.detector.ModeAController
+import com.ps26104.aawaz.detector.RiskAggregator
+
+/**
+ * The one React Native aware file in the project.
+ *
+ * Audio never crosses the bridge. The pipeline runs entirely in
+ * com.ps26104.aawaz.detector and hands this class a finished reading; only
+ * { score, state, ts } is emitted to JS, at 1 Hz.
+ *
+ * Contract (docs/CONTRACTS.md):
+ *   event "AawazRisk" -> { score: Int 0-100, state: String, ts: Long }
+ *   state in "ANALYSING" | "OK" | "ELEVATED" | "HIGH"
+ */
+class DetectorBridge(
+    private val reactContext: ReactApplicationContext
+) : ReactContextBaseJavaModule(reactContext) {
+
+    companion object {
+        const val NAME = "DetectorBridge"
+        const val EVENT_RISK = "AawazRisk"
+    }
+
+    override fun getName(): String = NAME
+
+    private val listener = ModeAPipelineListener()
+
+    @ReactMethod
+    fun startModeA(promise: Promise) {
+        try {
+            val pipeline = ModeAController.pipeline(reactContext)
+            pipeline.listener = listener
+            pipeline.start()
+            promise.resolve(pipeline.isRunning)
+        } catch (t: Throwable) {
+            promise.reject("MODEA_START_FAILED", t.message, t)
+        }
+    }
+
+    @ReactMethod
+    fun stopModeA(promise: Promise) {
+        try {
+            ModeAController.stop()
+            promise.resolve(true)
+        } catch (t: Throwable) {
+            promise.reject("MODEA_STOP_FAILED", t.message, t)
+        }
+    }
+
+    /** Median inference latency in ms, for the pitch numbers. */
+    @ReactMethod
+    fun getMedianLatencyMs(promise: Promise) {
+        promise.resolve(ModeAController.medianLatencyMs)
+    }
+
+    /** Required by NativeEventEmitter on iOS; harmless no-ops on Android. */
+    @ReactMethod
+    fun addListener(eventName: String) = Unit
+
+    @ReactMethod
+    fun removeListeners(count: Int) = Unit
+
+    private fun emit(reading: RiskAggregator.Reading) {
+        if (!reactContext.hasActiveReactInstance()) return
+        val payload: WritableMap = Arguments.createMap().apply {
+            putInt("score", reading.score)
+            putString("state", reading.state)
+            putDouble("ts", reading.ts.toDouble())
+        }
+        reactContext
+            .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter::class.java)
+            .emit(EVENT_RISK, payload)
+    }
+
+    private inner class ModeAPipelineListener : com.ps26104.aawaz.detector.ModeAPipeline.Listener {
+        override fun onRisk(reading: RiskAggregator.Reading) = emit(reading)
+    }
+}

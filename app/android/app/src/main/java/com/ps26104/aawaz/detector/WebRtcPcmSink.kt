@@ -26,7 +26,12 @@ import java.util.Locale
 class WebRtcPcmSink(
     context: Context,
     private val windowMs: Int = 500,
-    private val callStateProvider: () -> String = { CallStateMonitor.STATE_UNKNOWN }
+    private val callStateProvider: () -> String = { CallStateMonitor.STATE_UNKNOWN },
+    /**
+     * Downstream consumer of the raw frames, normally [ModeAPipeline]. Null
+     * keeps this a pure measurement sink, which is how the Probe A rig used it.
+     */
+    private val frameSink: PcmFrameSink? = null
 ) : AudioTrackSink {
 
     companion object {
@@ -87,6 +92,9 @@ class WebRtcPcmSink(
 
     private var csvFile: File? = null
 
+    /** Reused copy buffer for the downstream sink. Audio thread only. */
+    private var frameScratch = ShortArray(0)
+
     /**
      * Called by libwebrtc on its own audio thread. [audioData] is only valid for
      * the duration of this call, so it is copied out immediately.
@@ -129,6 +137,19 @@ class WebRtcPcmSink(
 
             val shorts = audioData.order(ByteOrder.LITTLE_ENDIAN).asShortBuffer()
             val available = shorts.remaining()
+
+            // Hand the frames downstream first, from a private copy, so the
+            // diagnostic window logic below cannot disturb what the pipeline
+            // sees and vice versa.
+            val consumer = frameSink
+            if (consumer != null && available > 0) {
+                if (frameScratch.size < available) {
+                    frameScratch = ShortArray(available)
+                }
+                shorts.duplicate().get(frameScratch, 0, available)
+                consumer.onPcmFrames(frameScratch, available, sampleRate, numberOfChannels)
+            }
+
             val toCopy = minOf(available, window.size - filled)
             if (toCopy > 0) {
                 shorts.get(window, filled, toCopy)

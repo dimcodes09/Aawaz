@@ -1,0 +1,144 @@
+{
+  "clips": [
+    {
+      "id": "hxtts_000",
+      "path": "ml/eval/data/hindi_xtts/hxtts_000.wav",
+      "label": "fake",
+      "engine": "xtts_v2",
+      "text": "कुछ अणुओं में अस्थिर केंद्रक होता है जिसका मतलब यह है कि उनमें थोड़े या बिना किसी झटके से टूटने की प्रवृत्ति होती है",
+      "duration_s": 7.19,
+      "pairs_with": "hreal_000",
+      "speaker_id": null
+    },
+    {
+      "id": "hxtts_001",
+      "path": "ml/eval/data/hindi_xtts/hxtts_001.wav",
+      "label": "fake",
+      "engine": "xtts_v2",
+      "text": "ग्रीनलैंड को बहुत कम जगह बसाया गया था नॉर्स सगास में वे कहते हैं कि एरिक रेड हत्या के लिए आइसलैंड से निर्वासित किया गया था और आगे पश्चिम की यात्रा करते समय ग्रीनलैंड मिला जिसे ग्रीनलैंड नाम दिया गया",
+      "duration_s": 12.95,
+      "pairs_with": "hreal_001",
+      "speaker_id": null
+    },
+    {
+      "id": "hxtts_003",
+      "path": "ml/eval/data/hindi_xtts/hxtts_003.wav",
+      "label": "fake",
+      "engine": "xtts_v2",
+      "text": "टेलीविजन रिपोर्टों में प्लांट से निकलने वाला सफेद धुआं दिखाया गया है",
+      "duration_s": 6.03,
+      "pairs_with": "hreal_003",
+      "speaker_id": null
+    },
+    {
+      "id": "hxtts_004",
+      "path": "ml/eval/data/hindi_xtts/hxtts_004.wav",
+      "label": "fake",
+      "engine": "xtts_v2",
+      "text": "इंटरनेट पर यह खोज शत्रुतापूर्ण पर्यावरण पाठ्यक्रम के लिए अक्सर आपको एक स्थानीय कंपनी का पता प्रदान करेगी",
+      "duration_s": 8.31,
+      "pairs_with": "hreal_004",
+      "speaker_id": null
+    },
+    {
+      "id": "hxtts_005",
+      "path": "ml/eval/data/hindi_xtts/hxtts_005.wav",
+      "label": "fake",
+      "engine": "xtts_v2",
+      "text": "अपनी सरकार के अलावा आप अन्य देशों की सरकारों की सलाह ले सकते हैं हालांकि उनकी सलाह उनके नागरिकों को ध्यान में रखकर दी जाती हैं",
+      "duration_s": 11.65,
+      "pairs_with": "hreal_005",
+      "speaker_id": null
+    },
+    {
+      "id": "hxtts_006",
+      "path": "ml/eval/data/hindi_xtts/hxtts_006.wav",
+      "label": "fake",
+      "engine": "xtts_v2",
+      "text": "प्राचीनकाल से ही लोग सोने चांदी और तांबे जैसे रासायनिक तत्वों के बारे में ही जानकारी रखते हैं क्योंकि इन्हें प्रकृति में मूल स्वरूप में ढूंढा जा सकता है और इन्हें प्राथमिक उपकरणों के ज़रिए ढूंढना अपेक्षाकृत आसान है",
+      "duration_s": 7.61,
+      "pairs_with": "hreal_006",
+      "speaker_id": null
+    },
+    {
+      "id": "hxtts_007",
+      "path": "ml/eval/data/hindi_xtts/hxtts_007.wav",
+      "label": "fake",
+      "engine": "xtts_v2",
+      "text": "इसे केमिकल का ph कहा जाता है आप लाल गोभी के जूस का इस्तेमाल करके एक संकेतक बना सकते हैं",
+      "duration_s": 7.05,
+      "pairs_with": "hreal_007",
+      "speaker_id": null
+    },
+    {
+      "id": "hxtts_009",
+      "path": "ml/eval/data/hindi_xtts/hxtts_009.wav",
+      "label": "fake",
+      "engine": "xtts_v2",
+      "text": "यह संबंधित है लेकिन आम तौर पर इसमें अल्पाइन शैली की स्की टूरिंग या माउंटेनीयरिंग शामिल नहीं होती है जिसे खड़े इलाकों में किया जाता है और जिसके लिए बहुत कड़ी स्की और बूट की ज़रूरत होती है",
+      "duration_s": 11.33,
+      "pairs_with": "hreal_009",
+      "speaker_id": null
+    },
+    {
+      "id": "hxtts_010",
+      "path": "ml/eval/data/hindi_xtts/hxtts_010.wav",
+      "label": "fake",
+      "engine": "xtts_v2",
+      "text": "पुरुषों के स्टैंडिंग सुपर-जी में ऑस्ट्रेलिया के मिशेल गौरले ग्यारहवें स्थान पर रहे चेक प्रतियोगी ओल्डरिच जेलिनेक पुरुषों के सिटिंग सुपर-जी में सोलहवें स्थान पर रहे",
+      "duration_s": 10.3,
+      "pairs_with": "hreal_010",
+      "speaker_id": null
+    },
+    {
+      "id": "hxtts_011",
+      "path": "ml/eval/data/hindi_xtts/hxtts_011.wav",
+      "label": "fake",
+      "engine": "xtts_v2",
+      "text": "केवल दो हफ़्तों में अमेरिकियों और फ़्री फ़्रेंच बलों ने दक्षिणी फ़्रांस को मुक्त कर दिया था और जर्मनी की ओर बढ़ रहे थे",
+      "duration_s": 9.93,
+      "pairs_with": "hreal_011",
+      "speaker_id": null
+    },
+    {
+      "id": "hxtts_012",
+      "path": "ml/eval/data/hindi_xtts/hxtts_012.wav",
+      "label": "fake",
+      "engine": "xtts_v2",
+      "text": "ms बीमारी केंद्रीय तंत्रिका तंत्र पर असर करती है जिसमें दिमाग स्पाइनल कॉर्ड और ऑप्टिक नर्व शामिल हैं",
+      "duration_s": 6.64,
+      "pairs_with": "hreal_012",
+      "speaker_id": null
+    },
+    {
+      "id": "hxtts_013",
+      "path": "ml/eval/data/hindi_xtts/hxtts_013.wav",
+      "label": "fake",
+      "engine": "xtts_v2",
+      "text": "हर कोई समाज से जुड़ा होता है और ट्रांसपोर्ट सिस्टम का उपयोग करता है लगभग सभी लोग ट्रांसपोर्ट सिस्टम के बारे में शिकायत करते हैं",
+      "duration_s": 7.01,
+      "pairs_with": "hreal_013",
+      "speaker_id": null
+    },
+    {
+      "id": "hxtts_014",
+      "path": "ml/eval/data/hindi_xtts/hxtts_014.wav",
+      "label": "fake",
+      "engine": "xtts_v2",
+      "text": "विशेष रूप से सवाना पर बेहतरीन अफ़्रीकी वन्य जीवन को संपूर्ण रूप से देखने के लिए आमतौर पर सफ़ारी शब्द का उपयोग किया जाता है",
+      "duration_s": 8.91,
+      "pairs_with": "hreal_014",
+      "speaker_id": null
+    }
+  ],
+  "failures": [
+    {
+      "id": "hxtts_002",
+      "error": "NotImplementedError: "
+    },
+    {
+      "id": "hxtts_008",
+      "error": "NotImplementedError: "
+    }
+  ]
+}

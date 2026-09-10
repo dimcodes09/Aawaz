@@ -78,6 +78,28 @@
             android:layout_height="wrap_content"
             android:text="STOP PROBE A" />
 
+        <TextView
+            android:id="@+id/modeaText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:typeface="monospace"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="mode A idle" />
+
+        <Button
+            android:id="@+id/testRealButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TEST CLIP - REAL" />
+
+        <Button
+            android:id="@+id/testFakeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TEST CLIP - SYNTHETIC" />
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"

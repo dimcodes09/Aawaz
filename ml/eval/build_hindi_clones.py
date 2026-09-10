@@ -59,6 +59,19 @@ def main() -> int:
     os.environ.setdefault("COQUI_TOS_AGREED", "1")
 
     import torch
+    import torchaudio
+
+    # torchaudio >= 2.9 delegates audio I/O to torchcodec, which needs FFmpeg
+    # *shared* libraries. The ffmpeg on this box is a static build, so
+    # torchaudio.load dies with "Could not load libtorchcodec" on every
+    # reference clip. XTTS only uses torchaudio.load to read the speaker
+    # reference, and soundfile reads these WAVs fine, so route it there.
+    def _soundfile_load(path, *args, **kwargs):
+        data, rate = sf.read(str(path), dtype="float32", always_2d=True)
+        return torch.from_numpy(np.ascontiguousarray(data.T)), rate
+
+    torchaudio.load = _soundfile_load
+
     from TTS.api import TTS
 
     print(f"torch {torch.__version__}, loading {MODEL} (first run downloads ~2 GB)")

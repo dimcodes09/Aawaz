@@ -13,6 +13,7 @@ import android.widget.TextView
 import android.widget.Toast
 import com.ps26104.aawaz.R
 import com.ps26104.aawaz.detector.AudioCaptureService
+import com.ps26104.aawaz.detector.ModeAController
 import com.ps26104.aawaz.detector.WebRtcPcmSink
 import java.util.Locale
 
@@ -35,8 +36,11 @@ class DiagnosticsActivity : Activity() {
     private lateinit var deviceText: TextView
     private lateinit var permissionsText: TextView
     private lateinit var probeText: TextView
+    private lateinit var modeaText: TextView
 
     private var modeAProbe: ModeALoopbackProbe? = null
+    private var feeder: ModeAFileFeeder? = null
+    private var feedThread: Thread? = null
 
     private val handler = Handler(Looper.getMainLooper())
     private val refresh = object : Runnable {
@@ -44,6 +48,7 @@ class DiagnosticsActivity : Activity() {
             renderLatest()
             renderPermissions()
             renderProbe()
+            renderModeA()
             handler.postDelayed(this, UI_REFRESH_MS)
         }
     }
@@ -62,6 +67,7 @@ class DiagnosticsActivity : Activity() {
         permissionsText = findViewById(R.id.permissionsText)
         metricsText = findViewById(R.id.metricsText)
         probeText = findViewById(R.id.probeText)
+        modeaText = findViewById(R.id.modeaText)
 
         deviceText.text = Build.MANUFACTURER + " " + Build.MODEL +
             "  |  Android " + Build.VERSION.RELEASE + "  |  API " + Build.VERSION.SDK_INT
@@ -105,6 +111,14 @@ class DiagnosticsActivity : Activity() {
             modeAProbe?.stop()
         }
 
+        findViewById<Button>(R.id.testRealButton).setOnClickListener {
+            runClip("modea_real_48k.wav", "REAL CLIP")
+        }
+
+        findViewById<Button>(R.id.testFakeButton).setOnClickListener {
+            runClip("modea_fake_48k.wav", "SYNTHETIC CLIP")
+        }
+
         bindMark(R.id.mark1Button, 1, "no call, room silent, noise floor")
         bindMark(R.id.mark2Button, 2, "no call, LOCAL speaking at ~30 cm")
         bindMark(R.id.mark3Button, 3, "carrier call, speakerphone, REMOTE talking, local silent")
@@ -125,6 +139,8 @@ class DiagnosticsActivity : Activity() {
     }
 
     override fun onDestroy() {
+        feeder?.cancel()
+        ModeAController.stop()
         modeAProbe?.stop()
         modeAProbe = null
         super.onDestroy()
@@ -135,6 +151,49 @@ class DiagnosticsActivity : Activity() {
             Log.i(TAG, "===== STEP " + step + " START: " + description + " =====")
             Toast.makeText(this, "Marked STEP " + step, Toast.LENGTH_SHORT).show()
         }
+    }
+
+    /**
+     * Feeds one clip through the real pipeline on a background thread. The
+     * pipeline is restarted first so each clip is scored from a clean ring
+     * buffer and a clean EMA, with no carry-over from the previous run.
+     */
+    private fun runClip(fileName: String, label: String) {
+        if (feedThread?.isAlive == true) {
+            Toast.makeText(this, "A clip is already playing", Toast.LENGTH_SHORT).show()
+            return
+        }
+        Toast.makeText(this, "Feeding " + label, Toast.LENGTH_SHORT).show()
+        val worker = ModeAFileFeeder(this)
+        feeder = worker
+        feedThread = Thread({
+            ModeAController.stop()
+            ModeAController.start(this)
+            worker.feed(fileName, label)
+            val pipeline = ModeAController.pipeline(this)
+            Log.i(
+                TAG,
+                String.format(
+                    Locale.US,
+                    "MODEA_RESULT,%s,inferences=%d,median_latency_ms=%.1f,ep=%s",
+                    label, pipeline.inferenceCount, pipeline.medianLatencyMs,
+                    pipeline.executionProvider
+                )
+            )
+            pipeline.logSummary(label)
+        }, "aawaz-modea-feed").also { it.start() }
+    }
+
+    private fun renderModeA() {
+        val pipeline = ModeAController.pipeline(this)
+        modeaText.text = String.format(
+            Locale.US,
+            "MODE A%nrunning   : %s%nep        : %s%nwindows   : %d%nmedian ms : %.1f",
+            pipeline.isRunning,
+            pipeline.executionProvider,
+            pipeline.inferenceCount,
+            pipeline.medianLatencyMs
+        )
     }
 
     private fun renderProbe() {
