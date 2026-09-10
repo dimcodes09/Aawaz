@@ -1,0 +1,154 @@
+{
+  "clips": [
+    {
+      "id": "real_00",
+      "path": "ml\\eval\\data\\real\\real_00.flac",
+      "label": "real",
+      "text": "MISTER QUILTER IS THE APOSTLE OF THE MIDDLE CLASSES AND WE ARE GLAD TO WELCOME HIS GOSPEL",
+      "speaker_id": 1272
+    },
+    {
+      "id": "real_01",
+      "path": "ml\\eval\\data\\real\\real_01.flac",
+      "label": "real",
+      "text": "NOR IS MISTER QUILTER'S MANNER LESS INTERESTING THAN HIS MATTER",
+      "speaker_id": 1272
+    },
+    {
+      "id": "real_02",
+      "path": "ml\\eval\\data\\real\\real_02.flac",
+      "label": "real",
+      "text": "HE TELLS US THAT AT THIS FESTIVE SEASON OF THE YEAR WITH CHRISTMAS AND ROAST BEEF LOOMING BEFORE US SIMILES DRAWN FROM EATING AND ITS RESULTS OCCUR MOST READILY TO THE MIND",
+      "speaker_id": 1272
+    },
+    {
+      "id": "real_03",
+      "path": "ml\\eval\\data\\real\\real_03.flac",
+      "label": "real",
+      "text": "HE HAS GRAVE DOUBTS WHETHER SIR FREDERICK LEIGHTON'S WORK IS REALLY GREEK AFTER ALL AND CAN DISCOVER IN IT BUT LITTLE OF ROCKY ITHACA",
+      "speaker_id": 1272
+    },
+    {
+      "id": "real_04",
+      "path": "ml\\eval\\data\\real\\real_04.flac",
+      "label": "real",
+      "text": "LINNELL'S PICTURES ARE A SORT OF UP GUARDS AND AT EM PAINTINGS AND MASON'S EXQUISITE IDYLLS ARE AS NATIONAL AS A JINGO POEM MISTER BIRKET FOSTER'S LANDSCAPES SMILE AT ONE MUCH IN THE SAME WAY THAT MISTER CARKER USED TO FLASH HIS TEETH AND MISTER JOHN COLLIER GIVES HIS SITTER A CHEERFUL SLAP ON THE BACK BEFORE HE SAYS LIKE A SHAMPOOER IN A TURKISH BATH NEXT MAN",
+      "speaker_id": 1272
+    },
+    {
+      "id": "real_05",
+      "path": "ml\\eval\\data\\real\\real_05.flac",
+      "label": "real",
+      "text": "IT IS OBVIOUSLY UNNECESSARY FOR US TO POINT OUT HOW LUMINOUS THESE CRITICISMS ARE HOW DELICATE IN EXPRESSION",
+      "speaker_id": 1272
+    },
+    {
+      "id": "real_06",
+      "path": "ml\\eval\\data\\real\\real_06.flac",
+      "label": "real",
+      "text": "ON THE GENERAL PRINCIPLES OF ART MISTER QUILTER WRITES WITH EQUAL LUCIDITY",
+      "speaker_id": 1272
+    },
+    {
+      "id": "real_07",
+      "path": "ml\\eval\\data\\real\\real_07.flac",
+      "label": "real",
+      "text": "PAINTING HE TELLS US IS OF A DIFFERENT QUALITY TO MATHEMATICS AND FINISH IN ART IS ADDING MORE FACT",
+      "speaker_id": 1272
+    },
+    {
+      "id": "real_08",
+      "path": "ml\\eval\\data\\real\\real_08.flac",
+      "label": "real",
+      "text": "AS FOR ETCHINGS THEY ARE OF TWO KINDS BRITISH AND FOREIGN",
+      "speaker_id": 1272
+    },
+    {
+      "id": "real_09",
+      "path": "ml\\eval\\data\\real\\real_09.flac",
+      "label": "real",
+      "text": "HE LAMENTS MOST BITTERLY THE DIVORCE THAT HAS BEEN MADE BETWEEN DECORATIVE ART AND WHAT WE USUALLY CALL PICTURES MAKES THE CUSTOMARY APPEAL TO THE LAST JUDGMENT AND REMINDS US THAT IN THE GREAT DAYS OF ART MICHAEL ANGELO WAS THE FURNISHING UPHOLSTERER",
+      "speaker_id": 1272
+    },
+    {
+      "id": "fake_00",
+      "path": "ml\\eval\\data\\fake\\fake_00.mp3",
+      "label": "fake",
+      "text": "Mister quilter is the apostle of the middle classes and we are glad to welcome his gospel",
+      "voice": "en-US-AriaNeural",
+      "pairs_with": "real_00"
+    },
+    {
+      "id": "fake_01",
+      "path": "ml\\eval\\data\\fake\\fake_01.mp3",
+      "label": "fake",
+      "text": "Nor is mister quilter's manner less interesting than his matter",
+      "voice": "en-US-GuyNeural",
+      "pairs_with": "real_01"
+    },
+    {
+      "id": "fake_02",
+      "path": "ml\\eval\\data\\fake\\fake_02.mp3",
+      "label": "fake",
+      "text": "He tells us that at this festive season of the year with christmas and roast beef looming before us similes drawn from eating and its results occur most readily to the mind",
+      "voice": "en-GB-SoniaNeural",
+      "pairs_with": "real_02"
+    },
+    {
+      "id": "fake_03",
+      "path": "ml\\eval\\data\\fake\\fake_03.mp3",
+      "label": "fake",
+      "text": "He has grave doubts whether sir frederick leighton's work is really greek after all and can discover in it but little of rocky ithaca",
+      "voice": "en-GB-RyanNeural",
+      "pairs_with": "real_03"
+    },
+    {
+      "id": "fake_04",
+      "path": "ml\\eval\\data\\fake\\fake_04.mp3",
+      "label": "fake",
+      "text": "Linnell's pictures are a sort of up guards and at em paintings and mason's exquisite idylls are as national as a jingo poem mister birket foster's landscapes smile at one much in the same way that mister carker used to flash his teeth and mister john collier gives his sitter a cheerful slap on the back before he says like a shampooer in a turkish bath next man",
+      "voice": "en-AU-NatashaNeural",
+      "pairs_with": "real_04"
+    },
+    {
+      "id": "fake_05",
+      "path": "ml\\eval\\data\\fake\\fake_05.mp3",
+      "label": "fake",
+      "text": "It is obviously unnecessary for us to point out how luminous these criticisms are how delicate in expression",
+      "voice": "en-US-JennyNeural",
+      "pairs_with": "real_05"
+    },
+    {
+      "id": "fake_06",
+      "path": "ml\\eval\\data\\fake\\fake_06.mp3",
+      "label": "fake",
+      "text": "On the general principles of art mister quilter writes with equal lucidity",
+      "voice": "en-US-EricNeural",
+      "pairs_with": "real_06"
+    },
+    {
+      "id": "fake_07",
+      "path": "ml\\eval\\data\\fake\\fake_07.mp3",
+      "label": "fake",
+      "text": "Painting he tells us is of a different quality to mathematics and finish in art is adding more fact",
+      "voice": "en-IE-EmilyNeural",
+      "pairs_with": "real_07"
+    },
+    {
+      "id": "fake_08",
+      "path": "ml\\eval\\data\\fake\\fake_08.mp3",
+      "label": "fake",
+      "text": "As for etchings they are of two kinds british and foreign",
+      "voice": "en-CA-LiamNeural",
+      "pairs_with": "real_08"
+    },
+    {
+      "id": "fake_09",
+      "path": "ml\\eval\\data\\fake\\fake_09.mp3",
+      "label": "fake",
+      "text": "He laments most bitterly the divorce that has been made between decorative art and what we usually call pictures makes the customary appeal to the last judgment and reminds us that in the great days of art michael angelo was the furnishing upholsterer",
+      "voice": "en-IN-NeerjaNeural",
+      "pairs_with": "real_09"
+    }
+  ]
+}

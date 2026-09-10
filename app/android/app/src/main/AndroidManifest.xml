@@ -9,6 +9,17 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
 
+    <!--
+      Mode A / WebRTC. ACCESS_NETWORK_STATE is not optional: libwebrtc's
+      NetworkMonitor calls ConnectivityManager on its network_thread, and without
+      it the SecurityException leaves a pending JNI exception that trips
+      RTC_CHECK(!env->ExceptionCheck()) and aborts the process.
+      MODIFY_AUDIO_SETTINGS is required for AudioManager.setMode() to take effect.
+      react-native-webrtc declares neither in its own manifest.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
     <application
       android:name=".MainApplication"
       android:label="@string/app_name"

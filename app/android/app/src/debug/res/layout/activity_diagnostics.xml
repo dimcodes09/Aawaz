@@ -56,6 +56,28 @@
             android:layout_height="wrap_content"
             android:text="STOP CAPTURE" />
 
+        <TextView
+            android:id="@+id/probeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:typeface="monospace"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="probe A stopped" />
+
+        <Button
+            android:id="@+id/probeAButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PROBE A - WEBRTC REMOTE PCM" />
+
+        <Button
+            android:id="@+id/probeAStopButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="STOP PROBE A" />
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"

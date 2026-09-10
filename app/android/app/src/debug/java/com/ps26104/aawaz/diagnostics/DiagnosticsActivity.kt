@@ -13,6 +13,7 @@ import android.widget.TextView
 import android.widget.Toast
 import com.ps26104.aawaz.R
 import com.ps26104.aawaz.detector.AudioCaptureService
+import com.ps26104.aawaz.detector.WebRtcPcmSink
 import java.util.Locale
 
 /**
@@ -33,12 +34,16 @@ class DiagnosticsActivity : Activity() {
     private lateinit var metricsText: TextView
     private lateinit var deviceText: TextView
     private lateinit var permissionsText: TextView
+    private lateinit var probeText: TextView
+
+    private var modeAProbe: ModeALoopbackProbe? = null
 
     private val handler = Handler(Looper.getMainLooper())
     private val refresh = object : Runnable {
         override fun run() {
             renderLatest()
             renderPermissions()
+            renderProbe()
             handler.postDelayed(this, UI_REFRESH_MS)
         }
     }
@@ -56,6 +61,7 @@ class DiagnosticsActivity : Activity() {
         deviceText = findViewById(R.id.deviceText)
         permissionsText = findViewById(R.id.permissionsText)
         metricsText = findViewById(R.id.metricsText)
+        probeText = findViewById(R.id.probeText)
 
         deviceText.text = Build.MANUFACTURER + " " + Build.MODEL +
             "  |  Android " + Build.VERSION.RELEASE + "  |  API " + Build.VERSION.SDK_INT
@@ -85,6 +91,20 @@ class DiagnosticsActivity : Activity() {
             Log.i(TAG, "===== STOP CAPTURE pressed =====")
         }
 
+        findViewById<Button>(R.id.probeAButton).setOnClickListener {
+            if (!hasAllPermissions()) {
+                Toast.makeText(this, "Grant permissions first", Toast.LENGTH_SHORT).show()
+                requestPermissionsIfNeeded()
+                return@setOnClickListener
+            }
+            if (modeAProbe == null) modeAProbe = ModeALoopbackProbe(this)
+            modeAProbe?.start()
+        }
+
+        findViewById<Button>(R.id.probeAStopButton).setOnClickListener {
+            modeAProbe?.stop()
+        }
+
         bindMark(R.id.mark1Button, 1, "no call, room silent, noise floor")
         bindMark(R.id.mark2Button, 2, "no call, LOCAL speaking at ~30 cm")
         bindMark(R.id.mark3Button, 3, "carrier call, speakerphone, REMOTE talking, local silent")
@@ -104,11 +124,36 @@ class DiagnosticsActivity : Activity() {
         super.onPause()
     }
 
+    override fun onDestroy() {
+        modeAProbe?.stop()
+        modeAProbe = null
+        super.onDestroy()
+    }
+
     private fun bindMark(viewId: Int, step: Int, description: String) {
         findViewById<Button>(viewId).setOnClickListener {
             Log.i(TAG, "===== STEP " + step + " START: " + description + " =====")
             Toast.makeText(this, "Marked STEP " + step, Toast.LENGTH_SHORT).show()
         }
+    }
+
+    private fun renderProbe() {
+        val snapshot = WebRtcPcmSink.latest
+        if (snapshot == null) {
+            probeText.text =
+                if (ModeALoopbackProbe.isRunning) "probe A: negotiating, no PCM yet" else "probe A stopped"
+            return
+        }
+        probeText.text = String.format(
+            Locale.US,
+            "PROBE A remote sink%nrms       : %.1f%npeak      : %d%ndBFS      : %.1f%nzeroRatio : %.3f%ncb/window : %d%nframes/s  : %.1f",
+            snapshot.rms,
+            snapshot.peak,
+            snapshot.dbfs,
+            snapshot.zeroRatio,
+            snapshot.readResult,
+            WebRtcPcmSink.framesPerSecond
+        )
     }
 
     private fun renderPermissions() {

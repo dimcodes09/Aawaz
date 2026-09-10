@@ -1,0 +1,5 @@
+data/
+*.flac
+*.mp3
+*.wav
+__pycache__/

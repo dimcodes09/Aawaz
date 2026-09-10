@@ -1,0 +1,22 @@
+{
+  "False": {
+    "real_median_risk": 1.0,
+    "fake_median_risk": 95.5,
+    "real_median_l1": 4.518720388412476,
+    "fake_median_l1": -3.1496434211730957,
+    "real_argmax1": 10,
+    "fake_argmax1": 1,
+    "risk_gap_fake_minus_real": 94.5,
+    "auc_l1_real_over_fake": 0.99
+  },
+  "True": {
+    "real_median_risk": 1.0,
+    "fake_median_risk": 94.0,
+    "real_median_l1": 4.936888933181763,
+    "fake_median_l1": -2.6915879249572754,
+    "real_argmax1": 10,
+    "fake_argmax1": 2,
+    "risk_gap_fake_minus_real": 93.0,
+    "auc_l1_real_over_fake": 0.99
+  }
+}

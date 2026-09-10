@@ -19,3 +19,20 @@ buildscript {
 }
 
 apply plugin: "com.facebook.react.rootproject"
+
+/**
+ * Mode A remote-audio PCM requires org.webrtc.AudioTrackSink and
+ * AudioTrack.addSink(). The org.jitsi:webrtc:124 build that react-native-webrtc
+ * pulls in ships neither (AudioTrack exposes only setVolume/getNativeAudioTrack),
+ * so there is no Java/Kotlin path to remote PCM with it. The webrtc-sdk build of
+ * the same libwebrtc generation exposes both.
+ */
+allprojects {
+    configurations.all {
+        resolutionStrategy.dependencySubstitution {
+            substitute(module("org.jitsi:webrtc"))
+                .using(module("io.github.webrtc-sdk:android:125.6422.07"))
+                .because("org.jitsi build lacks org.webrtc.AudioTrackSink / AudioTrack.addSink")
+        }
+    }
+}
