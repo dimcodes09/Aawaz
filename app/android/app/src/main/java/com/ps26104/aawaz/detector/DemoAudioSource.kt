@@ -35,6 +35,30 @@ class DemoAudioSource(context: Context) {
         const val ASSET_REAL = "demo_real_48k.wav"
         const val ASSET_FAKE = "demo_fake_48k.wav"
 
+        /**
+         * Validated LibriSpeech / XTTS-v2 pairs (docs/15-DEMO-VOICE-DATASET.md).
+         * These ship at 16 kHz, the rate the dataset was approved and scored at,
+         * so they are upsampled to 48 kHz on the way out - see [play].
+         */
+        const val ASSET_PAIR01_HUMAN = "demo_pair01_human.wav"
+        const val ASSET_PAIR01_AI = "demo_pair01_ai.wav"
+        const val ASSET_PAIR02_HUMAN = "demo_pair02_human.wav"
+        const val ASSET_PAIR02_AI = "demo_pair02_ai.wav"
+        const val ASSET_PAIR03_HUMAN = "demo_pair03_human.wav"
+        const val ASSET_PAIR03_AI = "demo_pair03_ai.wav"
+
+        /** Selection key -> (asset, spoken label). Keeps the bridge dumb. */
+        val CLIPS: Map<String, Pair<String, String>> = mapOf(
+            "real" to (ASSET_REAL to "REAL HUMAN"),
+            "fake" to (ASSET_FAKE to "AI VOICE"),
+            "pair01_human" to (ASSET_PAIR01_HUMAN to "PAIR 01 HUMAN"),
+            "pair01_ai" to (ASSET_PAIR01_AI to "PAIR 01 AI"),
+            "pair02_human" to (ASSET_PAIR02_HUMAN to "PAIR 02 HUMAN"),
+            "pair02_ai" to (ASSET_PAIR02_AI to "PAIR 02 AI"),
+            "pair03_human" to (ASSET_PAIR03_HUMAN to "PAIR 03 HUMAN"),
+            "pair03_ai" to (ASSET_PAIR03_AI to "PAIR 03 AI"),
+        )
+
         const val SAMPLE_RATE = 48000
         /** 10 ms at 48 kHz, the same chunk size libwebrtc hands the sink. */
         const val FRAME_SAMPLES = 480
@@ -64,14 +88,34 @@ class DemoAudioSource(context: Context) {
 
         var audioTrack: AudioTrack? = null
         try {
-            val wav = readPcm16WavFromAssets(assetName)
-            if (wav.sampleRate != SAMPLE_RATE || wav.channels != 1) {
-                Log.e(
-                    TAG,
-                    "DEMO_AUDIO: " + assetName + " is " + wav.sampleRate + " Hz / " +
-                        wav.channels + " ch; need 48000 Hz mono"
-                )
+            val raw = readPcm16WavFromAssets(assetName)
+            if (raw.channels != 1) {
+                Log.e(TAG, "DEMO_AUDIO: " + assetName + " has " + raw.channels + " ch; need mono")
                 return
+            }
+            // The approved voice-pair dataset is 16 kHz (that is the rate it was
+            // scored at). Playback and ModeAPipeline both speak 48 kHz, and
+            // 48000 = 3 x 16000 exactly, so lift it by a clean integer factor.
+            // The pipeline's own anti-alias filter removes the interpolation
+            // images on the way back down; no detector code is involved.
+            val wav = when (raw.sampleRate) {
+                SAMPLE_RATE -> raw
+                SAMPLE_RATE / 3 -> Wav(upsampleBy3(raw.samples), SAMPLE_RATE, 1)
+                else -> {
+                    Log.e(
+                        TAG,
+                        "DEMO_AUDIO: " + assetName + " is " + raw.sampleRate +
+                            " Hz; need 48000 or 16000 Hz mono"
+                    )
+                    return
+                }
+            }
+            if (raw.sampleRate != wav.sampleRate) {
+                Log.i(
+                    TAG,
+                    "DEMO_AUDIO: " + assetName + " upsampled " + raw.sampleRate +
+                        " -> " + wav.sampleRate + " Hz (x3, linear)"
+                )
             }
 
             Log.i(TAG, "===== DEMO AUDIO START: " + label + " (" + assetName + ") =====")
@@ -163,6 +207,24 @@ class DemoAudioSource(context: Context) {
     }
 
     private class Wav(val samples: ShortArray, val sampleRate: Int, val channels: Int)
+
+    /**
+     * Integer x3 upsample with linear interpolation. Exact for 16 kHz -> 48 kHz.
+     * Interpolation images sit above 8 kHz and are attenuated by the resampler
+     * already in the pipeline, so nothing extra is needed here.
+     */
+    private fun upsampleBy3(src: ShortArray): ShortArray {
+        if (src.isEmpty()) return src
+        val out = ShortArray(src.size * 3)
+        for (i in src.indices) {
+            val a = src[i].toInt()
+            val b = if (i + 1 < src.size) src[i + 1].toInt() else a
+            out[i * 3] = a.toShort()
+            out[i * 3 + 1] = (a + (b - a) / 3).toShort()
+            out[i * 3 + 2] = (a + 2 * (b - a) / 3).toShort()
+        }
+        return out
+    }
 
     /** Minimal RIFF/WAVE reader for uncompressed 16-bit PCM, read from assets. */
     private fun readPcm16WavFromAssets(assetName: String): Wav {

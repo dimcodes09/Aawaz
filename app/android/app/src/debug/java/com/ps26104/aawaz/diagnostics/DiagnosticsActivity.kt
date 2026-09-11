@@ -15,6 +15,7 @@ import android.widget.TextView
 import android.widget.Toast
 import com.ps26104.aawaz.R
 import com.ps26104.aawaz.detector.AudioCaptureService
+import com.ps26104.aawaz.detector.DemoAudioSource
 import com.ps26104.aawaz.detector.ModeAController
 import com.ps26104.aawaz.detector.ModeAPipeline
 import com.ps26104.aawaz.detector.WebRtcPcmSink
@@ -136,6 +137,10 @@ class DiagnosticsActivity : Activity() {
 
         findViewById<Button>(R.id.testFakeButton).setOnClickListener {
             runClip("modea_fake_48k.wav", "SYNTHETIC CLIP")
+        }
+
+        findViewById<Button>(R.id.runSixPairsButton).setOnClickListener {
+            runAllSixPairs()
         }
 
         findViewById<Button>(R.id.speakerRealButton).setOnClickListener {
@@ -261,6 +266,49 @@ class DiagnosticsActivity : Activity() {
         } catch (t: Throwable) {
             Log.e(TAG, "SPEAKER ONLY failed: " + t.javaClass.simpleName + ": " + t.message, t)
         }
+    }
+
+    /**
+     * Debug verification for the six bundled voice-pair assets. Plays each one
+     * through the SAME DemoAudioSource the judge demo uses, so every score comes
+     * from the real detector. Production UI is untouched.
+     */
+    private fun runAllSixPairs() {
+        if (feedThread?.isAlive == true) {
+            Toast.makeText(this, "A clip is already playing", Toast.LENGTH_SHORT).show()
+            return
+        }
+        Toast.makeText(this, "Running 6 demo pairs", Toast.LENGTH_SHORT).show()
+        val keys = listOf(
+            "pair01_human", "pair01_ai",
+            "pair02_human", "pair02_ai",
+            "pair03_human", "pair03_ai",
+        )
+        feedThread = Thread({
+            val source = DemoAudioSource(this)
+            for (key in keys) {
+                val entry = DemoAudioSource.CLIPS[key] ?: continue
+                Log.i(TAG, "===== SIXPAIR BEGIN " + key + " =====")
+                source.play(entry.first, entry.second)
+                val pipeline = ModeAController.pipeline(this)
+                Log.i(
+                    TAG,
+                    String.format(
+                        Locale.US,
+                        "SIXPAIR_RESULT,%s,%s,risk=%d,state=%s",
+                        key, entry.first, pipeline.lastRawRisk,
+                        pipeline.currentReading.state
+                    )
+                )
+                try {
+                    Thread.sleep(600)
+                } catch (ie: InterruptedException) {
+                    Thread.currentThread().interrupt()
+                    break
+                }
+            }
+            Log.i(TAG, "===== SIXPAIR DONE =====")
+        }, "aawaz-sixpair").also { it.start() }
     }
 
     private fun renderMicProbe() {

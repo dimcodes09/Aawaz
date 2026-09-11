@@ -66,12 +66,12 @@ class DetectorBridge(
     @ReactMethod
     fun playDemoClip(kind: String, promise: Promise) {
         try {
-            val asset = if (kind.equals("fake", ignoreCase = true)) {
-                DemoAudioSource.ASSET_FAKE
-            } else {
-                DemoAudioSource.ASSET_REAL
-            }
-            val label = if (kind.equals("fake", ignoreCase = true)) "AI VOICE" else "REAL HUMAN"
+            // Unknown keys fall back to the original REAL clip, so the existing
+            // "real" / "fake" judge-demo behaviour is unchanged.
+            val entry = DemoAudioSource.CLIPS[kind.lowercase()]
+                ?: (DemoAudioSource.ASSET_REAL to "REAL HUMAN")
+            val asset = entry.first
+            val label = entry.second
             val source = demoSource ?: DemoAudioSource(reactContext).also { demoSource = it }
             if (source.isPlaying) {
                 promise.resolve(false)
