@@ -366,9 +366,12 @@ class RealCallSession(
             state("INCOMING_CLIP", message.sdp)
             try {
                 // Fresh ring buffer and aggregator, so the next window is the clip.
-                ModeAController.stop()
                 val pipeline = ModeAController.pipeline(appContext)
-                pipeline.listener = ModeAPipelineListener()
+                val existing = pipeline.listener
+                ModeAController.stop()
+                // Preserve whoever owns the listener across the restart, so the
+                // real Aawaz screen keeps receiving AawazRisk events.
+                pipeline.listener = existing ?: ModeAPipelineListener()
                 ModeAController.start(appContext)
                 Log.i(
                     TAG,
@@ -632,7 +635,9 @@ class RealCallSession(
             // this is the same wiring the loopback probe used, now fed by audio
             // that arrived over RTP from another phone.
             val pipeline = ModeAController.pipeline(appContext)
-            pipeline.listener = ModeAPipelineListener()
+            // If the React Native bridge already owns the listener, leave it be -
+            // that is what drives the real Aawaz UI. Ours is only a fallback.
+            if (pipeline.listener == null) pipeline.listener = ModeAPipelineListener()
             ModeAController.start(appContext)
 
             val sink = WebRtcPcmSink(

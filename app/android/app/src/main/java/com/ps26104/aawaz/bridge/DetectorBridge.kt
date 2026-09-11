@@ -8,6 +8,7 @@ import com.facebook.react.bridge.ReactMethod
 import com.facebook.react.bridge.WritableMap
 import com.facebook.react.modules.core.DeviceEventManagerModule
 import com.ps26104.aawaz.detector.DemoAudioSource
+import com.ps26104.aawaz.detector.MicAudioSource
 import com.ps26104.aawaz.detector.ModeAController
 import com.ps26104.aawaz.detector.RiskAggregator
 
@@ -35,6 +36,7 @@ class DetectorBridge(
 
     private val listener = ModeAPipelineListener()
     private var demoSource: DemoAudioSource? = null
+    private var micSource: MicAudioSource? = null
 
     @ReactMethod
     fun startModeA(promise: Promise) {
@@ -98,6 +100,58 @@ class DetectorBridge(
      */
     private fun pipelineListenerAttached() {
         ModeAController.pipeline(reactContext).listener = listener
+    }
+
+    /**
+     * Live microphone into the existing detector. Audio is never stored; it goes
+     * straight to the same PcmFrameSink the demo clips and WebRTC use.
+     */
+    @ReactMethod
+    fun startMicDetection(promise: Promise) {
+        try {
+            ModeAController.pipeline(reactContext).listener = listener
+            val source = micSource ?: MicAudioSource(reactContext).also { micSource = it }
+            promise.resolve(source.start())
+        } catch (t: Throwable) {
+            promise.reject("MIC_START_FAILED", t.message, t)
+        }
+    }
+
+    @ReactMethod
+    fun stopMicDetection(promise: Promise) {
+        try {
+            micSource?.stop()
+            promise.resolve(true)
+        } catch (t: Throwable) {
+            promise.reject("MIC_STOP_FAILED", t.message, t)
+        }
+    }
+
+    /** Utterance capture: buffer the mic, score once. Nothing is persisted. */
+    @ReactMethod
+    fun startRecording(promise: Promise) {
+        try {
+            val source = micSource ?: MicAudioSource(reactContext).also { micSource = it }
+            promise.resolve(source.startRecording())
+        } catch (t: Throwable) {
+            promise.reject("REC_START_FAILED", t.message, t)
+        }
+    }
+
+    /** Returns seconds analysed, or -1 if the clip was too short to score. */
+    @ReactMethod
+    fun analyzeRecording(promise: Promise) {
+        try {
+            ModeAController.pipeline(reactContext).listener = listener
+            val source = micSource
+            if (source == null) {
+                promise.resolve(-1.0)
+                return
+            }
+            promise.resolve(source.stopAndAnalyze())
+        } catch (t: Throwable) {
+            promise.reject("REC_ANALYZE_FAILED", t.message, t)
+        }
     }
 
     /** Median inference latency in ms, for the pitch numbers. */

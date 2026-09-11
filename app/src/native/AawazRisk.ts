@@ -29,6 +29,10 @@ interface DetectorBridgeModule {
   getMedianLatencyMs: () => Promise<number>;
   playDemoClip: (kind: string) => Promise<boolean>;
   getMediaVolumePercent: () => Promise<number>;
+  startMicDetection: () => Promise<boolean>;
+  stopMicDetection: () => Promise<boolean>;
+  startRecording: () => Promise<boolean>;
+  analyzeRecording: () => Promise<number>;
 }
 
 const bridge: DetectorBridgeModule | undefined = (
@@ -70,6 +74,51 @@ export const playDemoClip = async (kind: 'real' | 'fake'): Promise<boolean> => {
   } catch (err) {
     console.warn(`[AawazRisk] playDemoClip failed: ${String(err)}`);
     return false;
+  }
+};
+
+/** Live mic into the existing detector. Nothing is recorded to disk. */
+export const startMicDetection = async (): Promise<boolean> => {
+  if (!bridge) return false;
+  try {
+    const ok = await bridge.startMicDetection();
+    console.log(`[AawazRisk] startMicDetection -> ${ok}`);
+    return ok;
+  } catch (err) {
+    console.warn(`[AawazRisk] startMicDetection failed: ${String(err)}`);
+    return false;
+  }
+};
+
+export const stopMicDetection = async (): Promise<boolean> => {
+  if (!bridge) return false;
+  try {
+    return await bridge.stopMicDetection();
+  } catch {
+    return false;
+  }
+};
+
+/** Utterance capture: record, then score once. Nothing is stored on disk. */
+export const startRecording = async (): Promise<boolean> => {
+  if (!bridge) return false;
+  try {
+    return await bridge.startRecording();
+  } catch {
+    return false;
+  }
+};
+
+/** Returns seconds analysed, or -1 if too short (<4.05 s) to score. */
+export const analyzeRecording = async (): Promise<number> => {
+  if (!bridge) return -1;
+  try {
+    const secs = await bridge.analyzeRecording();
+    console.log(`[AawazRisk] analyzeRecording -> ${secs}s`);
+    return secs;
+  } catch (err) {
+    console.warn(`[AawazRisk] analyzeRecording failed: ${String(err)}`);
+    return -1;
   }
 };
 

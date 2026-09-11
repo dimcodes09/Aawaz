@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, StyleSheet, Pressable } from 'react-native';
 import { Theme } from '../theme';
-import { playDemoClip, AawazRiskState } from '../native/AawazRisk';
+import {
+  playDemoClip,
+  startRecording,
+  analyzeRecording,
+  AawazRiskState,
+} from '../native/AawazRisk';
 
 export interface JudgeDemoBarProps {
   state: AawazRiskState;
@@ -28,6 +33,23 @@ export const JudgeDemoBar: React.FC<JudgeDemoBarProps> = ({
   };
 
   const v = verdict();
+  const [micOn, setMicOn] = useState<boolean>(false);
+
+  const [recNote, setRecNote] = useState<string>('');
+
+  const toggleMic = (): void => {
+    if (micOn) {
+      setMicOn(false);
+      setRecNote('analysing...');
+      analyzeRecording().then((secs: number) => {
+        setRecNote(secs < 0 ? 'too short - record at least 5 seconds' : `analysed ${secs.toFixed(1)}s`);
+      });
+    } else {
+      startRecording();
+      setMicOn(true);
+      setRecNote('recording... speak for about 5 seconds');
+    }
+  };
 
   return (
     <View style={styles.wrap}>
@@ -50,6 +72,19 @@ export const JudgeDemoBar: React.FC<JudgeDemoBarProps> = ({
           <Text style={styles.buttonLabel}>AI VOICE</Text>
         </Pressable>
       </View>
+
+      <Pressable
+        style={[styles.micButton, micOn && styles.micButtonOn]}
+        onPress={toggleMic}
+      >
+        <Text style={styles.micLabel}>
+          {micOn ? 'STOP AND ANALYSE' : 'RECORD MY VOICE'}
+        </Text>
+      </Pressable>
+
+      {recNote.length > 0 ? (
+        <Text style={styles.recNote}>{recNote}</Text>
+      ) : null}
 
       <View
         style={[
@@ -113,6 +148,32 @@ const styles = StyleSheet.create({
     fontWeight: '800',
     color: Theme.colors.textPrimary,
     letterSpacing: 0.5,
+  },
+  micButton: {
+    marginTop: Theme.spacing.md,
+    paddingVertical: 12,
+    borderRadius: Theme.borderRadius.lg,
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#38BDF8',
+    backgroundColor: 'rgba(56, 189, 248, 0.12)',
+  },
+  micButtonOn: {
+    borderColor: '#F59E0B',
+    backgroundColor: 'rgba(245, 158, 11, 0.18)',
+  },
+  micLabel: {
+    fontSize: 13,
+    fontWeight: '800',
+    color: Theme.colors.textPrimary,
+    letterSpacing: 0.5,
+  },
+  recNote: {
+    marginTop: 6,
+    fontSize: 11,
+    fontWeight: '700',
+    color: Theme.colors.textMuted,
+    textAlign: 'center',
   },
   verdict: {
     marginTop: Theme.spacing.md,
