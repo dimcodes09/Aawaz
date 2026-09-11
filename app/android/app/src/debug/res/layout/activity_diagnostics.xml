@@ -146,6 +146,55 @@
             android:layout_height="wrap_content"
             android:text="STOP MIC PROBE" />
 
+        <TextView
+            android:id="@+id/callText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:typeface="monospace"
+            android:paddingTop="12dp"
+            android:paddingBottom="8dp"
+            android:text="PHASE B: two-device call idle" />
+
+        <EditText
+            android:id="@+id/receiverIpInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="receiver IP (e.g. 192.168.43.5)"
+            android:textSize="16sp"
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/callConnectButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CALLER - CONNECT" />
+
+        <Button
+            android:id="@+id/callListenButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RECEIVER - LISTEN" />
+
+        <Button
+            android:id="@+id/sendHumanButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SEND HUMAN (pair 01) OVER WEBRTC" />
+
+        <Button
+            android:id="@+id/sendAiButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SEND AI VOICE (pair 01) OVER WEBRTC" />
+
+        <Button
+            android:id="@+id/callStopButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="STOP CALL SESSION" />
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"

@@ -11,6 +11,7 @@ import android.media.AudioAttributes
 import android.media.MediaPlayer
 import android.util.Log
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import com.ps26104.aawaz.R
@@ -48,6 +49,11 @@ class DiagnosticsActivity : Activity() {
     private var feedThread: Thread? = null
     private var micProbe: MicProbe? = null
     private var speakerPlayer: MediaPlayer? = null
+    private var callSession: RealCallSession? = null
+    private lateinit var callText: TextView
+    private lateinit var receiverIpInput: EditText
+    private val callState = java.util.LinkedHashMap<String, String>()
+    private val callMilestones = mutableListOf<String>()
 
     private val handler = Handler(Looper.getMainLooper())
     private val refresh = object : Runnable {
@@ -57,6 +63,7 @@ class DiagnosticsActivity : Activity() {
             renderProbe()
             renderModeA()
             renderMicProbe()
+            if (callSession == null) renderCallIdle()
             handler.postDelayed(this, UI_REFRESH_MS)
         }
     }
@@ -77,6 +84,8 @@ class DiagnosticsActivity : Activity() {
         probeText = findViewById(R.id.probeText)
         modeaText = findViewById(R.id.modeaText)
         micProbeText = findViewById(R.id.micProbeText)
+        callText = findViewById(R.id.callText)
+        receiverIpInput = findViewById(R.id.receiverIpInput)
 
         deviceText.text = Build.MANUFACTURER + " " + Build.MODEL +
             "  |  Android " + Build.VERSION.RELEASE + "  |  API " + Build.VERSION.SDK_INT
@@ -139,6 +148,45 @@ class DiagnosticsActivity : Activity() {
             runClip("modea_fake_48k.wav", "SYNTHETIC CLIP")
         }
 
+        findViewById<Button>(R.id.callConnectButton).setOnClickListener {
+            val ip = receiverIpInput.text.toString().trim()
+            if (ip.isEmpty()) {
+                Toast.makeText(this, "Enter the receiver IP first", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+            startCallSession(RealCallSession.Role.CALLER, ip)
+        }
+
+        findViewById<Button>(R.id.callListenButton).setOnClickListener {
+            startCallSession(RealCallSession.Role.RECEIVER, null)
+        }
+
+        findViewById<Button>(R.id.sendHumanButton).setOnClickListener {
+            val session = callSession
+            if (session == null) {
+                Toast.makeText(this, "Start the CALLER session first", Toast.LENGTH_SHORT).show()
+            } else {
+                session.playClip("pair01_human")
+                Toast.makeText(this, "Sending HUMAN over WebRTC", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        findViewById<Button>(R.id.sendAiButton).setOnClickListener {
+            val session = callSession
+            if (session == null) {
+                Toast.makeText(this, "Start the CALLER session first", Toast.LENGTH_SHORT).show()
+            } else {
+                session.playClip("pair01_ai")
+                Toast.makeText(this, "Sending AI VOICE over WebRTC", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        findViewById<Button>(R.id.callStopButton).setOnClickListener {
+            callSession?.stop()
+            callSession = null
+            Toast.makeText(this, "Call session stopped", Toast.LENGTH_SHORT).show()
+        }
+
         findViewById<Button>(R.id.runSixPairsButton).setOnClickListener {
             runAllSixPairs()
         }
@@ -164,6 +212,8 @@ class DiagnosticsActivity : Activity() {
 
         findViewById<Button>(R.id.micProbeStopButton).setOnClickListener {
             micProbe?.stop()
+        callSession?.stop()
+        callSession = null
         speakerPlayer?.release()
         speakerPlayer = null
             Toast.makeText(this, "Mic probe stopped", Toast.LENGTH_SHORT).show()
@@ -309,6 +359,63 @@ class DiagnosticsActivity : Activity() {
             }
             Log.i(TAG, "===== SIXPAIR DONE =====")
         }, "aawaz-sixpair").also { it.start() }
+    }
+
+    /**
+     * Phase B entry point. RealCallSession does all its work on its own worker
+     * thread; these callbacks arrive off the main thread, so the UI update is
+     * posted back.
+     */
+    private fun startCallSession(role: RealCallSession.Role, receiverIp: String?) {
+        callSession?.stop()
+        callMilestones.clear()
+        callState.clear()
+        val events = object : RealCallSession.Events {
+            override fun onState(key: String, value: String) {
+                callState[key] = value
+                runOnUiThread { renderCall() }
+            }
+
+            override fun onMilestone(name: String) {
+                if (!callMilestones.contains(name)) callMilestones.add(name)
+                runOnUiThread { renderCall() }
+            }
+
+            override fun onFailure(message: String) {
+                callState["FAILURE"] = message
+                runOnUiThread {
+                    renderCall()
+                    Toast.makeText(this@DiagnosticsActivity, message, Toast.LENGTH_LONG).show()
+                }
+            }
+        }
+        val session = RealCallSession(this, role, events)
+        callSession = session
+        session.start(receiverIp)
+        Toast.makeText(
+            this,
+            if (role == RealCallSession.Role.CALLER) "Calling " + receiverIp else "Listening",
+            Toast.LENGTH_SHORT
+        ).show()
+    }
+
+    private fun renderCall() {
+        val sb = StringBuilder("PHASE B: two-device call\n")
+        sb.append("LOCAL_IP  : ").append(RealCallSession.localIpAddress()).append("\n")
+        for ((k, v) in callState) {
+            sb.append(k.padEnd(10)).append(": ").append(v).append("\n")
+        }
+        if (callMilestones.isNotEmpty()) {
+            sb.append("milestones: ").append(callMilestones.joinToString(" > "))
+        }
+        callText.text = sb.toString().trimEnd()
+    }
+
+    private fun renderCallIdle() {
+        if (callState.isEmpty()) {
+            callText.text = "PHASE B: two-device call\nLOCAL_IP  : " +
+                RealCallSession.localIpAddress() + "\nidle"
+        }
     }
 
     private fun renderMicProbe() {
